@@ -26,6 +26,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy` | Quantum/open-system theorem rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Geometry_Manifold_Model.thy` | Shared scaffold for manifold, curvature, dimensional-span, closed-path, winding, holonomy, Berry-phase, field-equation, projection, and action claims |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy` | Geometry/manifold theorem rows promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Dynamics_Scaling_Model.thy` | Shared scaffold for stability, oscillators, drift, nonlinearity, temporal displacement, confined modes, rotation, renormalization, vacuum, semiclassical, and Casimir-style claims |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling.thy` | Dynamics/scaling theorem rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -52,6 +54,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 007 | Started | Quantum/open-system rows including `ID0001`, `ID0012`, `ID0015`, `ID0017`, `ID0019`, `ID0049`, `ID0050`, `ID0053`, `ID0057`, `ID0060`, `ID0061`, `ID0062`, `ID0063`, `ID0065`, `ID0070`, and `ID0073` | deepen coherence metrics, open-system dynamics, quantum channels, thermodynamic balances, and zero-point commutator semantics |
 | Geometry/manifold model | Scaffold started | typed guards and residuals for positive-dimensional manifolds, curvature equality, curvature singularity thresholds, dimensional ambiguity, hyperdimensional span, causal closed paths, winding/characteristic integer guards, holonomy residuals, Berry phase, field equations, Laplacians, nullspace projection, lemniscatic intersection, and action/least-action claims | replace residual guards with smooth-manifold charts, differential forms, fiber-bundle holonomy, and variational-calculus semantics |
 | Master theorem batch 008 | Started | Geometry/manifold rows including `ID0000`, `ID0001`, `ID0002`, `ID0003`, `ID0004`, `ID0016`, `ID0017`, `ID0020`, `ID0032`, `ID0173`, and `ID0174` | deepen manifold curvature, Trawinistic Laplacian, closed-path holonomy, Berry phase, characteristic classes, and action principles into HOL-Analysis geometry |
+| Dynamics/scaling model | Scaffold started | typed residuals and guards for stability balance, oscillator energy, stochastic drift magnitude, nonlinearity constants, temporal displacement, confined-mode quantization, emergent rotation, renormalization targets, running constants, zero-point fluctuation variance, vacuum polarization, semiclassical ratios, and Casimir-style inverse-scale behavior | replace algebraic guards with ODE, stochastic-process, asymptotic-limit, and field-theoretic scaling semantics |
+| Master theorem batch 009 | Started | Dynamics/scaling rows including `ID0000`, `ID0001`, `ID0004`, `ID0009`, `ID0018`, `ID0026`, `ID0030`, `ID0032`, `ID0036`, `ID0046`, `ID0054`, and `ID0080` | deepen oscillator dynamics, stability criteria, drift processes, renormalization flow, semiclassical limits, and Casimir/vacuum polarization semantics |
 
 ## Build Status
 
