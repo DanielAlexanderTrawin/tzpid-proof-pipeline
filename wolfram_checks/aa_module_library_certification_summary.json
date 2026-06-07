@@ -1,0 +1,61 @@
+{
+  "provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "summarize_aa_module_results.py",
+    "generated_at_utc": "2026-06-06T12:34:41Z",
+    "sources": [
+      "D:\\00_Engine\\AI_Workspaces\\OpenAI2\\algorithmic_ambassador\\TZPID_WOLFRAM_MODULE_LIBRARY.csv",
+      "wolfram_checks\\aa_module_library_results.json"
+    ],
+    "note": "Merged AA Wolfram module certification statuses into an auditable CSV copy."
+  },
+  "library_rows": 192,
+  "result_rows": 192,
+  "missing_results": 0,
+  "status_counts": {
+    "source_packet_normalized": 135,
+    "pass": 57
+  },
+  "parse_status_counts": {
+    "source_packet_normalized": 135,
+    "parse_ok": 57
+  },
+  "related_spine_status_counts": {
+    "DNA-TZPQVS (candidate)": {
+      "source_packet_normalized": 26,
+      "pass": 22
+    },
+    "L4 CHL lane": {
+      "pass": 2,
+      "source_packet_normalized": 6
+    },
+    "einstein / gravity_accumulated": {
+      "source_packet_normalized": 15,
+      "pass": 3
+    },
+    "energy_to_matter": {
+      "source_packet_normalized": 20,
+      "pass": 7
+    },
+    "implementation": {
+      "pass": 6,
+      "source_packet_normalized": 7
+    },
+    "neutrino-piezo (candidate)": {
+      "pass": 5,
+      "source_packet_normalized": 3
+    },
+    "topological_unification": {
+      "source_packet_normalized": 22,
+      "pass": 9
+    },
+    "vortex-core (candidate)": {
+      "source_packet_normalized": 36,
+      "pass": 3
+    }
+  },
+  "output_csv": "D:\\tzpidNEW\\TZPID_WOLFRAM_MODULE_LIBRARY_certified.csv"
+}

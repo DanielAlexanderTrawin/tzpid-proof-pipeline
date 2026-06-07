@@ -1,0 +1,68 @@
+# TZPID Phase 2 Semantic Translation Ledger
+
+Generated: 2026-06-07  
+Creator: Daniel Alexander Trawin  
+ORCID: https://orcid.org/0009-0001-4630-3715
+
+This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL semantics for the paper-facing theorem families.
+
+## Current Isabelle Files
+
+| File | Role |
+|---|---|
+| `isabelle_tzpid/TZPID_BesselResidualSpinalTap_Math_Checks.thy` | Direct typed algebra for the Bessel residual paper core |
+| `isabelle_tzpid/TZPID_BesselResidualSpinalTap_Phase2_Model.thy` | Connected 12-obligation Bessel residual model plus Kuramoto/orbital lock checks |
+| `isabelle_tzpid/TZPID_Phase2_Expanded_Theorem_Coverage.thy` | Expanded 8-family coverage ledger, 78 target-ID mentions |
+| `isabelle_tzpid/TZPID_Phase2_Semantic_Translation.thy` | First semantic translation pass from abstract predicates into typed HOL definitions |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch001.thy` | First 25 master-registry theorem IDs promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch002.thy` | Next 30 master-registry theorem IDs promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch003.thy` | Candidate-real-algebra theorem IDs promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch004.thy` | Final candidate-real-algebra leftovers promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Topology_Vector_Model.thy` | Shared scaffold for helicity, Chern/linking, Hopf fibers, flux quantization, and Gauss-Bonnet boundary claims |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch005_Topology_Vector.thy` | Vector/topology theorem IDs promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Operator_Spectral_Model.thy` | Shared scaffold for eigenvalue, modal-frequency, Kaluza-Klein, Hamiltonian, spectral-gap, and beat-frequency claims |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy` | Operator/spectral theorem IDs promoted into typed HOL semantics |
+| `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
+
+## Family Translation Status
+
+| Family | Status | What is now typed in HOL | Remaining work |
+|---|---|---|---|
+| Bessel residual spinal tap | Concrete pass started | boundary drop fraction, admissible zeros, temporal causality guard, residual decomposition, Planck charge, isotope charge, LLN residual scale | import HOL-Analysis for exponential kernel integral; keep Bessel root numerics in Wolfram until special-function formalization |
+| Nested hyperspherical enclosure | Partial semantic pass | hyperspherical order reduction; acoustic node algebra; sound-horizon fundamental spacing | formal topology/geometry of `S^3` and projection maps |
+| Cosmic acoustics | Partial semantic pass | node wavenumber reconstruction; acoustic frequency scaling; sound-horizon spacing | formal spherical Bessel eigenmode theory and BAO transfer-function semantics |
+| Cross-scale ripple projection | Concrete algebra pass | projected length, dimensionless ratio, ripple-index scale invariance | empirical measurement linkage for ripple datasets |
+| Pythagorean/Hopf reciprocal holonomy | Concrete algebra pass | exact comma, reciprocal closure, perfect/descending fifth reciprocity | formal Hopf fibration and curvature/holonomy proof |
+| Critical scale-invariance | Concrete algebra pass | `tau = 3/2`, cascade exponent `-1/2`, crackling relation value `2` | probability distribution normalization and cutoff-family semantics |
+| Gyromagnetic movement | Partial semantic pass | angular momentum, opposing dipole correction, vector-potential residual decomposition, relativistic speed ratio | vector calculus, helicity integral, rotating metric formalization |
+| Kuramoto/orbital synchronization | Concrete algebra pass | Kuramoto zero-drift equal-frequency lock; rational orbital lock; `3:2` lock theorem | full coupled-oscillator stability theorem and threshold inequalities |
+| Master theorem batch 001 | Started | IDs `ID0137` through `ID2992` segment: megastructure wavelength, helicity decomposition, information conservation scalar-unitary guard, entanglement dimension, normalized operator chains, configuration force, sound bridge, Kaluza-Klein mode formulas | replace operator-schema obligations with domain-specific type models where needed |
+| Master theorem batch 002 | Started | IDs `ID3286` through `ID4195` segment: magnetic helicity correction/evolution, modal relations, Kaluza-Klein spectral formulas, Hamiltonian conservation schemas, Green prefactor, stress-energy ratio, Planck relation, pressure kernel, constrained dipole potential | vector helicity integrals, wave operators, Hamiltonian calculus, and partition-function semantics |
+| Master theorem batch 003 | Started | Candidate algebra rows including `ID4201`, `ID4216`, `ID4217`, `ID4225`, `ID4231`, `ID4700`, `ID5737`, `ID5751`, `ID5797`, `ID5813`, `ID5992`, `ID6000`, `ID6092`, `ID9004`, `ID9005`, `ID9157`, `ID9291`, `ID9618`, `ID9619`, `ID9633`, `ID9656`, `ID9827`, `ID9887`, `ID9931`, `ID9989`, and `ID10104` | replace scalar guards for topology/category rows with full topology/category models later |
+| Master theorem batch 004 | Started | Final algebra candidate rows: `ID0006`, `ID0054`, and the `ID9999` proof-obligation algebra claims for uniqueness, lower bounds, dissipation, dispersion, and construction consistency | refine imported proof-obligation source links into per-source theorem namespaces |
+| Topology/vector model | Scaffold started | typed curves, surfaces, 3-manifolds, vector fields, connections, curvature fields, flux loops; scalar guards for linking, Chern number, flux quantization, helicity transfer, Hopf fibers, and Gauss-Bonnet totals | replace scaffold constants with proper HOL-Analysis/manifold/vector-calculus definitions |
+| Master theorem batch 005 | Started | Vector/topology rows including `ID0017`, `ID0041`, `ID0065`, `ID0170`, `ID10250`, `ID1802`, `ID4215`, `ID4233`, `ID4252`, `ID4256`, `ID4708`, `ID5738`, `ID6488`, `ID7754`, `ID8522`, `ID8523`, `ID9902`, `ID9990`, and `ID9999` | replace scaffold constants with proper vector-calculus, manifold, Chern-class, Hopf-fibration, and magnetic-helicity integral semantics |
+| Operator/spectral model | Scaffold started | typed operators, eigenpairs, real/imaginary eigenvalue carriers, modal residuals, Kaluza-Klein curvature/frequency residuals, Hamiltonian-equation guards, spectral deformation/gap guards, and beat-period algebra | replace residual carriers with full Hilbert-space, PDE-domain, and spectral-theorem semantics |
+| Master theorem batch 006 | Started | Operator/spectral rows including `ID0006`, `ID10072`, `ID10253`, `ID4202`, `ID4213`, `ID4710`, `ID4711`, `ID4713`, `ID5743`, `ID5744`, `ID5806`, `ID5812`, `ID6053`, `ID8521`, and `ID9999` | deepen Parker-GW complex eigenvalues, Kaluza-Klein Fourier sums, Hamiltonian flow, and curvature spectral deformation into HOL-Analysis structures |
+
+## Build Status
+
+Isabelle session command:
+
+```powershell
+& "D:\Isabelle2025\Isabelle2025-2\bin\isabelle" build -D .
+```
+
+Result: clean build.
+
+## Semantic Translation Rule
+
+Only promote a registry theorem family into the typed HOL layer when it has:
+
+1. a clear mathematical object type,
+2. explicit assumptions,
+3. a definition matching the paper equation,
+4. at least one theorem that Isabelle checks directly,
+5. a stated boundary if the result still depends on Wolfram, empirical data, or future HOL-Analysis/vector-calculus libraries.
+
+The full theorem registry remains indexed in `TZPID_THEOREM_NAMES.md` and `TZPID_THEOREM_NAMES.csv`. The current semantic pass covers the proof neighborhood used by the paper, not every theorem-name row in the corpus.

@@ -1,0 +1,39 @@
+{
+  "provenance": {
+    "project": "TZPID Proof Pipeline",
+    "creator": "Daniel Alexander Trawin",
+    "creator_orcid": "0009-0001-4630-3715",
+    "creator_orcid_url": "https://orcid.org/0009-0001-4630-3715",
+    "generator": "build_wolfram_executable_modules_and_symbol_index.py",
+    "generated_at_utc": "2026-06-06T19:26:37Z",
+    "sources": {
+      "source_module_csv": "D:\\WolfRam\\all_module_library_source.csv",
+      "executable_wls": "D:\\WolfRam\\all_executable_modules.wls",
+      "active_all_wls": "D:\\WolfRam\\all.wls",
+      "master": "D:\\00_Engine\\AI_Workspaces\\OpenAI2\\TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv"
+    }
+  },
+  "modules": {
+    "count": 192,
+    "all_wls_sha1": "20c2c3b6562fdfbbc992be9cf7aa247992ad0247",
+    "executable_wls_sha1": "20c2c3b6562fdfbbc992be9cf7aa247992ad0247"
+  },
+  "symbols": {
+    "count": 20905,
+    "curated_count": 8300,
+    "confidence_counts": {
+      "low": 4890,
+      "high": 16,
+      "unknown": 15974,
+      "medium": 25
+    },
+    "curated_confidence_counts": {
+      "high": 16,
+      "medium": 25,
+      "low": 3813,
+      "unknown": 4446
+    },
+    "needs_definition": 15974,
+    "curated_needs_definition": 4446
+  }
+}

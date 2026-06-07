@@ -1,0 +1,37 @@
+session TZPID = HOL +
+  options [document = false]
+  theories
+    TZPID_Manifest
+    TZPID_Axioms
+    TZPID_Core
+    TZPID_Obligations
+    TZPID_Einstein_Focus
+    TZPID_Einstein_Computational_Checks
+    TZPID_Gravity_Focus
+    TZPID_EnergyMatter_Focus
+    TZPID_BesselResidualSpinalTap_Focus
+    TZPID_BesselResidualSpinalTap_Computational_Checks
+    TZPID_BesselResidualSpinalTap_Math_Checks
+    TZPID_BesselResidualSpinalTap_Phase2_Model
+    TZPID_TopologicalUnification_Focus
+    TZPID_NewSpines_Computational_Checks
+    TZPID_ZenodoSpines_Focus
+    TZPID_ZenodoSpines_Computational_Checks
+    TZPID_AA_Spines_Focus
+    TZPID_AA_Spines_Computational_Checks
+    TZPID_NestedHypersphere_Focus
+    TZPID_NestedHypersphere_Computational_Checks
+    TZPID_GyromagneticMovement_Focus
+    TZPID_GyromagneticMovement_Computational_Checks
+    TZPID_PhaseLockingResonance_Focus
+    TZPID_PhaseLockingResonance_Computational_Checks
+    TZPID_Phase2_Expanded_Theorem_Coverage
+    TZPID_Phase2_Semantic_Translation
+    TZPID_Theorem_Semantic_Batch001
+    TZPID_Theorem_Semantic_Batch002
+    TZPID_Theorem_Semantic_Batch003
+    TZPID_Theorem_Semantic_Batch004
+    TZPID_Topology_Vector_Model
+    TZPID_Theorem_Semantic_Batch005_Topology_Vector
+    TZPID_Operator_Spectral_Model
+    TZPID_Theorem_Semantic_Batch006_Operator_Spectral
