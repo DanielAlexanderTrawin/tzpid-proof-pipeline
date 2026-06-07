@@ -65,6 +65,12 @@ BATCH006_IDS = {
     "ID6053", "ID8521", "ID9999",
 }
 
+BATCH007_IDS = {
+    "ID0001", "ID0012", "ID0015", "ID0017", "ID0019", "ID0049",
+    "ID0050", "ID0053", "ID0057", "ID0060", "ID0061", "ID0062",
+    "ID0063", "ID0065", "ID0070", "ID0073",
+}
+
 
 def classify(name: str, role: str, id_: str) -> tuple[str, str]:
     text = f"{id_} {name} {role}".lower()
@@ -93,6 +99,13 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         "intermodal", "beat", "spectral", "modal"
     ]):
         return "batch006_started", "operator_spectral_segment"
+    if id_ in BATCH007_IDS and any(k in text for k in [
+        "quantum", "coherence", "decoherence", "cptp", "channel",
+        "measurement", "noise", "commutator", "critical", "thermo",
+        "entangle", "multipartite", "qubit", "spinor", "transport",
+        "superselection", "fluctuation", "continuousvariable"
+    ]):
+        return "batch007_started", "quantum_open_system_segment"
     if any(k in text for k in ["helicity", "chern", "linking", "hopf", "flux quantization", "topological"]):
         return "needs_vector_topology_semantics", "topology_or_helicity"
     if any(k in text for k in ["hamiltonian", "wave equation", "eigenvalue", "frequency", "modal", "kaluza"]):
@@ -167,6 +180,7 @@ def main() -> None:
         "Rows marked `phase2_already_started` are covered by the current Phase 2 family files.",
         "Rows marked `batch005_started` are the vector/topology segment now translated through the shared topology-vector scaffold.",
         "Rows marked `batch006_started` are the operator/spectral segment now translated through the shared operator-spectral scaffold.",
+        "Rows marked `batch007_started` are the quantum/open-system segment now translated through the shared quantum-open-system scaffold.",
         "Rows marked `needs_operator_or_spectral_semantics` should be promoted only after a domain-specific operator or spectral model is selected.",
     ])
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")

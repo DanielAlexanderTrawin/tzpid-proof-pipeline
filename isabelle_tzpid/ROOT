@@ -35,3 +35,5 @@ session TZPID = HOL +
     TZPID_Theorem_Semantic_Batch005_Topology_Vector
     TZPID_Operator_Spectral_Model
     TZPID_Theorem_Semantic_Batch006_Operator_Spectral
+    TZPID_Quantum_Open_System_Model
+    TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems

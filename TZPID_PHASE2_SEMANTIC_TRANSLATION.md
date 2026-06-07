@@ -22,6 +22,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch005_Topology_Vector.thy` | Vector/topology theorem IDs promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Operator_Spectral_Model.thy` | Shared scaffold for eigenvalue, modal-frequency, Kaluza-Klein, Hamiltonian, spectral-gap, and beat-frequency claims |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy` | Operator/spectral theorem IDs promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Quantum_Open_System_Model.thy` | Shared scaffold for coherence, decoherence, quantum channels, CPTP maps, measurement, transport, noise, and thermodynamic claims |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy` | Quantum/open-system theorem rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -44,6 +46,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 005 | Started | Vector/topology rows including `ID0017`, `ID0041`, `ID0065`, `ID0170`, `ID10250`, `ID1802`, `ID4215`, `ID4233`, `ID4252`, `ID4256`, `ID4708`, `ID5738`, `ID6488`, `ID7754`, `ID8522`, `ID8523`, `ID9902`, `ID9990`, and `ID9999` | replace scaffold constants with proper vector-calculus, manifold, Chern-class, Hopf-fibration, and magnetic-helicity integral semantics |
 | Operator/spectral model | Scaffold started | typed operators, eigenpairs, real/imaginary eigenvalue carriers, modal residuals, Kaluza-Klein curvature/frequency residuals, Hamiltonian-equation guards, spectral deformation/gap guards, and beat-period algebra | replace residual carriers with full Hilbert-space, PDE-domain, and spectral-theorem semantics |
 | Master theorem batch 006 | Started | Operator/spectral rows including `ID0006`, `ID10072`, `ID10253`, `ID4202`, `ID4213`, `ID4710`, `ID4711`, `ID4713`, `ID5743`, `ID5744`, `ID5806`, `ID5812`, `ID6053`, `ID8521`, and `ID9999` | deepen Parker-GW complex eigenvalues, Kaluza-Klein Fourier sums, Hamiltonian flow, and curvature spectral deformation into HOL-Analysis structures |
+| Quantum/open-system model | Scaffold started | typed scalar guards for normalized probability weights, coherence/decoherence residuals, CPTP traces, quantum channel identity, measurement backaction, entanglement capacity, multipartite networks, qubit embeddings, quantum noise spectra, commutator residuals, transport, fluctuation-dissipation, criticality, and thermodynamic balances | replace scalar guards with matrix/density-operator semantics, complete positivity, trace preservation, and Hilbert-space channel theory |
+| Master theorem batch 007 | Started | Quantum/open-system rows including `ID0001`, `ID0012`, `ID0015`, `ID0017`, `ID0019`, `ID0049`, `ID0050`, `ID0053`, `ID0057`, `ID0060`, `ID0061`, `ID0062`, `ID0063`, `ID0065`, `ID0070`, and `ID0073` | deepen coherence metrics, open-system dynamics, quantum channels, thermodynamic balances, and zero-point commutator semantics |
 
 ## Build Status
 
