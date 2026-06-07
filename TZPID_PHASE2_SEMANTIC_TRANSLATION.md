@@ -24,6 +24,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy` | Operator/spectral theorem IDs promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Quantum_Open_System_Model.thy` | Shared scaffold for coherence, decoherence, quantum channels, CPTP maps, measurement, transport, noise, and thermodynamic claims |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy` | Quantum/open-system theorem rows promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Geometry_Manifold_Model.thy` | Shared scaffold for manifold, curvature, dimensional-span, closed-path, winding, holonomy, Berry-phase, field-equation, projection, and action claims |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy` | Geometry/manifold theorem rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -48,6 +50,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 006 | Started | Operator/spectral rows including `ID0006`, `ID10072`, `ID10253`, `ID4202`, `ID4213`, `ID4710`, `ID4711`, `ID4713`, `ID5743`, `ID5744`, `ID5806`, `ID5812`, `ID6053`, `ID8521`, and `ID9999` | deepen Parker-GW complex eigenvalues, Kaluza-Klein Fourier sums, Hamiltonian flow, and curvature spectral deformation into HOL-Analysis structures |
 | Quantum/open-system model | Scaffold started | typed scalar guards for normalized probability weights, coherence/decoherence residuals, CPTP traces, quantum channel identity, measurement backaction, entanglement capacity, multipartite networks, qubit embeddings, quantum noise spectra, commutator residuals, transport, fluctuation-dissipation, criticality, and thermodynamic balances | replace scalar guards with matrix/density-operator semantics, complete positivity, trace preservation, and Hilbert-space channel theory |
 | Master theorem batch 007 | Started | Quantum/open-system rows including `ID0001`, `ID0012`, `ID0015`, `ID0017`, `ID0019`, `ID0049`, `ID0050`, `ID0053`, `ID0057`, `ID0060`, `ID0061`, `ID0062`, `ID0063`, `ID0065`, `ID0070`, and `ID0073` | deepen coherence metrics, open-system dynamics, quantum channels, thermodynamic balances, and zero-point commutator semantics |
+| Geometry/manifold model | Scaffold started | typed guards and residuals for positive-dimensional manifolds, curvature equality, curvature singularity thresholds, dimensional ambiguity, hyperdimensional span, causal closed paths, winding/characteristic integer guards, holonomy residuals, Berry phase, field equations, Laplacians, nullspace projection, lemniscatic intersection, and action/least-action claims | replace residual guards with smooth-manifold charts, differential forms, fiber-bundle holonomy, and variational-calculus semantics |
+| Master theorem batch 008 | Started | Geometry/manifold rows including `ID0000`, `ID0001`, `ID0002`, `ID0003`, `ID0004`, `ID0016`, `ID0017`, `ID0020`, `ID0032`, `ID0173`, and `ID0174` | deepen manifold curvature, Trawinistic Laplacian, closed-path holonomy, Berry phase, characteristic classes, and action principles into HOL-Analysis geometry |
 
 ## Build Status
 

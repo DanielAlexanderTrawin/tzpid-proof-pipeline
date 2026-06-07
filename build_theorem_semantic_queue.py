@@ -71,6 +71,11 @@ BATCH007_IDS = {
     "ID0063", "ID0065", "ID0070", "ID0073",
 }
 
+BATCH008_IDS = {
+    "ID0000", "ID0001", "ID0002", "ID0003", "ID0004", "ID0016",
+    "ID0017", "ID0020", "ID0032", "ID0173", "ID0174",
+}
+
 
 def classify(name: str, role: str, id_: str) -> tuple[str, str]:
     text = f"{id_} {name} {role}".lower()
@@ -106,6 +111,13 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         "superselection", "fluctuation", "continuousvariable"
     ]):
         return "batch007_started", "quantum_open_system_segment"
+    if id_ in BATCH008_IDS and any(k in text for k in [
+        "manifold", "curvature", "causalloop", "dimensionalambiguity",
+        "hyperdimensionalspan", "winding", "characteristicclass",
+        "berryphase", "fieldequation", "laplacian", "actionfunctional",
+        "leastaction", "nullspaceprojection", "lemniscatic", "holonomy"
+    ]):
+        return "batch008_started", "geometry_manifold_segment"
     if any(k in text for k in ["helicity", "chern", "linking", "hopf", "flux quantization", "topological"]):
         return "needs_vector_topology_semantics", "topology_or_helicity"
     if any(k in text for k in ["hamiltonian", "wave equation", "eigenvalue", "frequency", "modal", "kaluza"]):
@@ -181,6 +193,7 @@ def main() -> None:
         "Rows marked `batch005_started` are the vector/topology segment now translated through the shared topology-vector scaffold.",
         "Rows marked `batch006_started` are the operator/spectral segment now translated through the shared operator-spectral scaffold.",
         "Rows marked `batch007_started` are the quantum/open-system segment now translated through the shared quantum-open-system scaffold.",
+        "Rows marked `batch008_started` are the geometry/manifold segment now translated through the shared geometry-manifold scaffold.",
         "Rows marked `needs_operator_or_spectral_semantics` should be promoted only after a domain-specific operator or spectral model is selected.",
     ])
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
