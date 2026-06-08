@@ -14,6 +14,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_HypersphericalBesselResidualBridge_Math_Checks
     TZPID_HypersphericalBesselResidualBridge_Phase2_Model
     TZPID_Bessel_External_Certificates
+    TZPID_Phase3_Observable_Contract
     TZPID_Temporal_Kernel_HOL_Analysis
     TZPID_TopologicalUnification_Focus
     TZPID_NewSpines_Computational_Checks
