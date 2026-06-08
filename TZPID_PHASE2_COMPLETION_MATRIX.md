@@ -41,7 +41,7 @@ Generated: 2026-06-07
 | Family | Kind | Rows | Level | Isabelle | Wolfram | Priority | Completion | Next Upgrade |
 |---|---|---:|---|---|---|---|---|---|
 | Hyperspherical Bessel residual bridge | paper_core | 6 | hol_analysis_integral_bessel_policy_delta_alpha_phase3_contract | clean_build | yes | critical | phase2_5_phase3_observable_contract_locked | Next lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics. |
-| Nested hyperspherical enclosure | gold_spine | n/a | focus_certificate_plus_typed_projection_map | clean_build | yes | critical | typed_projection_map_locked | Next enrich the projection carrier from finite-coordinate algebra into topology/continuity and explicit Hopf fibration semantics. |
+| Nested hyperspherical enclosure | gold_spine | n/a | focus_certificate_plus_typed_projection_map_plus_s3_spectrum | clean_build | yes | critical | s3_spectrum_locked | Next enrich the projection carrier from finite-coordinate algebra into topology/continuity and explicit Hopf fibration semantics. |
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_phase4_phase5_phase5_5_plus_spatial_boundary | clean_build | yes | critical | phase5_6_spatial_boundary_locked | Next move from finite/uniform spatial domains to full spatial/PDE or manifold boundary semantics. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_typed_ratio_selection | clean_build | yes | high | typed_ratio_selection_locked | Next lift typed ratio selection into coupled-oscillator stability and capture-basin semantics. |
 | Magnetic/torsion | domain_model | 21 | typed_residual_guard_plus_helicity_mhd_spatial_boundary_bridge | clean_build | attached_to_gyromagnetic_phase5_6 | high | phase5_6_attached | Next move finite/uniform helicity toward full spatial/PDE or manifold boundary semantics. |
@@ -83,7 +83,7 @@ Generated: 2026-06-07
 | Family | Definitions | Theorems/Lemmas | Assumes | Types/Consts | Shortcut Hits |
 |---|---:|---:|---:|---:|---:|
 | Hyperspherical Bessel residual bridge | 57 | 66 | 26 | 5 | 0 |
-| Nested hyperspherical enclosure | 20 | 30 | 9 | 35 | 22 |
+| Nested hyperspherical enclosure | 27 | 43 | 18 | 35 | 22 |
 | Gyromagnetic movement | 53 | 63 | 41 | 17 | 19 |
 | Phase locking resonance | 25 | 33 | 9 | 20 | 15 |
 | Magnetic/torsion | 31 | 47 | 30 | 2 | 0 |
