@@ -5,6 +5,7 @@ import csv
 import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
+from typing import Any
 
 import matplotlib
 
@@ -51,11 +52,29 @@ def compare_shells(
     peak_height_fraction: float,
     damping: float,
     profile_mode: str,
+    field: np.ndarray | None = None,
+    domain_radius_override: float | None = None,
 ) -> tuple[dict[str, float | int], list[ShellComparison], np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    axis = np.linspace(-domain_half_width, domain_half_width, grid_size)
-    x_grid, y_grid = np.meshgrid(axis, axis)
-    r_grid = np.sqrt(x_grid**2 + y_grid**2)
-    domain_radius = float(np.max(r_grid))
+    external_input = field is not None
+    if field is None:
+        axis = np.linspace(-domain_half_width, domain_half_width, grid_size)
+        x_grid, y_grid = np.meshgrid(axis, axis)
+        r_grid = np.sqrt(x_grid**2 + y_grid**2)
+        domain_radius = float(np.max(r_grid))
+    else:
+        field = np.asarray(field, dtype=float)
+        if field.ndim != 2:
+            raise ValueError(f"field must be 2D, got shape {field.shape}")
+        y_size, x_size = field.shape
+        x_axis = np.linspace(-domain_half_width, domain_half_width, x_size)
+        y_axis = np.linspace(-domain_half_width, domain_half_width, y_size)
+        x_grid, y_grid = np.meshgrid(x_axis, y_axis)
+        r_grid = np.sqrt(x_grid**2 + y_grid**2)
+        domain_radius = (
+            float(domain_radius_override)
+            if domain_radius_override is not None
+            else float(np.max(r_grid))
+        )
 
     j11 = 3.83170597
     j_half = float(np.pi)
@@ -64,7 +83,8 @@ def compare_shells(
     # Theorem-consistent scaled phase:
     # Delta alpha_s(r) = scale * j11 * delta * r / R.
     phase = oscillation_scale * j11 * delta * (r_grid / domain_radius)
-    field = np.cos(phase) * np.exp(-(r_grid**2) * damping)
+    if field is None:
+        field = np.cos(phase) * np.exp(-(r_grid**2) * damping)
 
     if profile_mode == "raw_abs":
         profile_field = np.abs(field)
@@ -73,9 +93,11 @@ def compare_shells(
         profile_field = np.abs(field) / np.maximum(envelope, np.finfo(float).eps)
     elif profile_mode == "oscillatory_abs":
         profile_field = np.abs(np.cos(phase))
+    elif profile_mode == "field":
+        profile_field = field
     else:
         raise ValueError(
-            "profile_mode must be one of: raw_abs, envelope_corrected_abs, oscillatory_abs"
+            "profile_mode must be one of: raw_abs, envelope_corrected_abs, oscillatory_abs, field"
         )
 
     r_centers, profile = radial_profile(r_grid, profile_field, domain_radius, radial_bins)
@@ -111,6 +133,7 @@ def compare_shells(
         "peak_height_fraction": peak_height_fraction,
         "damping": damping,
         "profile_mode": profile_mode,
+        "field_source": "external" if external_input else "synthetic",
         "j11": j11,
         "j_half": j_half,
         "delta": delta,
@@ -126,6 +149,58 @@ def compare_shells(
         else 0.0,
     }
     return summary, comparisons, r_centers, profile, observed, field
+
+
+def first_numeric_array_from_npz(path: Path) -> np.ndarray:
+    with np.load(path) as archive:
+        for name in archive.files:
+            value = np.asarray(archive[name])
+            if np.issubdtype(value.dtype, np.number) and value.ndim == 2:
+                return value
+        raise ValueError(f"No 2D numeric array found in {path}")
+
+
+def first_numeric_array_from_hdf5(path: Path, dataset: str | None) -> np.ndarray:
+    try:
+        import h5py  # type: ignore[import-not-found]
+    except ImportError as exc:
+        raise RuntimeError(
+            "HDF5 input requires h5py. Install it with `python -m pip install h5py`."
+        ) from exc
+
+    def visit_group(group: Any) -> np.ndarray | None:
+        for key in group:
+            value = group[key]
+            if hasattr(value, "shape") and hasattr(value, "dtype"):
+                array = np.asarray(value)
+                if np.issubdtype(array.dtype, np.number) and array.ndim == 2:
+                    return array
+            elif hasattr(value, "keys"):
+                nested = visit_group(value)
+                if nested is not None:
+                    return nested
+        return None
+
+    with h5py.File(path, "r") as handle:
+        if dataset:
+            return np.asarray(handle[dataset])
+        array = visit_group(handle)
+        if array is None:
+            raise ValueError(f"No 2D numeric dataset found in {path}")
+        return array
+
+
+def load_external_field(path: Path, dataset: str | None) -> np.ndarray:
+    suffix = path.suffix.lower()
+    if suffix == ".npy":
+        return np.asarray(np.load(path))
+    if suffix == ".npz":
+        return first_numeric_array_from_npz(path)
+    if suffix in {".csv", ".txt"}:
+        return np.loadtxt(path, delimiter="," if suffix == ".csv" else None)
+    if suffix in {".h5", ".hdf5"}:
+        return first_numeric_array_from_hdf5(path, dataset)
+    raise ValueError(f"Unsupported field input extension: {suffix}")
 
 
 def write_outputs(
@@ -168,7 +243,11 @@ def write_outputs(
     lines = [
         "# Delta Alpha Shell Radius Comparison",
         "",
-        "Synthetic theorem-consistent check:",
+        (
+            "External-field shell comparison:"
+            if summary.get("field_source") == "external"
+            else "Synthetic theorem-consistent check:"
+        ),
         "",
         "`Delta alpha_s(r) = scale * j11 * delta * r / R`",
         "",
@@ -225,7 +304,11 @@ def write_outputs(
         origin="lower",
         cmap="viridis",
     )
-    axes[1].set_title("Synthetic Delta Alpha Field")
+    axes[1].set_title(
+        "External Delta Alpha Field"
+        if summary.get("field_source") == "external"
+        else "Synthetic Delta Alpha Field"
+    )
     fig.colorbar(image, ax=axes[1], fraction=0.046, pad=0.04)
     fig.tight_layout()
     fig.savefig(output_dir / "delta_alpha_shell_comparison.png", dpi=180)
@@ -244,10 +327,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--damping", type=float, default=2.0)
     parser.add_argument(
         "--profile-mode",
-        choices=["raw_abs", "envelope_corrected_abs", "oscillatory_abs"],
-        default="oscillatory_abs",
+        choices=["raw_abs", "envelope_corrected_abs", "oscillatory_abs", "field"],
+        default=None,
         help="Profile used for peak detection. raw_abs includes damping; the other modes isolate phase shells.",
     )
+    parser.add_argument("--field-file", type=Path, default=None)
+    parser.add_argument("--hdf5-dataset", type=str, default=None)
+    parser.add_argument("--domain-radius", type=float, default=None)
     parser.add_argument(
         "--output-dir",
         type=Path,
@@ -258,6 +344,14 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    external_field = (
+        load_external_field(args.field_file, args.hdf5_dataset)
+        if args.field_file is not None
+        else None
+    )
+    profile_mode = args.profile_mode
+    if profile_mode is None:
+        profile_mode = "raw_abs" if external_field is not None else "oscillatory_abs"
     summary, comparisons, r_centers, profile, observed, field = compare_shells(
         grid_size=args.grid_size,
         domain_half_width=args.domain_half_width,
@@ -265,8 +359,14 @@ def main() -> None:
         oscillation_scale=args.oscillation_scale,
         peak_height_fraction=args.peak_height_fraction,
         damping=args.damping,
-        profile_mode=args.profile_mode,
+        profile_mode=profile_mode,
+        field=external_field,
+        domain_radius_override=args.domain_radius,
     )
+    if args.field_file is not None:
+        summary["field_file"] = str(args.field_file)
+        if args.hdf5_dataset is not None:
+            summary["hdf5_dataset"] = args.hdf5_dataset
     write_outputs(
         output_dir=args.output_dir,
         summary=summary,

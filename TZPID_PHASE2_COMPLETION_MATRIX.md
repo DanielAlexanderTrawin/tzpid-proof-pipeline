@@ -40,7 +40,7 @@ Generated: 2026-06-07
 
 | Family | Kind | Rows | Level | Isabelle | Wolfram | Priority | Completion | Next Upgrade |
 |---|---|---:|---|---|---|---|---|---|
-| Hyperspherical Bessel residual bridge | paper_core | 6 | hol_analysis_integral_bessel_policy_delta_alpha_phase_bridge_synthetic_shell_check | clean_build | yes | critical | phase2_5_synthetic_shell_check_done | Next replace the synthetic Delta-alpha field with real simulation peak data, then lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics. |
+| Hyperspherical Bessel residual bridge | paper_core | 6 | hol_analysis_integral_bessel_policy_delta_alpha_array_shell_check | clean_build | yes | critical | phase2_5_delta_alpha_array_check_done | Next compare against independently recorded experimental/simulation peak data, then lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics. |
 | Nested hyperspherical enclosure | gold_spine | n/a | focus_plus_certificate | clean_build | yes | critical | phase2_strengthen | Replace abstract S3/projection predicates with typed topology and projection-map semantics. |
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_clean_followup | clean_build | yes | critical | phase2_strengthen | Move legacy focus lemmas away from abstract predicates into the Batch016 algebraic gyromagnetic/orbital model. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_clean_followup | clean_build | yes | high | phase2_strengthen | Add coupled-oscillator stability and threshold inequalities beyond residual/guard semantics. |
@@ -71,7 +71,7 @@ Generated: 2026-06-07
 
 | Rank | Family | Reason | First Upgrade |
 |---:|---|---|---|
-| 1 | Hyperspherical Bessel residual bridge | Paper core with concrete algebra and certificates already present. | The kernel integral is proved in HOL-Analysis; Bessel roots are an explicit external Wolfram interval-certificate policy; the drop fraction induces a HOL-proved Delta-alpha phase-gradient and shell-radius prediction; and a synthetic Python shell comparison now detects the predicted radii. |
+| 1 | Hyperspherical Bessel residual bridge | Paper core with concrete algebra and certificates already present. | The kernel integral is proved in HOL-Analysis; Bessel roots are an explicit external Wolfram interval-certificate policy; the drop fraction induces a HOL-proved Delta-alpha phase-gradient and shell-radius prediction; and exported Delta-alpha arrays now reproduce the predicted shell radii. |
 | 2 | Gyromagnetic movement | Central movement-mechanism spine and already has Wolfram-backed checks. | Replace legacy abstract focus predicates with the cleaner Batch016 algebraic movement semantics. |
 | 3 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics. | Add coupled-oscillator threshold inequalities and stability conditions. |
 | 4 | Emergence/bifurcation | Core TZP emergence story; currently guard-level but high paper value. | Formalize a bifurcation normal form and infinite-order transition boundary. |
