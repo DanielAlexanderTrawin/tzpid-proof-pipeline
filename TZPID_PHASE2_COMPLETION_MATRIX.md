@@ -1,13 +1,13 @@
 # TZPID Phase 2 Completion Matrix
 
-Generated: 2026-06-07
+Generated: 2026-06-08
 
 ## Summary
 
 - Queue rows represented: `397`
 - Remaining triage rows: `0`
-- Matrix rows: `26`
-- Rows with no shortcut/placeholders in listed files: `23` of `26`
+- Matrix rows: `27`
+- Rows with no shortcut/placeholders in listed files: `24` of `27`
 - CSV: `TZPID_PHASE2_COMPLETION_MATRIX.csv`
 - JSON: `TZPID_PHASE2_COMPLETION_MATRIX.json`
 
@@ -44,7 +44,8 @@ Generated: 2026-06-07
 | Nested hyperspherical enclosure | gold_spine | n/a | focus_certificate_plus_typed_projection_map_plus_s3_spectrum | clean_build | yes | critical | s3_spectrum_locked | Next enrich the projection carrier from finite-coordinate algebra into topology/continuity and explicit Hopf fibration semantics. |
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_phase4_phase5_phase5_5_plus_spatial_boundary | clean_build | yes | critical | phase5_6_spatial_boundary_locked | Next move from finite/uniform spatial domains to full spatial/PDE or manifold boundary semantics. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_typed_ratio_selection | clean_build | yes | high | typed_ratio_selection_locked | Next lift typed ratio selection into coupled-oscillator stability and capture-basin semantics. |
-| Magnetic/torsion | domain_model | 21 | typed_residual_guard_plus_helicity_mhd_spatial_boundary_bridge | clean_build | attached_to_gyromagnetic_phase5_6 | high | phase5_6_attached | Next move finite/uniform helicity toward full spatial/PDE or manifold boundary semantics. |
+| Fifth flip crystal scale-invariance | spine_bridge | n/a | golden_reciprocal_fixed_point_plus_crystal_trace_hinge | clean_build | certificate_only | high | fifth_flip_bridge_locked | Next add an external trig/crystallographic certificate tying 2*cos(72 degrees) to the golden trace and then connect quasicrystal phi-inflation to the ripple scale-invariance lane. |
+| Magnetic/torsion | domain_model | 21 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar helicity/torsion guards with vector-calculus and MHD-style integral semantics. |
 | Emergence/bifurcation | domain_model | 7 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Formalize bifurcation normal forms, infinite-order transition behavior, and asymptotic emergence thresholds. |
 | Quantum/matter | domain_model | 7 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar quantum guards with density-operator, probability, Bell-bound, and conservation-law semantics. |
 | Master theorem batch 001 | batch | 50 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
@@ -72,21 +73,23 @@ Generated: 2026-06-07
 | Rank | Family | Reason | First Upgrade |
 |---:|---|---|---|
 | 1 | Hyperspherical Bessel residual bridge | Paper core with concrete algebra and certificates already present. | The kernel integral is proved in HOL-Analysis; Bessel roots are an explicit external Wolfram interval-certificate policy; the drop fraction induces a HOL-proved Delta-alpha phase-gradient and shell-radius prediction; exported Delta-alpha arrays reproduce the predicted shell radii; and the Phase3 HDF5 psi field is locked by an Isabelle observable contract. |
-| 2 | Gyromagnetic movement | Central movement-mechanism spine with Wolfram-backed checks plus Phase 4, Phase 5, Phase 5.5, and Phase 5.6 HOL bridges. | Move from finite/uniform spatial domains to full spatial/PDE or manifold boundary semantics. |
-| 3 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics. | Extend the locked detuning/ratio/beat-window layer into coupled-oscillator stability and capture-basin semantics. |
-| 4 | Emergence/bifurcation | Core TZP emergence story; currently guard-level but high paper value. | Formalize a bifurcation normal form and infinite-order transition boundary. |
-| 5 | Magnetic/torsion | High-value bridge between gyromagnetic motion, helicity, Elsasser balance, and matter dynamics. | Extend the new spatial-boundary bridge into full spatial/PDE or manifold boundary semantics. |
-| 6 | Quantum/matter | Matter-facing proof lane for conservation, criticality, Bell bounds, and dark distribution claims. | Introduce probability/density-operator carriers and conservation-law statements. |
+| 2 | Gyromagnetic movement | Central movement-mechanism spine and already has Wolfram-backed checks. | Replace legacy abstract focus predicates with the cleaner Batch016 algebraic movement semantics. |
+| 3 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics. | Add coupled-oscillator threshold inequalities and stability conditions. |
+| 4 | Fifth flip crystal scale-invariance | Connects rational locking, crystal trace admissibility, the golden reciprocal fixed point, and the transition into scale-invariant quasicrystal behavior. | Attach the external crystallographic trace certificate and then lift phi-inflation into the ripple/log-periodic scale-invariance lane. |
+| 5 | Emergence/bifurcation | Core TZP emergence story; currently guard-level but high paper value. | Formalize a bifurcation normal form and infinite-order transition boundary. |
+| 6 | Magnetic/torsion | High-value bridge between gyromagnetic motion, helicity, Elsasser balance, and matter dynamics. | Move helicity and torsion from scalar guards toward vector-calculus/MHD semantics. |
+| 7 | Quantum/matter | Matter-facing proof lane for conservation, criticality, Bell bounds, and dark distribution claims. | Introduce probability/density-operator carriers and conservation-law statements. |
 
 ## Isabelle Metrics
 
 | Family | Definitions | Theorems/Lemmas | Assumes | Types/Consts | Shortcut Hits |
 |---|---:|---:|---:|---:|---:|
 | Hyperspherical Bessel residual bridge | 57 | 66 | 26 | 5 | 0 |
-| Nested hyperspherical enclosure | 27 | 43 | 18 | 35 | 22 |
-| Gyromagnetic movement | 53 | 63 | 41 | 17 | 19 |
-| Phase locking resonance | 25 | 33 | 9 | 20 | 15 |
-| Magnetic/torsion | 31 | 47 | 30 | 2 | 0 |
+| Nested hyperspherical enclosure | 27 | 43 | 20 | 35 | 22 |
+| Gyromagnetic movement | 52 | 61 | 28 | 15 | 19 |
+| Phase locking resonance | 25 | 35 | 12 | 20 | 15 |
+| Fifth flip crystal scale-invariance | 21 | 37 | 28 | 0 | 0 |
+| Magnetic/torsion | 16 | 29 | 11 | 0 | 0 |
 | Emergence/bifurcation | 8 | 9 | 3 | 0 | 0 |
 | Quantum/matter | 30 | 32 | 7 | 3 | 0 |
 | Master theorem batch 001 | 19 | 22 | 14 | 2 | 0 |
