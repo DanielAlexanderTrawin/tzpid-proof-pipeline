@@ -19,7 +19,7 @@ Generated: 2026-06-07
 | batch007_started | 23 |
 | batch008_started | 17 |
 | batch009_started | 13 |
-| needs_semantic_translation | 13 |
+| batch010_started | 13 |
 | batch004_started | 7 |
 | phase2_already_started | 6 |
 
@@ -36,7 +36,7 @@ Generated: 2026-06-07
 | quantum_open_system_segment | 23 |
 | geometry_manifold_segment | 17 |
 | dynamics_scaling_segment | 13 |
-| unclassified_named_theorem | 13 |
+| meta_foundation_segment | 13 |
 | remaining_candidate_real_algebra | 7 |
 | existing_phase2_family | 6 |
 
@@ -57,4 +57,5 @@ Rows marked `batch006_started` are the operator/spectral segment now translated 
 Rows marked `batch007_started` are the quantum/open-system segment now translated through the shared quantum-open-system scaffold.
 Rows marked `batch008_started` are the geometry/manifold segment now translated through the shared geometry-manifold scaffold.
 Rows marked `batch009_started` are the dynamics/scaling segment now translated through the shared dynamics-scaling scaffold.
+Rows marked `batch010_started` are the meta-foundation segment now translated through the shared meta-foundation scaffold.
 Rows marked `needs_operator_or_spectral_semantics` should be promoted only after a domain-specific operator or spectral model is selected.

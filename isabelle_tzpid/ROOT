@@ -41,3 +41,5 @@ session TZPID = HOL +
     TZPID_Theorem_Semantic_Batch008_Geometry_Manifold
     TZPID_Dynamics_Scaling_Model
     TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling
+    TZPID_Meta_Foundation_Model
+    TZPID_Theorem_Semantic_Batch010_Meta_Foundation

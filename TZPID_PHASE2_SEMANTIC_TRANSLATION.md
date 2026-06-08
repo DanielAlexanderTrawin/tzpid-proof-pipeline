@@ -28,6 +28,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy` | Geometry/manifold theorem rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Dynamics_Scaling_Model.thy` | Shared scaffold for stability, oscillators, drift, nonlinearity, temporal displacement, confined modes, rotation, renormalization, vacuum, semiclassical, and Casimir-style claims |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling.thy` | Dynamics/scaling theorem rows promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Meta_Foundation_Model.thy` | Shared scaffold for base units, observer states, Bayesian evidence, falsifiability, and secondary proof-record guards |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy` | Final meta-foundation theorem rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -56,6 +58,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 008 | Started | Geometry/manifold rows including `ID0000`, `ID0001`, `ID0002`, `ID0003`, `ID0004`, `ID0016`, `ID0017`, `ID0020`, `ID0032`, `ID0173`, and `ID0174` | deepen manifold curvature, Trawinistic Laplacian, closed-path holonomy, Berry phase, characteristic classes, and action principles into HOL-Analysis geometry |
 | Dynamics/scaling model | Scaffold started | typed residuals and guards for stability balance, oscillator energy, stochastic drift magnitude, nonlinearity constants, temporal displacement, confined-mode quantization, emergent rotation, renormalization targets, running constants, zero-point fluctuation variance, vacuum polarization, semiclassical ratios, and Casimir-style inverse-scale behavior | replace algebraic guards with ODE, stochastic-process, asymptotic-limit, and field-theoretic scaling semantics |
 | Master theorem batch 009 | Started | Dynamics/scaling rows including `ID0000`, `ID0001`, `ID0004`, `ID0009`, `ID0018`, `ID0026`, `ID0030`, `ID0032`, `ID0036`, `ID0046`, `ID0054`, and `ID0080` | deepen oscillator dynamics, stability criteria, drift processes, renormalization flow, semiclassical limits, and Casimir/vacuum polarization semantics |
+| Meta-foundation model | Scaffold started | typed guards for base-unit positivity, observer-indexed state offsets, Bayes factors, posterior odds, falsifiability gaps, stability thresholds, particle uniformity, topological charge/spin quantization, coherence restoration, weak-gravity scaling, restorative force, reverse-process, creative singularity, and binary split claims | replace proof-record guards with source-specific theorem statements where the secondary PDFs provide sufficient formal detail |
+| Master theorem batch 010 | Started | Final semantic-translation rows including `ID0002`, `ID0007`, `ID0046`, `ID0047`, `ID0180`, `ID0181`, `ID0182`, `ID0183`, `ID0185`, `ID0186`, and `ID0187` | resolve generic secondary proof labels into fully named source theorem namespaces and deepen methodological claims into evidence-model semantics |
 
 ## Build Status
 

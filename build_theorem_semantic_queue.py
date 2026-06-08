@@ -81,6 +81,11 @@ BATCH009_IDS = {
     "ID0030", "ID0032", "ID0036", "ID0046", "ID0054", "ID0080",
 }
 
+BATCH010_IDS = {
+    "ID0002", "ID0007", "ID0046", "ID0047", "ID0180", "ID0181",
+    "ID0182", "ID0183", "ID0185", "ID0186", "ID0187",
+}
+
 
 def classify(name: str, role: str, id_: str) -> tuple[str, str]:
     text = f"{id_} {name} {role}".lower()
@@ -130,6 +135,13 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         "vacuumpolarization", "semiclassical", "casimir"
     ]):
         return "batch009_started", "dynamics_scaling_segment"
+    if id_ in BATCH010_IDS and any(k in text for k in [
+        "trawinbaseunit", "observerdependentstates", "bayesianevidence",
+        "falsifiabilityconstraint", "0181_proof", "0182_proof",
+        "0183_proof", "0184_proof", "0185_proof", "0186_proof",
+        "0187_proof", "0188_proof", "0189_proof"
+    ]):
+        return "batch010_started", "meta_foundation_segment"
     if any(k in text for k in ["helicity", "chern", "linking", "hopf", "flux quantization", "topological"]):
         return "needs_vector_topology_semantics", "topology_or_helicity"
     if any(k in text for k in ["hamiltonian", "wave equation", "eigenvalue", "frequency", "modal", "kaluza"]):
@@ -207,6 +219,7 @@ def main() -> None:
         "Rows marked `batch007_started` are the quantum/open-system segment now translated through the shared quantum-open-system scaffold.",
         "Rows marked `batch008_started` are the geometry/manifold segment now translated through the shared geometry-manifold scaffold.",
         "Rows marked `batch009_started` are the dynamics/scaling segment now translated through the shared dynamics-scaling scaffold.",
+        "Rows marked `batch010_started` are the meta-foundation segment now translated through the shared meta-foundation scaffold.",
         "Rows marked `needs_operator_or_spectral_semantics` should be promoted only after a domain-specific operator or spectral model is selected.",
     ])
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
