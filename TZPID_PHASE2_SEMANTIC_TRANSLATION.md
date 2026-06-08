@@ -32,6 +32,7 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy` | Final meta-foundation theorem rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Magnetic_Torsion_Model.thy` | Shared scaffold for density, magnetic curl/field/flux, quadrupole fields, Berry phase, torsion evolution, helicity, Elsasser balance, tunneling, and dipole non-annihilation claims |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy` | Field/magnetic/torsion triage rows promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch012_Operator_Spectral_Followup.thy` | Operator/spectral triage follow-up rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -64,6 +65,7 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 010 | Started | Final semantic-translation rows including `ID0002`, `ID0007`, `ID0046`, `ID0047`, `ID0180`, `ID0181`, `ID0182`, `ID0183`, `ID0185`, `ID0186`, and `ID0187` | resolve generic secondary proof labels into fully named source theorem namespaces and deepen methodological claims into evidence-model semantics |
 | Magnetic/torsion model | Scaffold started | typed algebraic guards for density, irrotational magnetic curl residuals, magnetic field amplitude, dark flux expansion, quadrupole trace-free constraints, gyromagnetic Berry phase, torsion evolution, pattern torsion, Woltjer helicity residuals, magnon-phonon coupling, Elsasser balance, flux tunneling, and dipole non-annihilation | replace scalar guards with vector-calculus, helicity integral, MHD, and torsion-geometry semantics |
 | Master theorem batch 011 | Started | Field/magnetic/torsion rows including `ID4214`, `ID4223`, `ID4224`, `ID4229`, `ID4363`, `ID4698`, `ID5802`, `ID5803`, `ID5758`, and the relevant `ID9999` proof obligations | deepen density, magnetic field, torsion, Woltjer, Elsasser, tunneling, and dipole residual semantics into HOL-Analysis structures |
+| Master theorem batch 012 | Started | Operator/spectral follow-up rows including `ID4206`, `ID8520`, `ID9595`, `ID9973`, `ID3902`, `ID10247`, and the relevant `ID9999` proof obligations | deepen solar Laplacian, tidal/closed-path wavelength quantization, KK effective modes, spectral inversion, Alfvén quantization, Hamiltonian flow, harmonic-KK resonance, and spectral gap semantics |
 
 ## Build Status
 
