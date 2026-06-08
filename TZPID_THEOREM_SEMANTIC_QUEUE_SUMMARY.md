@@ -19,7 +19,7 @@ Generated: 2026-06-07
 | batch011_started | 21 |
 | batch008_started | 17 |
 | batch012_started | 15 |
-| triaged_topology_category | 15 |
+| batch013_started | 15 |
 | batch009_started | 13 |
 | batch010_started | 13 |
 | triaged_dynamics_stability | 11 |
@@ -44,7 +44,7 @@ Generated: 2026-06-07
 | magnetic_torsion_segment | 21 |
 | geometry_manifold_segment | 17 |
 | operator_spectral_followup_segment | 15 |
-| topology_category_triage | 15 |
+| topology_category_followup_segment | 15 |
 | dynamics_scaling_segment | 13 |
 | meta_foundation_segment | 13 |
 | dynamics_stability_triage | 11 |
@@ -76,4 +76,5 @@ Rows marked `batch009_started` are the dynamics/scaling segment now translated t
 Rows marked `batch010_started` are the meta-foundation segment now translated through the shared meta-foundation scaffold.
 Rows marked `batch011_started` are the magnetic/torsion segment now translated through the shared magnetic-torsion scaffold.
 Rows marked `batch012_started` are the operator/spectral follow-up rows now translated through the operator-spectral scaffold.
+Rows marked `batch013_started` are the topology/category follow-up rows now translated through the category/topology scaffold.
 Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.

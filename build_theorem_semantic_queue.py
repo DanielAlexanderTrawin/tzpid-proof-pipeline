@@ -98,6 +98,10 @@ BATCH012_IDS = {
     "ID10247", "ID9999",
 }
 
+BATCH013_IDS = {
+    "ID0239", "ID9579", "ID3322", "ID10098", "ID10099", "ID9999",
+}
+
 
 TRIAGE_ACTIONS = {
     "emergence_bifurcation_triage": "Batch 011 candidate: bifurcation and emergence semantics.",
@@ -182,6 +186,13 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         "harmonic-kk", "spectral gap"
     ]):
         return "batch012_started", "operator_spectral_followup_segment"
+    if id_ in BATCH013_IDS and any(k in text for k in [
+        "borsuk", "buckingham", "dipole constraint topology",
+        "fine structure from topology", "universal toroidal",
+        "adjoint functor", "dimensional access", "global phase symmetry",
+        "encoding-decoding", "surface dominance", "categorical framework"
+    ]):
+        return "batch013_started", "topology_category_followup_segment"
     if any(k in text for k in [
         "phase-locking", "phase locking", "resonance capture",
         "sufficient condition for phase locking", "pitchfork", "lemniscate saddle"
@@ -340,6 +351,7 @@ def main() -> None:
         "Rows marked `batch010_started` are the meta-foundation segment now translated through the shared meta-foundation scaffold.",
         "Rows marked `batch011_started` are the magnetic/torsion segment now translated through the shared magnetic-torsion scaffold.",
         "Rows marked `batch012_started` are the operator/spectral follow-up rows now translated through the operator-spectral scaffold.",
+        "Rows marked `batch013_started` are the topology/category follow-up rows now translated through the category/topology scaffold.",
         "Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.",
     ])
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
