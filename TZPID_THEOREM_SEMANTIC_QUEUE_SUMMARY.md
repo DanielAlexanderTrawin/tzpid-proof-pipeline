@@ -26,7 +26,7 @@ Generated: 2026-06-07
 | batch015_started | 7 |
 | batch004_started | 7 |
 | triaged_quantum_matter | 7 |
-| triaged_orbital_gyromagnetic | 7 |
+| batch016_started | 7 |
 | phase2_already_started | 6 |
 | triaged_resonance_locking | 5 |
 | triaged_geometry_curvature | 1 |
@@ -51,7 +51,7 @@ Generated: 2026-06-07
 | emergence_bifurcation_followup_segment | 7 |
 | remaining_candidate_real_algebra | 7 |
 | quantum_matter_triage | 7 |
-| orbital_gyromagnetic_triage | 7 |
+| orbital_gyromagnetic_followup_segment | 7 |
 | existing_phase2_family | 6 |
 | resonance_locking_triage | 5 |
 | geometry_curvature_triage | 1 |
@@ -79,4 +79,5 @@ Rows marked `batch012_started` are the operator/spectral follow-up rows now tran
 Rows marked `batch013_started` are the topology/category follow-up rows now translated through the category/topology scaffold.
 Rows marked `batch014_started` are the dynamics/stability follow-up rows now translated through the dynamics-stability scaffold.
 Rows marked `batch015_started` are the emergence/bifurcation follow-up rows now translated through the TZP emergence scaffold.
+Rows marked `batch016_started` are the orbital/gyromagnetic follow-up rows now translated through the movement-mechanism scaffold.
 Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.

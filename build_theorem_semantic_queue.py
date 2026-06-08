@@ -110,6 +110,10 @@ BATCH015_IDS = {
     "ID9529", "ID9999",
 }
 
+BATCH016_IDS = {
+    "ID9999", "ID10244", "ID10257",
+}
+
 
 TRIAGE_ACTIONS = {
     "emergence_bifurcation_triage": "Batch 011 candidate: bifurcation and emergence semantics.",
@@ -214,6 +218,11 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         "planck oscillations", "emergence criterion"
     ]):
         return "batch015_started", "emergence_bifurcation_followup_segment"
+    if id_ in BATCH016_IDS and any(k in text for k in [
+        "celestial gyromagnetic", "tidal deformation",
+        "spiral pitch angle", "first-order orbital shift"
+    ]):
+        return "batch016_started", "orbital_gyromagnetic_followup_segment"
     if any(k in text for k in [
         "phase-locking", "phase locking", "resonance capture",
         "sufficient condition for phase locking", "pitchfork", "lemniscate saddle"
@@ -375,6 +384,7 @@ def main() -> None:
         "Rows marked `batch013_started` are the topology/category follow-up rows now translated through the category/topology scaffold.",
         "Rows marked `batch014_started` are the dynamics/stability follow-up rows now translated through the dynamics-stability scaffold.",
         "Rows marked `batch015_started` are the emergence/bifurcation follow-up rows now translated through the TZP emergence scaffold.",
+        "Rows marked `batch016_started` are the orbital/gyromagnetic follow-up rows now translated through the movement-mechanism scaffold.",
         "Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.",
     ])
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
