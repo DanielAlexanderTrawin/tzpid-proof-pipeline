@@ -34,6 +34,7 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy` | Field/magnetic/torsion triage rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch012_Operator_Spectral_Followup.thy` | Operator/spectral triage follow-up rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup.thy` | Topology/category triage follow-up rows promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup.thy` | Dynamics/stability triage follow-up rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -68,6 +69,7 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 011 | Started | Field/magnetic/torsion rows including `ID4214`, `ID4223`, `ID4224`, `ID4229`, `ID4363`, `ID4698`, `ID5802`, `ID5803`, `ID5758`, and the relevant `ID9999` proof obligations | deepen density, magnetic field, torsion, Woltjer, Elsasser, tunneling, and dipole residual semantics into HOL-Analysis structures |
 | Master theorem batch 012 | Started | Operator/spectral follow-up rows including `ID4206`, `ID8520`, `ID9595`, `ID9973`, `ID3902`, `ID10247`, and the relevant `ID9999` proof obligations | deepen solar Laplacian, tidal/closed-path wavelength quantization, KK effective modes, spectral inversion, Alfvén quantization, Hamiltonian flow, harmonic-KK resonance, and spectral gap semantics |
 | Master theorem batch 013 | Started | Topology/category follow-up rows including `ID0239`, `ID9579`, `ID3322`, `ID10098`, `ID10099`, and the relevant `ID9999` proof obligations | deepen Borsuk-Ulam, Buckingham Pi, toroidal constraints, adjunctions, dimensional access, global phase symmetry, surface dominance, and reverse-harmonics category semantics |
+| Master theorem batch 014 | Started | Dynamics/stability proof-obligation rows including accumulated force, geometric flow, accumulation dynamics, global weak existence, dissipative stability, logarithmic local uniqueness, numerical/linear stability, Newtonian limit recovery, nonlinear dispersion, and numerical stability theorem claims | deepen force functionals, flow/existence, stability criteria, numerical analysis, Newtonian limits, and dispersion into ODE/PDE and asymptotic HOL-Analysis structures |
 
 ## Build Status
 
