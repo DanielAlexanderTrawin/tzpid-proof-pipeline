@@ -24,6 +24,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_AA_Spines_Computational_Checks
     TZPID_NestedHypersphere_Focus
     TZPID_NestedHypersphere_Computational_Checks
+    TZPID_NestedHypersphere_Typed_Projection
     TZPID_GyromagneticMovement_Focus
     TZPID_GyromagneticMovement_Computational_Checks
     TZPID_PhaseLockingResonance_Focus

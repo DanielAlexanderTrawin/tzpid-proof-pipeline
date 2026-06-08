@@ -41,7 +41,7 @@ Generated: 2026-06-07
 | Family | Kind | Rows | Level | Isabelle | Wolfram | Priority | Completion | Next Upgrade |
 |---|---|---:|---|---|---|---|---|---|
 | Hyperspherical Bessel residual bridge | paper_core | 6 | hol_analysis_integral_bessel_policy_delta_alpha_phase3_contract | clean_build | yes | critical | phase2_5_phase3_observable_contract_locked | Next lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics. |
-| Nested hyperspherical enclosure | gold_spine | n/a | focus_plus_certificate | clean_build | yes | critical | phase2_strengthen | Replace abstract S3/projection predicates with typed topology and projection-map semantics. |
+| Nested hyperspherical enclosure | gold_spine | n/a | focus_certificate_plus_typed_projection_map | clean_build | yes | critical | typed_projection_map_locked | Next enrich the projection carrier from finite-coordinate algebra into topology/continuity and explicit Hopf fibration semantics. |
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_clean_followup | clean_build | yes | critical | phase2_strengthen | Move legacy focus lemmas away from abstract predicates into the Batch016 algebraic gyromagnetic/orbital model. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_clean_followup | clean_build | yes | high | phase2_strengthen | Add coupled-oscillator stability and threshold inequalities beyond residual/guard semantics. |
 | Magnetic/torsion | domain_model | 21 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar helicity/torsion guards with vector-calculus and MHD-style integral semantics. |
@@ -83,7 +83,7 @@ Generated: 2026-06-07
 | Family | Definitions | Theorems/Lemmas | Assumes | Types/Consts | Shortcut Hits |
 |---|---:|---:|---:|---:|---:|
 | Hyperspherical Bessel residual bridge | 57 | 66 | 26 | 5 | 0 |
-| Nested hyperspherical enclosure | 9 | 22 | 1 | 28 | 22 |
+| Nested hyperspherical enclosure | 20 | 30 | 9 | 35 | 22 |
 | Gyromagnetic movement | 18 | 29 | 6 | 15 | 19 |
 | Phase locking resonance | 17 | 25 | 5 | 20 | 15 |
 | Magnetic/torsion | 16 | 29 | 11 | 0 | 0 |
