@@ -202,10 +202,9 @@ definition exponential_kernel_density :: "real \<Rightarrow> real \<Rightarrow> 
 text \<open>
   The normalization integral
     integral_0^\<infinity> (1/tau_dec) exp(-s/tau_dec) ds = 1
-  is certified in the Wolfram layer.  It is intentionally not asserted
-  here as an Isabelle theorem until the project imports the required
-  measure-theoretic integration libraries and proves the exponential
-  integral directly in HOL-Analysis.
+  is now proved in the dedicated HOL-Analysis theory
+  TZPID_Temporal_Kernel_HOL_Analysis.  This base math theory keeps the kernel
+  density definition available to the lighter algebraic bridge files.
 \<close>
 
 end
