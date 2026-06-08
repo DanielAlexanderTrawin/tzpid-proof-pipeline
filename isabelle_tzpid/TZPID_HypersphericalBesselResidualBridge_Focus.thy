@@ -1,4 +1,4 @@
-theory TZPID_BesselResidualSpinalTap_Focus
+theory TZPID_HypersphericalBesselResidualBridge_Focus
   imports TZPID_Gravity_Focus TZPID_EnergyMatter_Focus
 begin
 
@@ -57,21 +57,21 @@ consts
   isotope_gravitational_charge_accounting :: "br_isotope_charge => br_planck_charge => bool"
   large_number_charge_smoothing :: "br_large_number_limit => br_planck_charge => bool"
   ordinary_mass_energy_residual_prediction :: "br_measurable_residual => br_accumulated_curvature => br_isotope_charge => bool"
-  bessel_residual_spinal_tap_chain :: bool
+  hyperspherical_bessel_residual_bridge_chain :: bool
 
-definition bessel_residual_spinal_tap_target_ids :: "string list" where
-  "bessel_residual_spinal_tap_target_ids = [''TAP-BESSEL-001'', ''TAP-BESSEL-002'', ''TAP-BESSEL-003'', ''TAP-BESSEL-004'', ''TAP-BESSEL-005'', ''TAP-BESSEL-006'', ''TAP-BESSEL-007'', ''TAP-BESSEL-008'', ''TAP-BESSEL-009'', ''TAP-BESSEL-010'', ''TAP-BESSEL-011'', ''TAP-BESSEL-012'']"
+definition hyperspherical_bessel_residual_bridge_target_ids :: "string list" where
+  "hyperspherical_bessel_residual_bridge_target_ids = [''HBRB-BESSEL-001'', ''HBRB-BESSEL-002'', ''HBRB-BESSEL-003'', ''HBRB-BESSEL-004'', ''HBRB-BESSEL-005'', ''HBRB-BESSEL-006'', ''HBRB-BESSEL-007'', ''HBRB-BESSEL-008'', ''HBRB-BESSEL-009'', ''HBRB-BESSEL-010'', ''HBRB-BESSEL-011'', ''HBRB-BESSEL-012'']"
 
-definition bessel_residual_spinal_tap_spine_sha1 :: string where
-  "bessel_residual_spinal_tap_spine_sha1 = ''71b3b16788766db4ad5131ec31fa6a4048067ed7''"
+definition hyperspherical_bessel_residual_bridge_spine_sha1 :: string where
+  "hyperspherical_bessel_residual_bridge_spine_sha1 = ''71b3b16788766db4ad5131ec31fa6a4048067ed7''"
 
-definition bessel_residual_spinal_tap_obligations_sha1 :: string where
-  "bessel_residual_spinal_tap_obligations_sha1 = ''2d24f2107414d89fc0d40f92913cdc16fa446d13''"
+definition hyperspherical_bessel_residual_bridge_obligations_sha1 :: string where
+  "hyperspherical_bessel_residual_bridge_obligations_sha1 = ''2d24f2107414d89fc0d40f92913cdc16fa446d13''"
 
-definition bessel_residual_spinal_tap_source_extract_sha1 :: string where
-  "bessel_residual_spinal_tap_source_extract_sha1 = ''b8caa7933b61457a60deaede576844e0fa9abe43''"
+definition hyperspherical_bessel_residual_bridge_source_extract_sha1 :: string where
+  "hyperspherical_bessel_residual_bridge_source_extract_sha1 = ''b8caa7933b61457a60deaede576844e0fa9abe43''"
 
-locale TZPID_BesselResidualSpinalTap_Focus = TZPID_Gravity_Focus + TZPID_EnergyMatter_Focus +
+locale TZPID_HypersphericalBesselResidualBridge_Focus = TZPID_Gravity_Focus + TZPID_EnergyMatter_Focus +
   assumes tap001_bessel: "hyperspherical_bessel_equation BR_Bessel BR_Order"
   and tap001_order: "d4_hyperspherical_order BR_Order"
   and tap002_boundary: "bessel_boundary_quantization BR_Zero BR_Order"
@@ -85,7 +85,7 @@ locale TZPID_BesselResidualSpinalTap_Focus = TZPID_Gravity_Focus + TZPID_EnergyM
   and tap010_isotope: "isotope_gravitational_charge_accounting BR_IsotopeQg BR_qg"
   and tap011_lln: "large_number_charge_smoothing BR_LLN BR_qg"
   and tap012_residual: "ordinary_mass_energy_residual_prediction BR_Residual BR_Gacc BR_IsotopeQg"
-  and tap_chain: "bessel_residual_spinal_tap_chain"
+  and tap_chain: "hyperspherical_bessel_residual_bridge_chain"
 begin
 
 theorem bessel_half_drop_resonance_source:
@@ -140,28 +140,30 @@ proof -
     using tap012_residual .
 qed
 
-theorem bessel_residual_spinal_tap:
-  "gravity_spine_chain & energy_to_matter_spine_chain & bessel_residual_spinal_tap_chain"
+theorem hyperspherical_bessel_residual_bridge:
+  "gravity_spine_chain & energy_to_matter_spine_chain & hyperspherical_bessel_residual_bridge_chain"
 proof (intro conjI)
   show "gravity_spine_chain"
     using gravity_chain .
   show "energy_to_matter_spine_chain"
     using energy_to_matter_chain .
-  show "bessel_residual_spinal_tap_chain"
+  show "hyperspherical_bessel_residual_bridge_chain"
     using tap_chain .
 qed
 
 end
 
-lemma bessel_residual_spinal_tap_target_count:
-  "length bessel_residual_spinal_tap_target_ids = 12"
+lemma hyperspherical_bessel_residual_bridge_target_count:
+  "length hyperspherical_bessel_residual_bridge_target_ids = 12"
 proof -
-  have "bessel_residual_spinal_tap_target_ids =
-        [''TAP-BESSEL-001'', ''TAP-BESSEL-002'', ''TAP-BESSEL-003'', ''TAP-BESSEL-004'', ''TAP-BESSEL-005'', ''TAP-BESSEL-006'', ''TAP-BESSEL-007'', ''TAP-BESSEL-008'', ''TAP-BESSEL-009'', ''TAP-BESSEL-010'', ''TAP-BESSEL-011'', ''TAP-BESSEL-012'']"
-    unfolding bessel_residual_spinal_tap_target_ids_def
+  have "hyperspherical_bessel_residual_bridge_target_ids =
+        [''HBRB-BESSEL-001'', ''HBRB-BESSEL-002'', ''HBRB-BESSEL-003'', ''HBRB-BESSEL-004'', ''HBRB-BESSEL-005'', ''HBRB-BESSEL-006'', ''HBRB-BESSEL-007'', ''HBRB-BESSEL-008'', ''HBRB-BESSEL-009'', ''HBRB-BESSEL-010'', ''HBRB-BESSEL-011'', ''HBRB-BESSEL-012'']"
+    unfolding hyperspherical_bessel_residual_bridge_target_ids_def
     by (rule refl)
   thus ?thesis
     by normalization
 qed
 
 end
+
+

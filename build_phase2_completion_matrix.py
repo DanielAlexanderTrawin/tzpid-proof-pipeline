@@ -84,12 +84,12 @@ def build_rows() -> list[dict[str, str | int]]:
 
     core_rows = [
         dict(
-            family="Bessel residual spinal tap",
+            family="Hyperspherical Bessel residual bridge",
             kind="paper_core",
             files=[
-                "TZPID_BesselResidualSpinalTap_Math_Checks.thy",
-                "TZPID_BesselResidualSpinalTap_Computational_Checks.thy",
-                "TZPID_BesselResidualSpinalTap_Phase2_Model.thy",
+                "TZPID_HypersphericalBesselResidualBridge_Math_Checks.thy",
+                "TZPID_HypersphericalBesselResidualBridge_Computational_Checks.thy",
+                "TZPID_HypersphericalBesselResidualBridge_Phase2_Model.thy",
             ],
             queue_status="phase2_already_started",
             level="concrete_algebra_plus_certificate",
@@ -316,7 +316,7 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
     ])
     upgrade_order = [
         (
-            "Bessel residual spinal tap",
+            "Hyperspherical Bessel residual bridge",
             "Paper core with concrete algebra and certificates already present.",
             "Formalize the exponential kernel integral and explicitly connect the Wolfram Bessel-root certificates.",
         ),
@@ -374,3 +374,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

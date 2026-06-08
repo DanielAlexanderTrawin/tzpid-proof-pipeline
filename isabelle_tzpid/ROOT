@@ -9,10 +9,10 @@ session TZPID = HOL +
     TZPID_Einstein_Computational_Checks
     TZPID_Gravity_Focus
     TZPID_EnergyMatter_Focus
-    TZPID_BesselResidualSpinalTap_Focus
-    TZPID_BesselResidualSpinalTap_Computational_Checks
-    TZPID_BesselResidualSpinalTap_Math_Checks
-    TZPID_BesselResidualSpinalTap_Phase2_Model
+    TZPID_HypersphericalBesselResidualBridge_Focus
+    TZPID_HypersphericalBesselResidualBridge_Computational_Checks
+    TZPID_HypersphericalBesselResidualBridge_Math_Checks
+    TZPID_HypersphericalBesselResidualBridge_Phase2_Model
     TZPID_TopologicalUnification_Focus
     TZPID_NewSpines_Computational_Checks
     TZPID_ZenodoSpines_Focus
@@ -53,3 +53,4 @@ session TZPID = HOL +
     TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup
     TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup
     TZPID_Theorem_Semantic_Batch019_Geometry_Curvature_Closeout
+

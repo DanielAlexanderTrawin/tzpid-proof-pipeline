@@ -1,4 +1,4 @@
-theory TZPID_BesselResidualSpinalTap_Math_Checks
+theory TZPID_HypersphericalBesselResidualBridge_Math_Checks
   imports Complex_Main
 begin
 
@@ -9,7 +9,7 @@ text \<open>
   Generated UTC: 2026-06-07
 
   This theory is the concrete Isabelle mathematics layer for the
-  Bessel residual spinal tap.  It intentionally avoids treating the
+  Hyperspherical Bessel residual bridge.  It intentionally avoids treating the
   proof as only an abstract predicate chain.  The lemmas below use
   typed real definitions and structured proof steps for the algebraic
   identities that Isabelle can check directly.
@@ -209,3 +209,4 @@ text \<open>
 \<close>
 
 end
+

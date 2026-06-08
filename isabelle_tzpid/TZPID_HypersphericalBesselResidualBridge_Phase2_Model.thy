@@ -1,7 +1,7 @@
-theory TZPID_BesselResidualSpinalTap_Phase2_Model
+theory TZPID_HypersphericalBesselResidualBridge_Phase2_Model
   imports
-    TZPID_BesselResidualSpinalTap_Math_Checks
-    TZPID_BesselResidualSpinalTap_Computational_Checks
+    TZPID_HypersphericalBesselResidualBridge_Math_Checks
+    TZPID_HypersphericalBesselResidualBridge_Computational_Checks
 begin
 
 text \<open>
@@ -10,7 +10,7 @@ text \<open>
   ORCID: https://orcid.org/0009-0001-4630-3715
   Generated UTC: 2026-06-07
 
-  Phase 2 connected HOL model for the Bessel residual spinal tap.
+  Phase 2 connected HOL model for the Hyperspherical Bessel residual bridge.
   This theory links the paper's twelve bridge obligations into typed
   Isabelle/HOL definitions and structured proofs.  Special-function
   root numerics remain in the Wolfram certificate layer; the HOL layer
@@ -416,3 +416,4 @@ proof -
 qed
 
 end
+

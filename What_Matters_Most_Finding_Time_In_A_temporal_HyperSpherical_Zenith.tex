@@ -795,10 +795,10 @@ isotopePass = TrueQ[isotopeResidual == 0];
 
 \subsection{Isabelle Concrete Mathematics Certificate}
 
-The Isabelle layer has been strengthened beyond an abstract proof-graph certificate. The companion theory \texttt{TZPID\_BesselResidualSpinalTap\_Math\_Checks.thy} uses typed real-valued definitions and structured Isar proofs for the algebraic pieces that Isabelle can check directly. The special-function numeric values, such as the first zero of $J_1$, remain in the Wolfram certificate; Isabelle proves the real-algebra identities that connect those values to the paper's proof spine.
+The Isabelle layer has been strengthened beyond an abstract proof-graph certificate. The companion theory \texttt{TZPID\_HypersphericalBesselResidualBridge\_Math\_Checks.thy} uses typed real-valued definitions and structured Isar proofs for the algebraic pieces that Isabelle can check directly. The special-function numeric values, such as the first zero of $J_1$, remain in the Wolfram certificate; Isabelle proves the real-algebra identities that connect those values to the paper's proof spine.
 
 \begin{lstlisting}
-theory TZPID_BesselResidualSpinalTap_Math_Checks
+theory TZPID_HypersphericalBesselResidualBridge_Math_Checks
   imports Complex_Main
 begin
 
@@ -923,11 +923,11 @@ qed
 
 \subsection{Expanded Phase 2 HOL Coverage}
 
-The Phase 2 Isabelle layer has also been widened beyond the twelve Bessel-residual bridge obligations. The theory \texttt{TZPID\_Phase2\_Expanded\_Theorem\_Coverage.thy} records the paper-facing theorem neighborhood as eight connected families with seventy-eight target-ID mentions: the Bessel residual spinal tap, nested hyperspherical enclosure, cosmic acoustics, cross-scale ripple projection, Pythagorean/Hopf reciprocal holonomy, critical scale-invariance, gyromagnetic movement, and Kuramoto-style phase-locking/orbital synchronization. This does not claim that every theorem row in the full registry has already been semantically translated into HOL; it marks the expanded formal scope used by this paper.
+The Phase 2 Isabelle layer has also been widened beyond the twelve Bessel-residual bridge obligations. The theory \texttt{TZPID\_Phase2\_Expanded\_Theorem\_Coverage.thy} records the paper-facing theorem neighborhood as eight connected families with seventy-eight target-ID mentions: the Hyperspherical Bessel residual bridge, nested hyperspherical enclosure, cosmic acoustics, cross-scale ripple projection, Pythagorean/Hopf reciprocal holonomy, critical scale-invariance, gyromagnetic movement, and Kuramoto-style phase-locking/orbital synchronization. This does not claim that every theorem row in the full registry has already been semantically translated into HOL; it marks the expanded formal scope used by this paper.
 
 \begin{lstlisting}
 theorem expanded_phase2_spine_connections:
-  "bessel_residual_spinal_tap_chain
+  "hyperspherical_bessel_residual_bridge_chain
    & cosmic_acoustics_chain
    & ripple_projection_chain
    & acoustic_holonomy_chain
@@ -936,7 +936,7 @@ theorem expanded_phase2_spine_connections:
    & gyromagnetic_movement_chain
    & phase_locking_resonance_chain"
 proof (intro conjI)
-  show "bessel_residual_spinal_tap_chain" using tap_chain .
+  show "hyperspherical_bessel_residual_bridge_chain" using tap_chain .
   show "cosmic_acoustics_chain" using cosmic_chain .
   show "ripple_projection_chain" using ripple_chain .
   show "acoustic_holonomy_chain" using acoustic_holonomy_chain .
@@ -947,7 +947,7 @@ proof (intro conjI)
 qed
 \end{lstlisting}
 
-The Kuramoto-style orbital synchronization mechanism is represented as typed HOL algebra in \texttt{TZPID\_BesselResidualSpinalTap\_Phase2\_Model.thy}. Isabelle proves both zero-drift phase lock for equal intrinsic frequencies and the rational $3{:}2$ orbital lock used by the resonance-selection spine.
+The Kuramoto-style orbital synchronization mechanism is represented as typed HOL algebra in \texttt{TZPID\_HypersphericalBesselResidualBridge\_Phase2\_Model.thy}. Isabelle proves both zero-drift phase lock for equal intrinsic frequencies and the rational $3{:}2$ orbital lock used by the resonance-selection spine.
 
 \begin{lstlisting}
 definition kuramoto_pair_drift :: "real => real => real => real => real" where
@@ -984,3 +984,4 @@ International Union of Pure and Applied Chemistry, ``Periodic Table of Elements.
 \end{thebibliography}
 
 \end{document}
+

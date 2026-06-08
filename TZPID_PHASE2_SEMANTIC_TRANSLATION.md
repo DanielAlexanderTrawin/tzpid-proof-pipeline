@@ -10,8 +10,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 
 | File | Role |
 |---|---|
-| `isabelle_tzpid/TZPID_BesselResidualSpinalTap_Math_Checks.thy` | Direct typed algebra for the Bessel residual paper core |
-| `isabelle_tzpid/TZPID_BesselResidualSpinalTap_Phase2_Model.thy` | Connected 12-obligation Bessel residual model plus Kuramoto/orbital lock checks |
+| `isabelle_tzpid/TZPID_HypersphericalBesselResidualBridge_Math_Checks.thy` | Direct typed algebra for the Bessel residual paper core |
+| `isabelle_tzpid/TZPID_HypersphericalBesselResidualBridge_Phase2_Model.thy` | Connected 12-obligation Bessel residual model plus Kuramoto/orbital lock checks |
 | `isabelle_tzpid/TZPID_Phase2_Expanded_Theorem_Coverage.thy` | Expanded 8-family coverage ledger, 78 target-ID mentions |
 | `isabelle_tzpid/TZPID_Phase2_Semantic_Translation.thy` | First semantic translation pass from abstract predicates into typed HOL definitions |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch001.thy` | First 25 master-registry theorem IDs promoted into typed HOL semantics |
@@ -46,7 +46,7 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 
 | Family | Status | What is now typed in HOL | Remaining work |
 |---|---|---|---|
-| Bessel residual spinal tap | Concrete pass started | boundary drop fraction, admissible zeros, temporal causality guard, residual decomposition, Planck charge, isotope charge, LLN residual scale | import HOL-Analysis for exponential kernel integral; keep Bessel root numerics in Wolfram until special-function formalization |
+| Hyperspherical Bessel residual bridge | Concrete pass started | boundary drop fraction, admissible zeros, temporal causality guard, residual decomposition, Planck charge, isotope charge, LLN residual scale | import HOL-Analysis for exponential kernel integral; keep Bessel root numerics in Wolfram until special-function formalization |
 | Nested hyperspherical enclosure | Partial semantic pass | hyperspherical order reduction; acoustic node algebra; sound-horizon fundamental spacing | formal topology/geometry of `S^3` and projection maps |
 | Cosmic acoustics | Partial semantic pass | node wavenumber reconstruction; acoustic frequency scaling; sound-horizon spacing | formal spherical Bessel eigenmode theory and BAO transfer-function semantics |
 | Cross-scale ripple projection | Concrete algebra pass | projected length, dimensionless ratio, ripple-index scale invariance | empirical measurement linkage for ripple datasets |
@@ -102,3 +102,4 @@ Only promote a registry theorem family into the typed HOL layer when it has:
 5. a stated boundary if the result still depends on Wolfram, empirical data, or future HOL-Analysis/vector-calculus libraries.
 
 The full theorem registry remains indexed in `TZPID_THEOREM_NAMES.md` and `TZPID_THEOREM_NAMES.csv`. The current semantic pass covers the proof neighborhood used by the paper, not every theorem-name row in the corpus.
+

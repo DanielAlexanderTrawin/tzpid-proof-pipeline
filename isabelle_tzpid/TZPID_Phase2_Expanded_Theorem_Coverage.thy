@@ -1,6 +1,6 @@
 theory TZPID_Phase2_Expanded_Theorem_Coverage
   imports
-    TZPID_BesselResidualSpinalTap_Phase2_Model
+    TZPID_HypersphericalBesselResidualBridge_Phase2_Model
     TZPID_NestedHypersphere_Focus
     TZPID_PhaseLockingResonance_Focus
 begin
@@ -13,12 +13,12 @@ text \<open>
 
   Expanded Phase 2 coverage ledger.
 
-  The first Phase 2 model proves the twelve Bessel residual spinal-tap
+  The first Phase 2 model proves the twelve Hyperspherical Bessel residual bridge
   bridge obligations as typed HOL algebra.  This companion theory widens
   the formal scope to the theorem families that the paper is actually
   using around that bridge:
 
-    * Bessel residual spinal tap
+    * Hyperspherical Bessel residual bridge
     * nested hyperspherical enclosure / cosmic acoustics
     * cross-scale ripple projection
     * Pythagorean / Hopf reciprocal holonomy
@@ -33,7 +33,7 @@ text \<open>
 
 definition phase2_expanded_theorem_family_names :: "string list" where
   "phase2_expanded_theorem_family_names =
-    [''bessel_residual_spinal_tap'',
+    [''hyperspherical_bessel_residual_bridge'',
      ''nested_hyperspherical_enclosure'',
      ''cosmic_acoustics'',
      ''cross_scale_ripple_projection'',
@@ -44,7 +44,7 @@ definition phase2_expanded_theorem_family_names :: "string list" where
 
 definition phase2_expanded_target_id_mentions :: "string list" where
   "phase2_expanded_target_id_mentions =
-     bessel_residual_spinal_tap_target_ids
+     hyperspherical_bessel_residual_bridge_target_ids
    @ nested_hypersphere_target_ids
    @ gyromagnetic_movement_target_ids
    @ phase_locking_resonance_target_ids"
@@ -57,7 +57,7 @@ theorem phase2_expanded_family_count:
   "length phase2_expanded_theorem_family_names = 8"
 proof -
   have "phase2_expanded_theorem_family_names =
-    [''bessel_residual_spinal_tap'',
+    [''hyperspherical_bessel_residual_bridge'',
      ''nested_hyperspherical_enclosure'',
      ''cosmic_acoustics'',
      ''cross_scale_ripple_projection'',
@@ -75,25 +75,25 @@ theorem phase2_expanded_target_mention_count:
   "length phase2_expanded_target_id_mentions = 78"
 proof -
   have "phase2_expanded_target_id_mentions =
-     bessel_residual_spinal_tap_target_ids
+     hyperspherical_bessel_residual_bridge_target_ids
    @ nested_hypersphere_target_ids
    @ gyromagnetic_movement_target_ids
    @ phase_locking_resonance_target_ids"
     unfolding phase2_expanded_target_id_mentions_def
     by (rule refl)
   also have "... =
-     [''TAP-BESSEL-001'', ''TAP-BESSEL-002'', ''TAP-BESSEL-003'', ''TAP-BESSEL-004'', ''TAP-BESSEL-005'', ''TAP-BESSEL-006'', ''TAP-BESSEL-007'', ''TAP-BESSEL-008'', ''TAP-BESSEL-009'', ''TAP-BESSEL-010'', ''TAP-BESSEL-011'', ''TAP-BESSEL-012'']
+     [''HBRB-BESSEL-001'', ''HBRB-BESSEL-002'', ''HBRB-BESSEL-003'', ''HBRB-BESSEL-004'', ''HBRB-BESSEL-005'', ''HBRB-BESSEL-006'', ''HBRB-BESSEL-007'', ''HBRB-BESSEL-008'', ''HBRB-BESSEL-009'', ''HBRB-BESSEL-010'', ''HBRB-BESSEL-011'', ''HBRB-BESSEL-012'']
    @ [''ID7732'', ''ID7733'', ''ID6819'', ''ID7257'', ''ID7259'', ''ID7177'', ''ID7207'', ''ID0230'', ''ID0256'', ''ID6583'', ''ID0362'', ''ID0104'', ''ID8796'', ''ID10786'', ''ID10787'', ''ID10788'', ''ID10789'', ''ID10790'', ''ID0353'', ''ID0395'', ''ID0470'', ''ID10791'', ''ID10792'', ''ID0285'', ''ID0245'', ''ID1837'']
    @ [''ID10146'', ''ID0092'', ''ID0093'', ''ID0037'', ''ID0085'', ''ID0087'', ''ID0038'', ''ID0039'', ''ID0040'', ''ID0044'', ''ID0089'', ''ID0090'', ''ID9758'', ''ID9761'', ''ID10130'', ''ID10131'', ''ID10145'', ''ID10272'', ''ID10264'', ''ID0252'', ''ID9513'', ''ID0143'']
    @ [''ID0105'', ''ID0115'', ''ID0117'', ''ID9513'', ''ID0143'', ''ID0120'', ''ID0144'', ''ID9955'', ''ID0252'', ''ID0261'', ''ID7732'', ''ID9492'', ''ID9494'', ''ID0099'', ''ID0097'', ''ID10786'', ''ID10790'', ''ID10792'']"
-    unfolding bessel_residual_spinal_tap_target_ids_def
+    unfolding hyperspherical_bessel_residual_bridge_target_ids_def
       nested_hypersphere_target_ids_def
       gyromagnetic_movement_target_ids_def
       phase_locking_resonance_target_ids_def
     by (rule refl)
   finally have expanded_list:
     "phase2_expanded_target_id_mentions =
-     [''TAP-BESSEL-001'', ''TAP-BESSEL-002'', ''TAP-BESSEL-003'', ''TAP-BESSEL-004'', ''TAP-BESSEL-005'', ''TAP-BESSEL-006'', ''TAP-BESSEL-007'', ''TAP-BESSEL-008'', ''TAP-BESSEL-009'', ''TAP-BESSEL-010'', ''TAP-BESSEL-011'', ''TAP-BESSEL-012'']
+     [''HBRB-BESSEL-001'', ''HBRB-BESSEL-002'', ''HBRB-BESSEL-003'', ''HBRB-BESSEL-004'', ''HBRB-BESSEL-005'', ''HBRB-BESSEL-006'', ''HBRB-BESSEL-007'', ''HBRB-BESSEL-008'', ''HBRB-BESSEL-009'', ''HBRB-BESSEL-010'', ''HBRB-BESSEL-011'', ''HBRB-BESSEL-012'']
    @ [''ID7732'', ''ID7733'', ''ID6819'', ''ID7257'', ''ID7259'', ''ID7177'', ''ID7207'', ''ID0230'', ''ID0256'', ''ID6583'', ''ID0362'', ''ID0104'', ''ID8796'', ''ID10786'', ''ID10787'', ''ID10788'', ''ID10789'', ''ID10790'', ''ID0353'', ''ID0395'', ''ID0470'', ''ID10791'', ''ID10792'', ''ID0285'', ''ID0245'', ''ID1837'']
    @ [''ID10146'', ''ID0092'', ''ID0093'', ''ID0037'', ''ID0085'', ''ID0087'', ''ID0038'', ''ID0039'', ''ID0040'', ''ID0044'', ''ID0089'', ''ID0090'', ''ID9758'', ''ID9761'', ''ID10130'', ''ID10131'', ''ID10145'', ''ID10272'', ''ID10264'', ''ID0252'', ''ID9513'', ''ID0143'']
    @ [''ID0105'', ''ID0115'', ''ID0117'', ''ID9513'', ''ID0143'', ''ID0120'', ''ID0144'', ''ID9955'', ''ID0252'', ''ID0261'', ''ID7732'', ''ID9492'', ''ID9494'', ''ID0099'', ''ID0097'', ''ID10786'', ''ID10790'', ''ID10792'']" .
@@ -103,13 +103,13 @@ proof -
 qed
 
 locale TZPID_Phase2_Expanded_Theorem_Coverage =
-  TZPID_BesselResidualSpinalTap_Focus
+  TZPID_HypersphericalBesselResidualBridge_Focus
   + TZPID_NestedHypersphere_Focus
   + TZPID_PhaseLockingResonance_Focus
 begin
 
 theorem expanded_phase2_spine_connections:
-  "bessel_residual_spinal_tap_chain
+  "hyperspherical_bessel_residual_bridge_chain
    \<and> cosmic_acoustics_chain
    \<and> ripple_projection_chain
    \<and> acoustic_holonomy_chain
@@ -118,7 +118,7 @@ theorem expanded_phase2_spine_connections:
    \<and> gyromagnetic_movement_chain
    \<and> phase_locking_resonance_chain"
 proof (intro conjI)
-  show "bessel_residual_spinal_tap_chain"
+  show "hyperspherical_bessel_residual_bridge_chain"
     using tap_chain .
   show "cosmic_acoustics_chain"
     using cosmic_chain .
@@ -139,3 +139,5 @@ qed
 end
 
 end
+
+

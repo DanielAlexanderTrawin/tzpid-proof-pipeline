@@ -1,10 +1,10 @@
 [
   {
-    "family": "Bessel residual spinal tap",
+    "family": "Hyperspherical Bessel residual bridge",
     "kind": "paper_core",
     "queue_status": "phase2_already_started",
     "covered_queue_rows": 6,
-    "isabelle_files": "TZPID_BesselResidualSpinalTap_Math_Checks.thy; TZPID_BesselResidualSpinalTap_Computational_Checks.thy; TZPID_BesselResidualSpinalTap_Phase2_Model.thy",
+    "isabelle_files": "TZPID_HypersphericalBesselResidualBridge_Math_Checks.thy; TZPID_HypersphericalBesselResidualBridge_Computational_Checks.thy; TZPID_HypersphericalBesselResidualBridge_Phase2_Model.thy",
     "current_level": "concrete_algebra_plus_certificate",
     "typed_carrier_exists": "yes",
     "explicit_assumptions": "yes",
