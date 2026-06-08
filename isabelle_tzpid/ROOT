@@ -28,6 +28,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_GyromagneticMovement_Focus
     TZPID_GyromagneticMovement_Computational_Checks
     TZPID_GyromagneticMovement_Typed_PhaseGradient
+    TZPID_GyromagneticMovement_VectorCalculus
     TZPID_PhaseLockingResonance_Focus
     TZPID_PhaseLockingResonance_Computational_Checks
     TZPID_Phase2_Expanded_Theorem_Coverage
