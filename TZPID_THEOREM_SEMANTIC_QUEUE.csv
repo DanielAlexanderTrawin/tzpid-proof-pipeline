@@ -58,20 +58,20 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 57,master_registry,ID4202,Eigenvalue,Theorem,,,,,batch006_started,operator_spectral_segment,no
 58,master_registry,ID4206,Solar Laplacian Operator,Theorem,,,,,triaged_operator_spectral_mode,operator_spectral_triage,no
 59,master_registry,ID4213,Breathing Mode Frequency Relation,Theorem,,,,,batch006_started,operator_spectral_segment,no
-60,master_registry,ID4214,Density,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+60,master_registry,ID4214,Density,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
 61,master_registry,ID4215,Magnetic Helicity Functional Correction,Theorem,,,,,batch005_started,topology_vector_segment,no
 62,master_registry,ID4216,Sideband Pi Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 63,master_registry,ID4217,Chemical Potential Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-64,master_registry,ID4223,Irrotational Magnetic Field Curl Field Equation,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
-65,master_registry,ID4224,Magnetic Field,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+64,master_registry,ID4223,Irrotational Magnetic Field Curl Field Equation,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
+65,master_registry,ID4224,Magnetic Field,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
 66,master_registry,ID4225,Delta Scaling Law,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-67,master_registry,ID4229,Dark Magnetic Flux Expansion,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+67,master_registry,ID4229,Dark Magnetic Flux Expansion,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
 68,master_registry,ID4231,Alfvn Alfven Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 69,master_registry,ID4233,Chern Magnetic Field Curl Field Equation,Theorem,,,,,batch005_started,topology_vector_segment,no
 70,master_registry,ID4252,Magnetic Helicity Evolution Evolution Relation,Theorem,,,,,batch005_started,topology_vector_segment,no
 71,master_registry,ID4256,Magnetic Helicity Evolution Evolution Relation,Theorem,,,,,batch005_started,topology_vector_segment,no
-72,master_registry,ID4363,Quadrupole Magnetic Field,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
-73,master_registry,ID4698,Gyromagnetic Berry Phase,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+72,master_registry,ID4363,Quadrupole Magnetic Field,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
+73,master_registry,ID4698,Gyromagnetic Berry Phase,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
 74,master_registry,ID4700,Text Magnetic Flux Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 75,master_registry,ID4708,Magnetic Helicity Evolution Evolution Relation,Theorem,,,,,batch005_started,topology_vector_segment,no
 76,master_registry,ID4710,Kaluza-Klein Magnetic Flux Expansion,Theorem,,,,,batch006_started,operator_spectral_segment,no
@@ -83,8 +83,8 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 82,master_registry,ID5744,Hamiltonian Evolution Equation,Theorem,,,,,batch006_started,operator_spectral_segment,no
 83,master_registry,ID5751,Helix Action Bound,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 84,master_registry,ID5797,Pressure Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-85,master_registry,ID5802,Torsion Evolution Equation,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
-86,master_registry,ID5803,Pattern Torsion Functional,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+85,master_registry,ID5802,Torsion Evolution Equation,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
+86,master_registry,ID5803,Pattern Torsion Functional,Theorem,,,,,batch011_started,magnetic_torsion_segment,no
 87,master_registry,ID5806,Kaluza-Klein Pi Bound,Theorem,,,,,batch006_started,operator_spectral_segment,no
 88,master_registry,ID5812,North Hamiltonian,Theorem,,,,,batch006_started,operator_spectral_segment,no
 89,master_registry,ID5813,Cent Field Strength Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
@@ -220,13 +220,13 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 219,proof_obligations,ID9999,Generalized Helicity Conservation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,172,batch005_started,topology_vector_segment,no
 220,proof_obligations,ID9999,Spiral Pitch Angle from Accumulated Curvature,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,205,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
 221,proof_obligations,ID9999,Opposite Helicity Conservation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,269,batch005_started,topology_vector_segment,no
-222,proof_obligations,ID9999,"Theorem (Woltjer, 1958)",Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\mathematical_formulation.tex,236,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+222,proof_obligations,ID9999,"Theorem (Woltjer, 1958)",Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\mathematical_formulation.tex,236,batch011_started,magnetic_torsion_segment,no
 223,proof_obligations,ID9999,Theorem: Curvature Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,74,triaged_geometry_curvature,geometry_curvature_triage,no
 224,proof_obligations,ID9999,Accumulated Force Functional,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,98,triaged_dynamics_stability,dynamics_stability_triage,no
 225,proof_obligations,ID9999,Chern Number Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,611,batch005_started,topology_vector_segment,no
 226,proof_obligations,ID9999,Curvature-Induced Spectral Deformation,Theorem,Needs_Semantic_Translation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,489,batch006_started,operator_spectral_segment,no
 227,proof_obligations,ID9999,Fine Structure from Topology,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\theory_of_it_all_trawin_topology (2).tex,171,triaged_topology_category,topology_category_triage,no
-228,proof_obligations,ID9999,Magnon-Phonon Interaction,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,273,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+228,proof_obligations,ID9999,Magnon-Phonon Interaction,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,273,batch011_started,magnetic_torsion_segment,no
 229,proof_obligations,ID9999,Spectral Gap Under Positive Curvature,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,922,batch006_started,operator_spectral_segment,no
 230,proof_obligations,ID9999,Theorem 3 (Information-Theoretic Lower Bound).,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\pi_slide.tex,529,batch004_started,remaining_candidate_real_algebra,no
 231,proof_obligations,ID9999,Universal Toroidal Constraint,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\theory_of_it_all_trawin_topology (2).tex,139,triaged_topology_category,topology_category_triage,no
@@ -234,7 +234,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 233,proof_obligations,ID9999,KK Mode Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\reverse_harmonics_publication.tex,241,triaged_operator_spectral_mode,operator_spectral_triage,no
 234,proof_obligations,ID9999,Dimensional Access Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,180,triaged_topology_category,topology_category_triage,no
 235,proof_obligations,ID9999,Discrete Dark Matter Distribution,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,406,triaged_quantum_matter,quantum_matter_triage,no
-236,proof_obligations,ID9999,Elsasser Universality,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,212,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+236,proof_obligations,ID9999,Elsasser Universality,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,212,batch011_started,magnetic_torsion_segment,no
 237,proof_obligations,ID9999,Geometric Flow Dynamics,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,141,triaged_dynamics_stability,dynamics_stability_triage,no
 238,proof_obligations,ID9999,Universal Critical Exponent,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,306,triaged_quantum_matter,quantum_matter_triage,no
 239,proof_obligations,ID9999,Hamilton’s Equations,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\refactored_derivations.tex,212,triaged_operator_spectral_mode,operator_spectral_triage,no
@@ -251,7 +251,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 250,proof_obligations,ID9999,Dissipative Energy Decay,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,700,batch004_started,remaining_candidate_real_algebra,no
 251,proof_obligations,ID9999,Dissipative Stability,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,553,triaged_dynamics_stability,dynamics_stability_triage,no
 252,proof_obligations,ID9999,First-Order Orbital Shift,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1275,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
-253,proof_obligations,ID5758,Flux Tunneling,Theorem,Derived_Theorem_Obligation,ID5758,D:\Tex\TEX_20260224_182530\topological_quantum_storage_paper (2).tex,73,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+253,proof_obligations,ID5758,Flux Tunneling,Theorem,Derived_Theorem_Obligation,ID5758,D:\Tex\TEX_20260224_182530\topological_quantum_storage_paper (2).tex,73,batch011_started,magnetic_torsion_segment,no
 254,proof_obligations,ID9999,Global Phase Symmetry,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,863,triaged_topology_category,topology_category_triage,no
 255,proof_obligations,ID9999,Harmonic-KK Resonance,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,331,triaged_operator_spectral_mode,operator_spectral_triage,no
 256,proof_obligations,ID0522,ID 0522: THE UNIFIED ENTANGLEMENT META-THEOREM,Theorem,Derived_Theorem_Obligation,ID0522,D:\Tex\TEX_20260224_182530\CanonicalRegistryVol01_1_math_verify_run_5.tex,1441,batch001_started,first_master_registry_segment,no
@@ -260,7 +260,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 259,proof_obligations,ID9999,Theorem 1 (Local Uniqueness Bound).,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\pi_slide.tex,276,batch004_started,remaining_candidate_real_algebra,no
 260,proof_obligations,ID0522,[ID 522] THE UNIFIED ENTANGLEMENT META-THEOREM,Theorem,Derived_Theorem_Obligation,ID0522,D:\Tex\CanonicalRegistryVol01.tex,2225,batch001_started,first_master_registry_segment,no
 261,proof_obligations,ID9999,Theorem: Infinite-Order Phase Transitions,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,65,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
-262,proof_obligations,ID9999,Dipole Non-Annihilation Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,337,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+262,proof_obligations,ID9999,Dipole Non-Annihilation Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,337,batch011_started,magnetic_torsion_segment,no
 263,proof_obligations,ID3322,Encoding-Decoding Adjunction,Theorem,Derived_Theorem_Obligation,ID3322,D:\Tex\All_tex\QuantumTopoHoloNavSystem.tex,1,triaged_topology_category,topology_category_triage,no
 264,proof_obligations,ID9999,Linear Dispersion Relation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1012,batch004_started,remaining_candidate_real_algebra,no
 265,proof_obligations,ID9999,Linear Stability Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1044,triaged_dynamics_stability,dynamics_stability_triage,no
@@ -339,20 +339,20 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 338,statement_inventory,ID4202,ID4202: Eigenvalue,Theorem,,ID4202,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4202,3819,batch006_started,operator_spectral_segment,no
 339,statement_inventory,ID4206,ID4206: Solar Laplacian Operator,Theorem,,ID4206,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4206,3823,triaged_operator_spectral_mode,operator_spectral_triage,no
 340,statement_inventory,ID4213,ID4213: Breathing Mode Frequency Relation,Theorem,,ID4213,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4213,3830,batch006_started,operator_spectral_segment,no
-341,statement_inventory,ID4214,ID4214: Density,Theorem,,ID4214,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4214,3831,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+341,statement_inventory,ID4214,ID4214: Density,Theorem,,ID4214,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4214,3831,batch011_started,magnetic_torsion_segment,no
 342,statement_inventory,ID4215,ID4215: Magnetic Helicity Functional Correction,Theorem,,ID4215,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4215,3832,batch005_started,topology_vector_segment,no
 343,statement_inventory,ID4216,ID4216: Sideband Pi Relation,Theorem,,ID4216,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4216,3833,batch003_started,candidate_real_algebra_segment,no
 344,statement_inventory,ID4217,ID4217: Chemical Potential Relation,Theorem,,ID4217,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4217,3834,batch003_started,candidate_real_algebra_segment,no
-345,statement_inventory,ID4223,ID4223: Irrotational Magnetic Field Curl Field Equation,Theorem,,ID4223,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4223,3840,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
-346,statement_inventory,ID4224,ID4224: Magnetic Field,Theorem,,ID4224,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4224,3841,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+345,statement_inventory,ID4223,ID4223: Irrotational Magnetic Field Curl Field Equation,Theorem,,ID4223,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4223,3840,batch011_started,magnetic_torsion_segment,no
+346,statement_inventory,ID4224,ID4224: Magnetic Field,Theorem,,ID4224,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4224,3841,batch011_started,magnetic_torsion_segment,no
 347,statement_inventory,ID4225,ID4225: Delta Scaling Law,Theorem,,ID4225,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4225,3842,batch003_started,candidate_real_algebra_segment,no
-348,statement_inventory,ID4229,ID4229: Dark Magnetic Flux Expansion,Theorem,,ID4229,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4229,3846,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+348,statement_inventory,ID4229,ID4229: Dark Magnetic Flux Expansion,Theorem,,ID4229,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4229,3846,batch011_started,magnetic_torsion_segment,no
 349,statement_inventory,ID4231,ID4231: Alfvn Alfven Relation,Theorem,,ID4231,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4231,3848,batch003_started,candidate_real_algebra_segment,no
 350,statement_inventory,ID4233,ID4233: Chern Magnetic Field Curl Field Equation,Theorem,,ID4233,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4233,3850,batch005_started,topology_vector_segment,no
 351,statement_inventory,ID4252,ID4252: Magnetic Helicity Evolution Evolution Relation,Theorem,,ID4252,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4252,3869,batch005_started,topology_vector_segment,no
 352,statement_inventory,ID4256,ID4256: Magnetic Helicity Evolution Evolution Relation,Theorem,,ID4256,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4256,3873,batch005_started,topology_vector_segment,no
-353,statement_inventory,ID4363,ID4363: Quadrupole Magnetic Field,Theorem,,ID4363,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4363,3980,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
-354,statement_inventory,ID4698,ID4698: Gyromagnetic Berry Phase,Theorem,,ID4698,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4698,4314,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+353,statement_inventory,ID4363,ID4363: Quadrupole Magnetic Field,Theorem,,ID4363,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4363,3980,batch011_started,magnetic_torsion_segment,no
+354,statement_inventory,ID4698,ID4698: Gyromagnetic Berry Phase,Theorem,,ID4698,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4698,4314,batch011_started,magnetic_torsion_segment,no
 355,statement_inventory,ID4700,ID4700: Text Magnetic Flux Relation,Theorem,,ID4700,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4700,4316,batch003_started,candidate_real_algebra_segment,no
 356,statement_inventory,ID4708,ID4708: Magnetic Helicity Evolution Evolution Relation,Theorem,,ID4708,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4708,4324,batch005_started,topology_vector_segment,no
 357,statement_inventory,ID4710,ID4710: Kaluza-Klein Magnetic Flux Expansion,Theorem,,ID4710,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4710,4326,batch006_started,operator_spectral_segment,no
@@ -364,8 +364,8 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 363,statement_inventory,ID5744,ID5744: Hamiltonian Evolution Equation,Theorem,,ID5744,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5744,5250,batch006_started,operator_spectral_segment,no
 364,statement_inventory,ID5751,ID5751: Helix Action Bound,Theorem,,ID5751,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5751,5257,batch003_started,candidate_real_algebra_segment,no
 365,statement_inventory,ID5797,ID5797: Pressure Relation,Theorem,,ID5797,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5797,5303,batch003_started,candidate_real_algebra_segment,no
-366,statement_inventory,ID5802,ID5802: Torsion Evolution Equation,Theorem,,ID5802,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5802,5308,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
-367,statement_inventory,ID5803,ID5803: Pattern Torsion Functional,Theorem,,ID5803,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5803,5309,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+366,statement_inventory,ID5802,ID5802: Torsion Evolution Equation,Theorem,,ID5802,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5802,5308,batch011_started,magnetic_torsion_segment,no
+367,statement_inventory,ID5803,ID5803: Pattern Torsion Functional,Theorem,,ID5803,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5803,5309,batch011_started,magnetic_torsion_segment,no
 368,statement_inventory,ID5806,ID5806: Kaluza-Klein Pi Bound,Theorem,,ID5806,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5806,5312,batch006_started,operator_spectral_segment,no
 369,statement_inventory,ID5812,ID5812: North Hamiltonian,Theorem,,ID5812,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5812,5318,batch006_started,operator_spectral_segment,no
 370,statement_inventory,ID5813,ID5813: Cent Field Strength Relation,Theorem,,ID5813,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5813,5319,batch003_started,candidate_real_algebra_segment,no

@@ -30,6 +30,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling.thy` | Dynamics/scaling theorem rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Meta_Foundation_Model.thy` | Shared scaffold for base units, observer states, Bayesian evidence, falsifiability, and secondary proof-record guards |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy` | Final meta-foundation theorem rows promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Magnetic_Torsion_Model.thy` | Shared scaffold for density, magnetic curl/field/flux, quadrupole fields, Berry phase, torsion evolution, helicity, Elsasser balance, tunneling, and dipole non-annihilation claims |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy` | Field/magnetic/torsion triage rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -60,6 +62,8 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 009 | Started | Dynamics/scaling rows including `ID0000`, `ID0001`, `ID0004`, `ID0009`, `ID0018`, `ID0026`, `ID0030`, `ID0032`, `ID0036`, `ID0046`, `ID0054`, and `ID0080` | deepen oscillator dynamics, stability criteria, drift processes, renormalization flow, semiclassical limits, and Casimir/vacuum polarization semantics |
 | Meta-foundation model | Scaffold started | typed guards for base-unit positivity, observer-indexed state offsets, Bayes factors, posterior odds, falsifiability gaps, stability thresholds, particle uniformity, topological charge/spin quantization, coherence restoration, weak-gravity scaling, restorative force, reverse-process, creative singularity, and binary split claims | replace proof-record guards with source-specific theorem statements where the secondary PDFs provide sufficient formal detail |
 | Master theorem batch 010 | Started | Final semantic-translation rows including `ID0002`, `ID0007`, `ID0046`, `ID0047`, `ID0180`, `ID0181`, `ID0182`, `ID0183`, `ID0185`, `ID0186`, and `ID0187` | resolve generic secondary proof labels into fully named source theorem namespaces and deepen methodological claims into evidence-model semantics |
+| Magnetic/torsion model | Scaffold started | typed algebraic guards for density, irrotational magnetic curl residuals, magnetic field amplitude, dark flux expansion, quadrupole trace-free constraints, gyromagnetic Berry phase, torsion evolution, pattern torsion, Woltjer helicity residuals, magnon-phonon coupling, Elsasser balance, flux tunneling, and dipole non-annihilation | replace scalar guards with vector-calculus, helicity integral, MHD, and torsion-geometry semantics |
+| Master theorem batch 011 | Started | Field/magnetic/torsion rows including `ID4214`, `ID4223`, `ID4224`, `ID4229`, `ID4363`, `ID4698`, `ID5802`, `ID5803`, `ID5758`, and the relevant `ID9999` proof obligations | deepen density, magnetic field, torsion, Woltjer, Elsasser, tunneling, and dipole residual semantics into HOL-Analysis structures |
 
 ## Build Status
 

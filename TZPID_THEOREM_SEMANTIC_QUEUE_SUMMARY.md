@@ -16,7 +16,7 @@ Generated: 2026-06-07
 | batch005_started | 38 |
 | batch006_started | 30 |
 | batch007_started | 23 |
-| triaged_field_magnetic_torsion | 21 |
+| batch011_started | 21 |
 | batch008_started | 17 |
 | triaged_operator_spectral_mode | 15 |
 | triaged_topology_category | 15 |
@@ -41,7 +41,7 @@ Generated: 2026-06-07
 | topology_vector_segment | 38 |
 | operator_spectral_segment | 30 |
 | quantum_open_system_segment | 23 |
-| field_magnetic_torsion_triage | 21 |
+| magnetic_torsion_segment | 21 |
 | geometry_manifold_segment | 17 |
 | operator_spectral_triage | 15 |
 | topology_category_triage | 15 |
@@ -74,4 +74,5 @@ Rows marked `batch007_started` are the quantum/open-system segment now translate
 Rows marked `batch008_started` are the geometry/manifold segment now translated through the shared geometry-manifold scaffold.
 Rows marked `batch009_started` are the dynamics/scaling segment now translated through the shared dynamics-scaling scaffold.
 Rows marked `batch010_started` are the meta-foundation segment now translated through the shared meta-foundation scaffold.
+Rows marked `batch011_started` are the magnetic/torsion segment now translated through the shared magnetic-torsion scaffold.
 Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.
