@@ -190,6 +190,147 @@ proof -
     unfolding certified_bessel_zero_intervals_def .
 qed
 
+definition radial_phase :: "real \<Rightarrow> real \<Rightarrow> real \<Rightarrow> real" where
+  "radial_phase zero R r = zero * (r / R)"
+
+definition delta_alpha_phase :: "real \<Rightarrow> real \<Rightarrow> real \<Rightarrow> real \<Rightarrow> real" where
+  "delta_alpha_phase full_zero half_zero R r =
+     radial_phase full_zero R r - radial_phase half_zero R r"
+
+definition bessel_phase_gradient :: "real \<Rightarrow> real \<Rightarrow> real \<Rightarrow> real" where
+  "bessel_phase_gradient full_zero half_zero R =
+     (full_zero / R) * half_bessel_drop_fraction full_zero half_zero"
+
+definition bessel_shell_radius :: "nat \<Rightarrow> real \<Rightarrow> real \<Rightarrow> real \<Rightarrow> real" where
+  "bessel_shell_radius n R full_zero delta =
+     (real n * pi * R) / (full_zero * delta)"
+
+theorem delta_alpha_phase_difference:
+  "delta_alpha_phase full_zero half_zero R r =
+     (full_zero - half_zero) * r / R"
+proof -
+  have "delta_alpha_phase full_zero half_zero R r =
+      full_zero * (r / R) - half_zero * (r / R)"
+    unfolding delta_alpha_phase_def radial_phase_def
+    by (rule refl)
+  also have "... = (full_zero - half_zero) * r / R"
+    by algebra
+  finally show ?thesis .
+qed
+
+theorem drop_fraction_induces_phase_gradient:
+  assumes admissible: "boundary_drop_admissible full_zero half_zero"
+    and radius_nonzero: "R \<noteq> 0"
+  shows "delta_alpha_phase full_zero half_zero R r =
+     bessel_phase_gradient full_zero half_zero R * r"
+proof -
+  have full_pos: "0 < full_zero"
+    using admissible
+    unfolding boundary_drop_admissible_def positive_boundary_zero_def
+    by blast
+  have full_nonzero: "full_zero \<noteq> 0"
+    using full_pos
+    by linarith
+  have "delta_alpha_phase full_zero half_zero R r =
+      (full_zero - half_zero) * r / R"
+    using delta_alpha_phase_difference .
+  also have "... =
+      ((full_zero / R) * ((full_zero - half_zero) / full_zero)) * r"
+    using full_nonzero radius_nonzero
+    by field
+  also have "... = bessel_phase_gradient full_zero half_zero R * r"
+    unfolding bessel_phase_gradient_def half_bessel_drop_fraction_def .
+  finally show ?thesis .
+qed
+
+theorem drop_fraction_induces_phase_gradient_exists:
+  assumes admissible: "boundary_drop_admissible full_zero half_zero"
+    and radius_nonzero: "R \<noteq> 0"
+  shows "\<exists>k_eff. \<forall>r.
+     delta_alpha_phase full_zero half_zero R r = k_eff * r
+     \<and> k_eff = (full_zero / R) *
+          half_bessel_drop_fraction full_zero half_zero"
+proof -
+  let ?k = "bessel_phase_gradient full_zero half_zero R"
+  have phase: "\<And>r. delta_alpha_phase full_zero half_zero R r = ?k * r"
+    using admissible radius_nonzero
+    by (rule drop_fraction_induces_phase_gradient)
+  have k_eq:
+    "?k = (full_zero / R) * half_bessel_drop_fraction full_zero half_zero"
+    unfolding bessel_phase_gradient_def
+    by (rule refl)
+  show ?thesis
+    using phase k_eq
+    by blast
+qed
+
+theorem bessel_shell_radius_solves_delta_alpha_quantization:
+  assumes admissible: "boundary_drop_admissible full_zero half_zero"
+    and radius_nonzero: "R \<noteq> 0"
+  defines "delta \<equiv> half_bessel_drop_fraction full_zero half_zero"
+  shows "delta_alpha_phase full_zero half_zero R
+      (bessel_shell_radius n R full_zero delta) = real n * pi"
+proof -
+  have drop_bounds:
+    "0 < half_bessel_drop_fraction full_zero half_zero
+     \<and> half_bessel_drop_fraction full_zero half_zero < 1"
+    using admissible
+    by (rule tap003_half_bessel_drop_is_between_zero_and_one)
+  have drop_pos: "0 < delta"
+    using drop_bounds
+    unfolding delta_def
+    by blast
+  have full_pos: "0 < full_zero"
+    using admissible
+    unfolding boundary_drop_admissible_def positive_boundary_zero_def
+    by blast
+  have denom_nonzero: "full_zero * delta \<noteq> 0"
+    using full_pos drop_pos
+    by (metis less_irrefl mult_eq_0_iff)
+  have phase:
+    "delta_alpha_phase full_zero half_zero R
+      (bessel_shell_radius n R full_zero delta) =
+       ((full_zero / R) * delta) *
+        bessel_shell_radius n R full_zero delta"
+    using admissible radius_nonzero
+    unfolding delta_def
+    by (rule drop_fraction_induces_phase_gradient)
+  also have "... = real n * pi"
+    using radius_nonzero denom_nonzero
+    unfolding bessel_shell_radius_def
+    by field
+  finally show ?thesis .
+qed
+
+theorem certified_bessel_delta_alpha_phase_bridge:
+  assumes intervals: "certified_bessel_zero_intervals full_zero half_zero"
+    and radius_nonzero: "R \<noteq> 0"
+  shows "\<exists>k_eff. \<forall>r.
+     delta_alpha_phase full_zero half_zero R r = k_eff * r
+     \<and> (18 / 100 :: real) <
+          half_bessel_drop_fraction full_zero half_zero
+     \<and> half_bessel_drop_fraction full_zero half_zero <
+          (19 / 100 :: real)"
+proof -
+  have admissible: "boundary_drop_admissible full_zero half_zero"
+    using intervals
+    by (rule certified_bessel_intervals_imply_boundary_admissible)
+  have drop_window:
+    "(18 / 100 :: real) < half_bessel_drop_fraction full_zero half_zero
+     \<and> half_bessel_drop_fraction full_zero half_zero < (19 / 100 :: real)"
+    using intervals
+    by (rule bessel_drop_interval_for_certified_zeros)
+  obtain k_eff where phase:
+    "\<forall>r. delta_alpha_phase full_zero half_zero R r = k_eff * r
+       \<and> k_eff = (full_zero / R) *
+          half_bessel_drop_fraction full_zero half_zero"
+    using admissible radius_nonzero
+    by (meson drop_fraction_induces_phase_gradient_exists)
+  show ?thesis
+    using phase drop_window
+    by blast
+qed
+
 context TZPID_HypersphericalBesselResidualBridge_Focus
 begin
 
@@ -207,7 +348,12 @@ theorem bessel_external_certificate_policy_connected:
    \<and> half_bessel_drop_fraction
         (383170597 / 100000000)
         (314159265 / 100000000)
-      < (19 / 100 :: real)"
+      < (19 / 100 :: real)
+   \<and> (\<exists>k_eff. \<forall>r.
+      delta_alpha_phase
+        (383170597 / 100000000)
+        (314159265 / 100000000)
+        (1 :: real) r = k_eff * r)"
 proof (intro conjI)
   show "all_hyperspherical_bessel_residual_bridge_certificates_verified"
     using all_hyperspherical_bessel_residual_bridge_certificates_passed .
@@ -242,6 +388,28 @@ proof (intro conjI)
         (314159265 / 100000000)
       < (19 / 100 :: real)"
     using drop_window
+    by blast
+  have phase_bridge:
+    "\<exists>k_eff. \<forall>r.
+      delta_alpha_phase
+        (383170597 / 100000000)
+        (314159265 / 100000000)
+        (1 :: real) r = k_eff * r
+      \<and> (18 / 100 :: real) <
+          half_bessel_drop_fraction
+            (383170597 / 100000000)
+            (314159265 / 100000000)
+      \<and> half_bessel_drop_fraction
+            (383170597 / 100000000)
+            (314159265 / 100000000)
+          < (19 / 100 :: real)"
+    using paper_bessel_representative_intervals_hold
+    by (rule certified_bessel_delta_alpha_phase_bridge, norm_num)
+  thus "\<exists>k_eff. \<forall>r.
+      delta_alpha_phase
+        (383170597 / 100000000)
+        (314159265 / 100000000)
+        (1 :: real) r = k_eff * r"
     by blast
 qed
 
