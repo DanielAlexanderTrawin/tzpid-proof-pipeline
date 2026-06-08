@@ -92,14 +92,14 @@ def build_rows() -> list[dict[str, str | int]]:
                 "TZPID_HypersphericalBesselResidualBridge_Phase2_Model.thy",
             ],
             queue_status="phase2_already_started",
-            level="concrete_algebra_certificate_integrated",
+            level="concrete_algebra_certificate_kernel_integrated",
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
             wolfram="yes",
             priority="critical",
-            completion="phase2_5_started",
-            next_upgrade="Next formalize the exponential-kernel integral and keep Bessel special-function zeros tied to Wolfram certificates until HOL special functions are selected.",
+            completion="phase2_5_kernel_set",
+            next_upgrade="Next import the HOL-Analysis integration stack for the improper exponential integral, while keeping Bessel special-function zeros tied to Wolfram certificates until HOL special functions are selected.",
         ),
         dict(
             family="Nested hyperspherical enclosure",
@@ -318,7 +318,7 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
         (
             "Hyperspherical Bessel residual bridge",
             "Paper core with concrete algebra and certificates already present.",
-            "Wolfram certificate aggregation is now connected to the HOL bridge theorem; next formalize the exponential kernel integral.",
+            "Temporal kernel causality, positivity, bounded finite-window mass, and window-plus-tail normalization are now connected to the HOL bridge theorem; next prove the improper integral in HOL-Analysis.",
         ),
         (
             "Gyromagnetic movement",

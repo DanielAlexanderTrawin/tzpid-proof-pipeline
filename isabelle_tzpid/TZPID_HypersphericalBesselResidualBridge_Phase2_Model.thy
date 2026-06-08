@@ -48,6 +48,14 @@ definition causal_temporal_kernel ::
   "causal_temporal_kernel tau_decay t tau =
      (if tau \<le> t then exponential_kernel_density tau_decay (t - tau) else 0)"
 
+definition temporal_kernel_window_mass :: "real \<Rightarrow> real \<Rightarrow> real" where
+  "temporal_kernel_window_mass tau_decay horizon =
+     1 - exp (- horizon / tau_decay)"
+
+definition temporal_kernel_tail_mass :: "real \<Rightarrow> real \<Rightarrow> real" where
+  "temporal_kernel_tail_mass tau_decay horizon =
+     exp (- horizon / tau_decay)"
+
 definition accumulated_curvature ::
   "source \<Rightarrow> source \<Rightarrow> source \<Rightarrow> curvature" where
   "accumulated_curvature matter sound entropy =
@@ -184,6 +192,137 @@ proof -
     unfolding causal_temporal_kernel_def
     using assms
     by (rule if_P)
+qed
+
+theorem temporal_kernel_density_nonnegative_on_past:
+  assumes "tau_decay > 0"
+    and "tau \<le> t"
+  shows "causal_temporal_kernel tau_decay t tau \<ge> 0"
+proof -
+  have density:
+    "causal_temporal_kernel tau_decay t tau =
+       (1 / tau_decay) * exp (- (t - tau) / tau_decay)"
+    using assms(2)
+    unfolding causal_temporal_kernel_def exponential_kernel_density_def
+    by (rule if_P)
+  have inv_nonnegative: "1 / tau_decay \<ge> 0"
+  proof -
+    have "0 \<le> (1::real)"
+      by (rule zero_le_one)
+    thus ?thesis
+      using assms(1)
+      by (rule divide_nonneg_pos)
+  qed
+  have exp_nonnegative: "exp (- (t - tau) / tau_decay) \<ge> 0"
+  proof -
+    have "0 < exp (- (t - tau) / tau_decay)"
+      by (rule exp_gt_zero)
+    thus ?thesis
+      by (rule less_imp_le)
+  qed
+  show ?thesis
+    unfolding density
+    using inv_nonnegative exp_nonnegative
+    by (rule mult_nonneg_nonneg)
+qed
+
+theorem temporal_kernel_window_mass_zero:
+  "temporal_kernel_window_mass tau_decay 0 = 0"
+proof -
+  have "temporal_kernel_window_mass tau_decay 0 =
+        1 - exp (- 0 / tau_decay)"
+    unfolding temporal_kernel_window_mass_def
+    by (rule refl)
+  also have "... = 0"
+  proof -
+    have "- 0 / tau_decay = (0::real)"
+      by algebra
+    hence "exp (- 0 / tau_decay) = 1"
+    proof -
+      have "exp (- 0 / tau_decay) = exp 0"
+        using \<open>- 0 / tau_decay = (0::real)\<close>
+        by presburger
+      also have "... = 1"
+        by (rule exp_zero)
+      finally show ?thesis .
+    qed
+    thus ?thesis
+      by algebra
+  qed
+  finally show ?thesis .
+qed
+
+theorem temporal_kernel_window_mass_plus_tail:
+  "temporal_kernel_window_mass tau_decay horizon
+   + temporal_kernel_tail_mass tau_decay horizon = 1"
+proof -
+  have "temporal_kernel_window_mass tau_decay horizon
+      + temporal_kernel_tail_mass tau_decay horizon =
+        (1 - exp (- horizon / tau_decay)) + exp (- horizon / tau_decay)"
+    unfolding temporal_kernel_window_mass_def temporal_kernel_tail_mass_def
+    by (rule refl)
+  also have "... = 1"
+    by algebra
+  finally show ?thesis .
+qed
+
+theorem temporal_kernel_window_mass_between_zero_and_one:
+  assumes "tau_decay > 0"
+    and "horizon > 0"
+  shows "temporal_kernel_window_mass tau_decay horizon > 0
+       \<and> temporal_kernel_window_mass tau_decay horizon < 1"
+proof -
+  have ratio_positive: "horizon / tau_decay > 0"
+    using assms(2) assms(1)
+    by (rule divide_pos_pos)
+  hence neg_ratio_negative: "- horizon / tau_decay < 0"
+    by linarith
+  have exp_lt_one: "exp (- horizon / tau_decay) < 1"
+  proof -
+    have "exp (- horizon / tau_decay) < exp 0"
+      using neg_ratio_negative
+      by (rule exp_less_mono)
+    also have "... = 1"
+      by (rule exp_zero)
+    finally show ?thesis .
+  qed
+  have exp_pos: "exp (- horizon / tau_decay) > 0"
+    by (rule exp_gt_zero)
+  have lower: "temporal_kernel_window_mass tau_decay horizon > 0"
+    unfolding temporal_kernel_window_mass_def
+    using exp_lt_one
+    by linarith
+  have upper: "temporal_kernel_window_mass tau_decay horizon < 1"
+    unfolding temporal_kernel_window_mass_def
+    using exp_pos
+    by linarith
+  show ?thesis
+  proof (intro conjI)
+    show "temporal_kernel_window_mass tau_decay horizon > 0"
+      using lower .
+    show "temporal_kernel_window_mass tau_decay horizon < 1"
+      using upper .
+  qed
+qed
+
+theorem temporal_kernel_closed_form_normalization_bridge:
+  assumes "tau_decay > 0"
+    and "horizon > 0"
+  shows
+    "temporal_kernel_window_mass tau_decay horizon > 0
+     \<and> temporal_kernel_window_mass tau_decay horizon < 1
+     \<and> temporal_kernel_window_mass tau_decay horizon
+        + temporal_kernel_tail_mass tau_decay horizon = 1"
+proof (intro conjI)
+  show "temporal_kernel_window_mass tau_decay horizon > 0"
+    using assms temporal_kernel_window_mass_between_zero_and_one
+    by blast
+  show "temporal_kernel_window_mass tau_decay horizon < 1"
+    using assms temporal_kernel_window_mass_between_zero_and_one
+    by blast
+  show "temporal_kernel_window_mass tau_decay horizon
+        + temporal_kernel_tail_mass tau_decay horizon = 1"
+    using temporal_kernel_window_mass_plus_tail .
 qed
 
 theorem tap007_accumulated_curvature_has_residual_part:
@@ -331,12 +470,14 @@ theorem phase2_all_twelve_bessel_residual_obligations_connected:
     and "half_zero > 0"
     and "half_zero < full_zero"
     and "tau \<le> t"
+    and "tau_decay > 0"
     and "hbar > 0"
     and "c > 0"
     and "grav > 0"
     and "mP = planck_mass hbar c grav"
     and "mP \<noteq> 0"
     and "particle_count > 0"
+    and "horizon > 0"
   shows
     "hyperspherical_order 4 ell = ell + 1
      \<and> boundary_drop_admissible full_zero half_zero
@@ -346,6 +487,11 @@ theorem phase2_all_twelve_bessel_residual_obligations_connected:
      \<and> effective_residual_source matter sound entropy = matter + sound + entropy
      \<and> causal_temporal_kernel tau_decay t tau =
           exponential_kernel_density tau_decay (t - tau)
+     \<and> causal_temporal_kernel tau_decay t tau \<ge> 0
+     \<and> temporal_kernel_window_mass tau_decay horizon > 0
+     \<and> temporal_kernel_window_mass tau_decay horizon < 1
+     \<and> temporal_kernel_window_mass tau_decay horizon
+        + temporal_kernel_tail_mass tau_decay horizon = 1
      \<and> measurable_residual
           (accumulated_curvature matter sound entropy) matter
           = sound + entropy
@@ -380,6 +526,18 @@ proof (intro conjI)
         exponential_kernel_density tau_decay (t - tau)"
     using assms(4)
     by (rule tap006_causal_kernel_active_on_past)
+  show "0 \<le> causal_temporal_kernel tau_decay t tau"
+    using assms(5) assms(4)
+    by (rule temporal_kernel_density_nonnegative_on_past)
+  show "0 < temporal_kernel_window_mass tau_decay horizon"
+    using assms(5) assms(12) temporal_kernel_closed_form_normalization_bridge
+    by blast
+  show "temporal_kernel_window_mass tau_decay horizon < 1"
+    using assms(5) assms(12) temporal_kernel_closed_form_normalization_bridge
+    by blast
+  show "temporal_kernel_window_mass tau_decay horizon
+        + temporal_kernel_tail_mass tau_decay horizon = 1"
+    using temporal_kernel_window_mass_plus_tail .
   show "measurable_residual (accumulated_curvature matter sound entropy) matter =
         sound + entropy"
     using tap007_accumulated_curvature_has_residual_part .
@@ -387,14 +545,14 @@ proof (intro conjI)
     using tap008_frame_dragging_current_zero_without_rotation .
   show "gravitational_charge mX mP * gravitational_charge mY mP =
         grav * mX * mY / (hbar * c)"
-    using assms(5) assms(6) assms(7) assms(8)
+    using assms(6) assms(7) assms(8) assms(9)
     by (metis tap009_planck_charge_product_hol)
   show "mP * isotope_gravitational_charge Z N mp mn me Ebind c mP =
         isotope_mass Z N mp mn me Ebind c"
-    using assms(9)
+    using assms(10)
     by (rule tap010_isotope_charge_recovers_mass_hol)
   show "lln_residual_scale particle_count sigma * sqrt particle_count = sigma"
-    using assms(10)
+    using assms(11)
     by (rule tap011_large_number_residual_scale_recovers_sigma)
   show "measurable_residual
           (accumulated_curvature ordinary_matter sound entropy)
@@ -423,17 +581,24 @@ theorem phase2_bridge_certificates_and_hol_model_connected:
     and "half_zero > 0"
     and "half_zero < full_zero"
     and "tau \<le> t"
+    and "tau_decay > 0"
     and "hbar > 0"
     and "c > 0"
     and "grav > 0"
     and "mP = planck_mass hbar c grav"
     and "mP \<noteq> 0"
     and "particle_count > 0"
+    and "horizon > 0"
   shows
     "all_hyperspherical_bessel_residual_bridge_certificates_verified
      \<and> hyperspherical_bessel_residual_bridge_chain
      \<and> length phase2_obligation_vector = 12
      \<and> boundary_drop_admissible full_zero half_zero
+     \<and> causal_temporal_kernel tau_decay t tau \<ge> 0
+     \<and> temporal_kernel_window_mass tau_decay horizon > 0
+     \<and> temporal_kernel_window_mass tau_decay horizon < 1
+     \<and> temporal_kernel_window_mass tau_decay horizon
+        + temporal_kernel_tail_mass tau_decay horizon = 1
      \<and> measurable_residual
           (accumulated_curvature ordinary_matter sound entropy)
           ordinary_matter =
@@ -448,6 +613,18 @@ proof (intro conjI)
   show "boundary_drop_admissible full_zero half_zero"
     using assms(1) assms(2) assms(3)
     by (rule tap002_boundary_quantization_admissible)
+  show "0 \<le> causal_temporal_kernel tau_decay t tau"
+    using assms(5) assms(4)
+    by (rule temporal_kernel_density_nonnegative_on_past)
+  show "0 < temporal_kernel_window_mass tau_decay horizon"
+    using assms(5) assms(12) temporal_kernel_closed_form_normalization_bridge
+    by blast
+  show "temporal_kernel_window_mass tau_decay horizon < 1"
+    using assms(5) assms(12) temporal_kernel_closed_form_normalization_bridge
+    by blast
+  show "temporal_kernel_window_mass tau_decay horizon
+        + temporal_kernel_tail_mass tau_decay horizon = 1"
+    using temporal_kernel_window_mass_plus_tail .
   show "measurable_residual
           (accumulated_curvature ordinary_matter sound entropy)
           ordinary_matter =
