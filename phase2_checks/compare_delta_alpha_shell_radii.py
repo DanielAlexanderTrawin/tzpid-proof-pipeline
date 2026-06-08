@@ -107,18 +107,28 @@ def compare_shells(
     )
     observed = r_centers[peaks]
 
-    n_values = np.arange(1, len(observed) + 1)
-    predicted = n_values * np.pi * domain_radius / (j11 * delta * oscillation_scale)
+    predicted_all: list[tuple[int, float]] = []
+    n = 1
+    while True:
+        predicted_radius = n * np.pi * domain_radius / (j11 * delta * oscillation_scale)
+        if predicted_radius > domain_radius:
+            break
+        predicted_all.append((n, float(predicted_radius)))
+        n += 1
 
     comparisons: list[ShellComparison] = []
-    for n, predicted_radius, observed_radius in zip(n_values, predicted, observed):
+    for n_value, predicted_radius in predicted_all:
+        if len(observed) == 0:
+            break
+        nearest_index = int(np.argmin(np.abs(observed - predicted_radius)))
+        observed_radius = float(observed[nearest_index])
         absolute_error = float(abs(predicted_radius - observed_radius))
         relative_error = float(absolute_error / predicted_radius) if predicted_radius else 0.0
         comparisons.append(
             ShellComparison(
-                n=int(n),
+                n=int(n_value),
                 predicted_radius=float(predicted_radius),
-                observed_radius=float(observed_radius),
+                observed_radius=observed_radius,
                 absolute_error=absolute_error,
                 relative_error=relative_error,
             )
@@ -138,6 +148,7 @@ def compare_shells(
         "j_half": j_half,
         "delta": delta,
         "detected_peaks": int(len(observed)),
+        "predicted_shells_in_domain": int(len(predicted_all)),
         "mean_absolute_error": float(np.mean([row.absolute_error for row in comparisons]))
         if comparisons
         else 0.0,
@@ -160,7 +171,20 @@ def first_numeric_array_from_npz(path: Path) -> np.ndarray:
         raise ValueError(f"No 2D numeric array found in {path}")
 
 
-def first_numeric_array_from_hdf5(path: Path, dataset: str | None) -> np.ndarray:
+def coerce_to_2d(array: np.ndarray, slice_index: int) -> np.ndarray:
+    array = np.asarray(array)
+    if array.ndim == 2:
+        return array
+    if array.ndim == 3:
+        if not 0 <= slice_index < array.shape[0]:
+            raise IndexError(
+                f"slice index {slice_index} is outside first axis with length {array.shape[0]}"
+            )
+        return np.asarray(array[slice_index])
+    raise ValueError(f"Expected a 2D field or 3D time stack, got shape {array.shape}")
+
+
+def first_numeric_array_from_hdf5(path: Path, dataset: str | None, slice_index: int) -> np.ndarray:
     try:
         import h5py  # type: ignore[import-not-found]
     except ImportError as exc:
@@ -173,8 +197,8 @@ def first_numeric_array_from_hdf5(path: Path, dataset: str | None) -> np.ndarray
             value = group[key]
             if hasattr(value, "shape") and hasattr(value, "dtype"):
                 array = np.asarray(value)
-                if np.issubdtype(array.dtype, np.number) and array.ndim == 2:
-                    return array
+                if np.issubdtype(array.dtype, np.number) and array.ndim in {2, 3}:
+                    return coerce_to_2d(array, slice_index)
             elif hasattr(value, "keys"):
                 nested = visit_group(value)
                 if nested is not None:
@@ -183,14 +207,14 @@ def first_numeric_array_from_hdf5(path: Path, dataset: str | None) -> np.ndarray
 
     with h5py.File(path, "r") as handle:
         if dataset:
-            return np.asarray(handle[dataset])
+            return coerce_to_2d(np.asarray(handle[dataset]), slice_index)
         array = visit_group(handle)
         if array is None:
-            raise ValueError(f"No 2D numeric dataset found in {path}")
+            raise ValueError(f"No 2D numeric dataset or 3D numeric time stack found in {path}")
         return array
 
 
-def load_external_field(path: Path, dataset: str | None) -> np.ndarray:
+def load_external_field(path: Path, dataset: str | None, slice_index: int) -> np.ndarray:
     suffix = path.suffix.lower()
     if suffix == ".npy":
         return np.asarray(np.load(path))
@@ -199,7 +223,7 @@ def load_external_field(path: Path, dataset: str | None) -> np.ndarray:
     if suffix in {".csv", ".txt"}:
         return np.loadtxt(path, delimiter="," if suffix == ".csv" else None)
     if suffix in {".h5", ".hdf5"}:
-        return first_numeric_array_from_hdf5(path, dataset)
+        return first_numeric_array_from_hdf5(path, dataset, slice_index)
     raise ValueError(f"Unsupported field input extension: {suffix}")
 
 
@@ -333,6 +357,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--field-file", type=Path, default=None)
     parser.add_argument("--hdf5-dataset", type=str, default=None)
+    parser.add_argument("--slice-index", type=int, default=0)
     parser.add_argument("--domain-radius", type=float, default=None)
     parser.add_argument(
         "--output-dir",
@@ -345,7 +370,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     external_field = (
-        load_external_field(args.field_file, args.hdf5_dataset)
+        load_external_field(args.field_file, args.hdf5_dataset, args.slice_index)
         if args.field_file is not None
         else None
     )
@@ -367,6 +392,7 @@ def main() -> None:
         summary["field_file"] = str(args.field_file)
         if args.hdf5_dataset is not None:
             summary["hdf5_dataset"] = args.hdf5_dataset
+        summary["slice_index"] = args.slice_index
     write_outputs(
         output_dir=args.output_dir,
         summary=summary,

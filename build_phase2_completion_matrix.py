@@ -94,14 +94,14 @@ def build_rows() -> list[dict[str, str | int]]:
                 "TZPID_Bessel_External_Certificates.thy",
             ],
             queue_status="phase2_already_started",
-            level="hol_analysis_integral_bessel_policy_delta_alpha_array_shell_check",
+            level="hol_analysis_integral_bessel_policy_delta_alpha_phase3_hdf5_shell_check",
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
             wolfram="yes",
             priority="critical",
-            completion="phase2_5_delta_alpha_array_check_done",
-            next_upgrade="Next compare against independently recorded experimental/simulation peak data, then lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics.",
+            completion="phase2_5_phase3_hdf5_shell_check_done",
+            next_upgrade="Next formalize the Phase3 HDF5 observable contract and then lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics.",
         ),
         dict(
             family="Nested hyperspherical enclosure",
@@ -320,7 +320,7 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
         (
             "Hyperspherical Bessel residual bridge",
             "Paper core with concrete algebra and certificates already present.",
-            "The kernel integral is proved in HOL-Analysis; Bessel roots are an explicit external Wolfram interval-certificate policy; the drop fraction induces a HOL-proved Delta-alpha phase-gradient and shell-radius prediction; and exported Delta-alpha arrays now reproduce the predicted shell radii.",
+            "The kernel integral is proved in HOL-Analysis; Bessel roots are an explicit external Wolfram interval-certificate policy; the drop fraction induces a HOL-proved Delta-alpha phase-gradient and shell-radius prediction; exported Delta-alpha arrays reproduce the predicted shell radii; and the Phase3 HDF5 psi field now matches the shell prediction.",
         ),
         (
             "Gyromagnetic movement",
