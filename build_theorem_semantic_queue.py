@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parent
 INPUT = ROOT / "TZPID_THEOREM_NAMES.csv"
 OUT_CSV = ROOT / "TZPID_THEOREM_SEMANTIC_QUEUE.csv"
 OUT_MD = ROOT / "TZPID_THEOREM_SEMANTIC_QUEUE_SUMMARY.md"
+OUT_TRIAGE_CSV = ROOT / "TZPID_TRIAGE_CLASSIFICATION.csv"
+OUT_TRIAGE_MD = ROOT / "TZPID_TRIAGE_CLASSIFICATION.md"
 
 PHASE2_IDS = {
     "ID7732", "ID7733", "ID6819", "ID7257", "ID7259", "ID7177", "ID7207",
@@ -87,6 +89,20 @@ BATCH010_IDS = {
 }
 
 
+TRIAGE_ACTIONS = {
+    "emergence_bifurcation_triage": "Batch 011 candidate: bifurcation and emergence semantics.",
+    "operator_spectral_triage": "Promote into an operator/spectral follow-up or merge with Batch006.",
+    "field_magnetic_torsion_triage": "Promote into a vector, magnetic, or torsion follow-up or merge with Batch005.",
+    "orbital_gyromagnetic_triage": "Promote into an orbital and gyromagnetic movement follow-up.",
+    "geometry_curvature_triage": "Promote into a geometry/curvature follow-up or merge with Batch008.",
+    "topology_category_triage": "Promote into a topology/category follow-up.",
+    "dynamics_stability_triage": "Promote into a dynamics/stability follow-up or merge with Batch009.",
+    "resonance_locking_triage": "Promote into a phase-locking and resonance follow-up.",
+    "quantum_matter_triage": "Promote into a quantum/matter follow-up.",
+    "misc_source_review_triage": "Manual source review required before semantic translation.",
+}
+
+
 def classify(name: str, role: str, id_: str) -> tuple[str, str]:
     text = f"{id_} {name} {role}".lower()
     if id_ in PHASE2_IDS:
@@ -142,6 +158,64 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         "0187_proof", "0188_proof", "0189_proof"
     ]):
         return "batch010_started", "meta_foundation_segment"
+    if any(k in text for k in [
+        "phase-locking", "phase locking", "resonance capture",
+        "sufficient condition for phase locking", "pitchfork", "lemniscate saddle"
+    ]):
+        return "triaged_resonance_locking", "resonance_locking_triage"
+    if any(k in text for k in [
+        "bifurcation", "emergence", "infinite-order phase", "phase transition",
+        "r_tzp", "creative singularity", "tzp emergence"
+    ]):
+        return "triaged_emergence_bifurcation", "emergence_bifurcation_triage"
+    if any(k in text for k in [
+        "4d effective theory", "massive field", "kk mode", "harmonic-kk",
+        "spectral inversion", "spectral gap", "laplacian", "hamilton",
+        "alfvén mode", "alfven mode", "wavelength quantization",
+        "tidal wavelength", "wave equation", "eigenvalue", "frequency",
+        "modal", "kaluza"
+    ]):
+        return "triaged_operator_spectral_mode", "operator_spectral_triage"
+    if any(k in text for k in [
+        "density", "magnetic field", "curl field", "magnetic flux",
+        "quadrupole", "torsion", "woltjer", "elsasser",
+        "gyromagnetic berry", "flux tunneling", "magnon-phonon",
+        "helicity", "chern", "linking", "hopf", "flux quantization",
+        "dipole non-annihilation"
+    ]):
+        return "triaged_field_magnetic_torsion", "field_magnetic_torsion_triage"
+    if any(k in text for k in [
+        "celestial gyromagnetic", "tidal deformation", "spiral pitch angle",
+        "orbital", "gyromagnetic motion"
+    ]):
+        return "triaged_orbital_gyromagnetic", "orbital_gyromagnetic_triage"
+    if any(k in text for k in [
+        "curvature coupling", "accumulated curvature"
+    ]):
+        return "triaged_geometry_curvature", "geometry_curvature_triage"
+    if any(k in text for k in [
+        "borsuk", "buckingham", "dipole constraint topology",
+        "fine structure from topology", "universal toroidal",
+        "adjoint functor", "encoding-decoding", "categorical framework",
+        "dimensional access", "global phase symmetry", "surface dominance",
+        "topological", "topology"
+    ]):
+        return "triaged_topology_category", "topology_category_triage"
+    if any(k in text for k in [
+        "force functional", "geometric flow", "accumulation dynamics",
+        "global weak existence", "dissipative stability", "numerical stability",
+        "linear stability", "local uniqueness", "newtonian limit",
+        "dispersion shift", "orbital shift", "stability", "oscillator",
+        "renormalization", "semiclassical", "casimir"
+    ]):
+        return "triaged_dynamics_stability", "dynamics_stability_triage"
+    if any(k in text for k in [
+        "electron conservation", "quantum violation", "dark matter distribution",
+        "vacuum divergence", "universal critical", "critical exponent",
+        "quantum", "coherence", "decoherence", "channel", "measurement",
+        "commutator", "entangle", "qubit", "spinor", "bell inequality"
+    ]):
+        return "triaged_quantum_matter", "quantum_matter_triage"
     if any(k in text for k in ["helicity", "chern", "linking", "hopf", "flux quantization", "topological"]):
         return "needs_vector_topology_semantics", "topology_or_helicity"
     if any(k in text for k in ["hamiltonian", "wave equation", "eigenvalue", "frequency", "modal", "kaluza"]):
@@ -150,7 +224,7 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         return "candidate_real_algebra", "algebra_or_inequality"
     if "needs_semantic_translation" in text:
         return "needs_semantic_translation", "unclassified_named_theorem"
-    return "queued_for_triage", "unclassified"
+    return "triaged_misc_source_review", "misc_source_review_triage"
 
 
 def main() -> None:
@@ -181,6 +255,26 @@ def main() -> None:
         writer = csv.DictWriter(f, fieldnames=list(out_rows[0].keys()))
         writer.writeheader()
         writer.writerows(out_rows)
+
+    triage_rows = [
+        {
+            "queue_index": r["queue_index"],
+            "source": r["source"],
+            "id": r["id"],
+            "name": r["name"],
+            "triage_status": r["translation_status"],
+            "triage_class": r["translation_class"],
+            "suggested_next_action": TRIAGE_ACTIONS.get(r["translation_class"], "Review before promotion."),
+            "source_file": r["source_file"],
+            "line": r["line"],
+        }
+        for r in out_rows
+        if r["translation_status"].startswith("triaged_")
+    ]
+    with OUT_TRIAGE_CSV.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=list(triage_rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(triage_rows)
 
     status_counts = Counter(r["translation_status"] for r in out_rows)
     class_counts = Counter(r["translation_class"] for r in out_rows)
@@ -220,9 +314,45 @@ def main() -> None:
         "Rows marked `batch008_started` are the geometry/manifold segment now translated through the shared geometry-manifold scaffold.",
         "Rows marked `batch009_started` are the dynamics/scaling segment now translated through the shared dynamics-scaling scaffold.",
         "Rows marked `batch010_started` are the meta-foundation segment now translated through the shared meta-foundation scaffold.",
-        "Rows marked `needs_operator_or_spectral_semantics` should be promoted only after a domain-specific operator or spectral model is selected.",
+        "Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.",
     ])
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    triage_counts = Counter(r["triage_class"] for r in triage_rows)
+    triage_source_counts = Counter(r["source"] for r in triage_rows)
+    triage_lines = [
+        "# TZPID Triage Classification",
+        "",
+        "Generated: 2026-06-07",
+        "",
+        f"- Triaged rows: `{len(triage_rows)}`",
+        f"- Output CSV: `{OUT_TRIAGE_CSV.name}`",
+        "",
+        "## Class Counts",
+        "",
+        "| Triage Class | Count | Suggested Next Action |",
+        "|---|---:|---|",
+    ]
+    for cls, count in triage_counts.most_common():
+        triage_lines.append(f"| {cls} | {count} | {TRIAGE_ACTIONS.get(cls, 'Review before promotion.')} |")
+    triage_lines.extend(["", "## Source Counts", "", "| Source | Count |", "|---|---:|"])
+    for source, count in triage_source_counts.most_common():
+        triage_lines.append(f"| {source} | {count} |")
+    triage_lines.extend([
+        "",
+        "## Full Listing",
+        "",
+        "| Queue | Source | ID | Name | Triage Class | Suggested Next Action |",
+        "|---:|---|---|---|---|---|",
+    ])
+    for row in sorted(triage_rows, key=lambda r: int(r["queue_index"])):
+        name = row["name"].replace("|", "\\|")
+        action = row["suggested_next_action"].replace("|", "\\|")
+        triage_lines.append(
+            f"| {row['queue_index']} | {row['source']} | {row['id']} | {name} | "
+            f"{row['triage_class']} | {action} |"
+        )
+    OUT_TRIAGE_MD.write_text("\n".join(triage_lines) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -56,22 +56,22 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 55,master_registry,ID4195,Potential Energy Relation,Theorem,,,,,batch002_started,spectral_helicity_kk_segment,no
 56,master_registry,ID4201,Rho Dark Apparent Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 57,master_registry,ID4202,Eigenvalue,Theorem,,,,,batch006_started,operator_spectral_segment,no
-58,master_registry,ID4206,Solar Laplacian Operator,Theorem,,,,,queued_for_triage,unclassified,no
+58,master_registry,ID4206,Solar Laplacian Operator,Theorem,,,,,triaged_operator_spectral_mode,operator_spectral_triage,no
 59,master_registry,ID4213,Breathing Mode Frequency Relation,Theorem,,,,,batch006_started,operator_spectral_segment,no
-60,master_registry,ID4214,Density,Theorem,,,,,queued_for_triage,unclassified,no
+60,master_registry,ID4214,Density,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 61,master_registry,ID4215,Magnetic Helicity Functional Correction,Theorem,,,,,batch005_started,topology_vector_segment,no
 62,master_registry,ID4216,Sideband Pi Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 63,master_registry,ID4217,Chemical Potential Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-64,master_registry,ID4223,Irrotational Magnetic Field Curl Field Equation,Theorem,,,,,queued_for_triage,unclassified,no
-65,master_registry,ID4224,Magnetic Field,Theorem,,,,,queued_for_triage,unclassified,no
+64,master_registry,ID4223,Irrotational Magnetic Field Curl Field Equation,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+65,master_registry,ID4224,Magnetic Field,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 66,master_registry,ID4225,Delta Scaling Law,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-67,master_registry,ID4229,Dark Magnetic Flux Expansion,Theorem,,,,,queued_for_triage,unclassified,no
+67,master_registry,ID4229,Dark Magnetic Flux Expansion,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 68,master_registry,ID4231,Alfvn Alfven Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 69,master_registry,ID4233,Chern Magnetic Field Curl Field Equation,Theorem,,,,,batch005_started,topology_vector_segment,no
 70,master_registry,ID4252,Magnetic Helicity Evolution Evolution Relation,Theorem,,,,,batch005_started,topology_vector_segment,no
 71,master_registry,ID4256,Magnetic Helicity Evolution Evolution Relation,Theorem,,,,,batch005_started,topology_vector_segment,no
-72,master_registry,ID4363,Quadrupole Magnetic Field,Theorem,,,,,queued_for_triage,unclassified,no
-73,master_registry,ID4698,Gyromagnetic Berry Phase,Theorem,,,,,queued_for_triage,unclassified,no
+72,master_registry,ID4363,Quadrupole Magnetic Field,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+73,master_registry,ID4698,Gyromagnetic Berry Phase,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 74,master_registry,ID4700,Text Magnetic Flux Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 75,master_registry,ID4708,Magnetic Helicity Evolution Evolution Relation,Theorem,,,,,batch005_started,topology_vector_segment,no
 76,master_registry,ID4710,Kaluza-Klein Magnetic Flux Expansion,Theorem,,,,,batch006_started,operator_spectral_segment,no
@@ -83,8 +83,8 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 82,master_registry,ID5744,Hamiltonian Evolution Equation,Theorem,,,,,batch006_started,operator_spectral_segment,no
 83,master_registry,ID5751,Helix Action Bound,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 84,master_registry,ID5797,Pressure Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-85,master_registry,ID5802,Torsion Evolution Equation,Theorem,,,,,queued_for_triage,unclassified,no
-86,master_registry,ID5803,Pattern Torsion Functional,Theorem,,,,,queued_for_triage,unclassified,no
+85,master_registry,ID5802,Torsion Evolution Equation,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+86,master_registry,ID5803,Pattern Torsion Functional,Theorem,,,,,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 87,master_registry,ID5806,Kaluza-Klein Pi Bound,Theorem,,,,,batch006_started,operator_spectral_segment,no
 88,master_registry,ID5812,North Hamiltonian,Theorem,,,,,batch006_started,operator_spectral_segment,no
 89,master_registry,ID5813,Cent Field Strength Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
@@ -94,7 +94,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 93,master_registry,ID6092,Energy Relation,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 94,master_registry,ID6488,III. Helicity Transfer Reversal (Theorem Inversion) (1),Theorem,,,,,batch005_started,topology_vector_segment,no
 95,master_registry,ID7754,III. Helicity Transfer Reversal (Theorem Inversion) (2),Theorem,,,,,batch005_started,topology_vector_segment,no
-96,master_registry,ID8520,TIDAL WAVELENGTH QUANTIZATION Canonical Statutory Formula: λ_tidal,Theorem,,,,,queued_for_triage,unclassified,no
+96,master_registry,ID8520,TIDAL WAVELENGTH QUANTIZATION Canonical Statutory Formula: λ_tidal,Theorem,,,,,triaged_operator_spectral_mode,operator_spectral_triage,no
 97,master_registry,ID8521,SEMIDIURNAL BEAT FREQUENCY Canonical Statutory Formula: ω_beat,Theorem,,,,,batch006_started,operator_spectral_segment,no
 98,master_registry,ID8522,DIPOLE TOPOLOGICAL CONSTRAINT Canonical Statutory Formula,Theorem,,,,,batch005_started,topology_vector_segment,no
 99,master_registry,ID8523,MACROSCOPIC FLUX QUANTIZATION Canonical Statutory Formula: Φ_mag,Theorem,,,,,batch005_started,topology_vector_segment,no
@@ -102,8 +102,8 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 101,master_registry,ID9005,"Relation: H^3(M, U(1)) Neq 0",Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 102,master_registry,ID9157,"Relation: R_universe / N, Where R_universe Is the Hubble Radius. for N of Order Unity",Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 103,master_registry,ID9291,Relation: τdecoherence/(kBT)τ_decoherence,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-104,master_registry,ID9529,Infinite-Order Phase Transition: R → r_TZP,Theorem,,,,,queued_for_triage,unclassified,no
-105,master_registry,ID9595,4D Effective Theory Each Mode $Phin$ Appears as Massive Field: R_KK ∼ 10^-6,Theorem,,,,,queued_for_triage,unclassified,no
+104,master_registry,ID9529,Infinite-Order Phase Transition: R → r_TZP,Theorem,,,,,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
+105,master_registry,ID9595,4D Effective Theory Each Mode $Phin$ Appears as Massive Field: R_KK ∼ 10^-6,Theorem,,,,,triaged_operator_spectral_mode,operator_spectral_triage,no
 106,master_registry,ID9618,Relation: ε: ε_encode Circ δ_decode Rightarrow Id_DAAN,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 107,master_registry,ID9619,Relation: η: Id_Blob Rightarrow δ_decode Circ ε_encode,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 108,master_registry,ID9633,Relation: ⟨ ε_encode Dashv δ_decode ⟩,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
@@ -112,7 +112,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 111,master_registry,ID9887,Relation: O(n^π-3),Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 112,master_registry,ID9902,"Relation: π,Δ_topological/N_max",Theorem,,,,,batch005_started,topology_vector_segment,no
 113,master_registry,ID9931,"Relation: Ω[T^2 × T^2, π, DAAN]",Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
-114,master_registry,ID9973,Spectral Inversion Theory: S_obs(ω),Theorem,,,,,queued_for_triage,unclassified,no
+114,master_registry,ID9973,Spectral Inversion Theory: S_obs(ω),Theorem,,,,,triaged_operator_spectral_mode,operator_spectral_triage,no
 115,master_registry,ID9989,Toroidal Boundary Condition: ∫∫_T^2 K DA,Theorem,,,,,batch003_started,candidate_real_algebra_segment,no
 116,master_registry,ID9990,Topological Constraints: ∫∫_Σ K DA + ∫_∂Σ κ_g Ds,Theorem,,,,,batch005_started,topology_vector_segment,no
 117,proof_obligations,ID0000,lemma trawinisticmanifold: sorry theorem trawinisticmanifold : Prop Theorem trawinisticmanifold :,Theorem,Needs_Semantic_Translation,ID0000,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,234,batch008_started,geometry_manifold_segment,no
@@ -133,7 +133,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 132,proof_obligations,ID0004,lemma stochasticdriftmagnitude: theorem stochasticdriftmagnitude : Theorem stochasticdriftmagnitude :,Theorem,Needs_Semantic_Translation,ID0004,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,955,batch009_started,dynamics_scaling_segment,no
 133,proof_obligations,ID0002,lemma trawinbaseunit: sorry theorem trawinbaseunit : Prop := Theorem trawinbaseunit : Prop.,Theorem,Needs_Semantic_Translation,ID0002,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,620,batch010_started,meta_foundation_segment,no
 134,proof_obligations,ID0006,lemma spectraldensityindex: sorry theorem spectraldensityindex : Theorem spectraldensityindex :,Theorem,Needs_Semantic_Translation,ID0006,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,1376,batch006_started,operator_spectral_segment,no
-135,proof_obligations,ID9999,Symmetry-fixed bifurcation criterion for the Trawin Zero Point,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TRAWIN.tex,206,queued_for_triage,unclassified,no
+135,proof_obligations,ID9999,Symmetry-fixed bifurcation criterion for the Trawin Zero Point,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TRAWIN.tex,206,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
 136,proof_obligations,ID0170,lemma cymatic_topological_control: theorem cymatic_topological_control Theorem cymatic_topological_control,Theorem,Needs_Semantic_Translation,ID0170,D:\Zenodo\Trawin_Zero_Point_200_Secondary.pdf,6298,batch005_started,topology_vector_segment,no
 137,proof_obligations,ID0020,lemma trawincharacteristicclass: theorem trawincharacteristicclass Theorem trawincharacteristicclass,Theorem,Needs_Semantic_Translation,ID0020,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,1853,batch008_started,geometry_manifold_segment,no
 138,proof_obligations,ID0038,lemma elsasseruniversality: sorry theorem elsasseruniversality : Theorem elsasseruniversality :,Theorem,Needs_Semantic_Translation,ID0038,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,3437,phase2_already_started,existing_phase2_family,no
@@ -146,7 +146,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 145,proof_obligations,ID0032,lemma vacuumpolarization: sorry theorem vacuumpolarization : Prop Theorem vacuumpolarization : Prop.,Theorem,Needs_Semantic_Translation,ID0032,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,4380,batch009_started,dynamics_scaling_segment,no
 146,proof_obligations,ID0180,lemma 0181_proof: theorem Theorem,Theorem,Needs_Semantic_Translation,ID0180,D:\Zenodo\Trawin_Zero_Point_200_Secondary.pdf,7190,batch010_started,meta_foundation_segment,no
 147,proof_obligations,ID0065,lemma multipartitenetworks: sorry theorem multipartitenetworks : Theorem multipartitenetworks :,Theorem,Needs_Semantic_Translation,ID0065,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,5525,batch007_started,quantum_open_system_segment,no
-148,proof_obligations,ID9999,TZP emergence as symmetry-fixed bifurcation of TRAWIN closure,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\00_Canon_00_TRAWIN_definition.tex,256,queued_for_triage,unclassified,no
+148,proof_obligations,ID9999,TZP emergence as symmetry-fixed bifurcation of TRAWIN closure,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\00_Canon_00_TRAWIN_definition.tex,256,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
 149,proof_obligations,ID0054,lemma boundaryquantumeffects: theorem boundaryquantumeffects : Theorem boundaryquantumeffects :,Theorem,Needs_Semantic_Translation,ID0054,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,4624,batch004_started,remaining_candidate_real_algebra,no
 150,proof_obligations,ID0173,lemma curvature_and_field_strength: theorem Theorem,Theorem,Needs_Semantic_Translation,ID0173,D:\Zenodo\Trawin_Zero_Point_200_Secondary.pdf,6586,batch008_started,geometry_manifold_segment,no
 151,proof_obligations,ID0040,lemma magneticmomentscaling: theorem magneticmomentscaling : Theorem magneticmomentscaling :,Theorem,Needs_Semantic_Translation,ID0040,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,3764,phase2_already_started,existing_phase2_family,no
@@ -160,7 +160,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 159,proof_obligations,ID0080,lemma semiclassicallimits: sorry theorem semiclassicallimits : Prop Theorem semiclassicallimits :,Theorem,Needs_Semantic_Translation,ID0080,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,6590,batch009_started,dynamics_scaling_segment,no
 160,proof_obligations,ID0181,lemma 0182_proof: theorem Theorem,Theorem,Needs_Semantic_Translation,ID0181,D:\Zenodo\Trawin_Zero_Point_200_Secondary.pdf,7275,batch010_started,meta_foundation_segment,no
 161,proof_obligations,ID0001,lemma lemniscaticselfintersection: theorem Theorem,Theorem,Needs_Semantic_Translation,ID0001,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,305,batch008_started,geometry_manifold_segment,no
-162,proof_obligations,ID9999,THEOREM 4: TZP Emergence Mechanism: Planck oscillations ω P ≈ 1.86×1043 Hz with,Theorem,Derived_Theorem_Obligation,ID9999,D:\Zenodo\gyromagnetic_validation.pdf,256,queued_for_triage,unclassified,no
+162,proof_obligations,ID9999,THEOREM 4: TZP Emergence Mechanism: Planck oscillations ω P ≈ 1.86×1043 Hz with,Theorem,Derived_Theorem_Obligation,ID9999,D:\Zenodo\gyromagnetic_validation.pdf,256,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
 163,proof_obligations,ID0018,lemma confinedmodequantization: theorem confinedmodequantization : Theorem confinedmodequantization :,Theorem,Needs_Semantic_Translation,ID0018,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,4543,batch009_started,dynamics_scaling_segment,no
 164,proof_obligations,ID0053,lemma continuousvariablesystems: theorem continuousvariablesystems Theorem continuousvariablesystems,Theorem,Needs_Semantic_Translation,ID0053,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,5975,batch007_started,quantum_open_system_segment,no
 165,proof_obligations,ID0174,lemma holonomy_and_closed_loops: theorem holonomy_and_closed_loops : Theorem holonomy_and_closed_loops :,Theorem,Needs_Semantic_Translation,ID0174,D:\Zenodo\Trawin_Zero_Point_200_Secondary.pdf,6722,batch008_started,geometry_manifold_segment,no
@@ -199,97 +199,97 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 198,proof_obligations,ID0049,lemma quantumnoisespectra: sorry theorem quantumnoisespectra : Theorem quantumnoisespectra :,Theorem,Needs_Semantic_Translation,ID0049,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,5227,batch007_started,quantum_open_system_segment,no
 199,proof_obligations,ID0015,lemma vacuumfluctuationoperator: theorem vacuumfluctuationoperator Theorem vacuumfluctuationoperator,Theorem,Needs_Semantic_Translation,ID0015,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,3102,batch007_started,quantum_open_system_segment,no
 200,proof_obligations,ID0049,lemma zeropointcommutator: sorry theorem zeropointcommutator : Theorem zeropointcommutator :,Theorem,Needs_Semantic_Translation,ID0049,D:\Zenodo\Trawin_Zero_Point_100_Primary.pdf,4300,batch007_started,quantum_open_system_segment,no
-201,proof_obligations,ID9999,Theorem 1: Wavelength Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,279,queued_for_triage,unclassified,no
+201,proof_obligations,ID9999,Theorem 1: Wavelength Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,279,triaged_operator_spectral_mode,operator_spectral_triage,no
 202,proof_obligations,ID9999,Topological Protection,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\00_Canon_01_TZP_Definition.tex,81,batch005_started,topology_vector_segment,no
 203,proof_obligations,ID0137,law N:normalizedmegastructureformationtheorem,Theorem,Needs_Semantic_Translation,ID0137,D:\Zenodo\Trawin_Zero_Point_200_Secondary.pdf,3356,batch001_started,first_master_registry_segment,no
-204,proof_obligations,ID9999,TZP Vacuum Divergence,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,190,queued_for_triage,unclassified,no
-205,proof_obligations,ID9999,Theorem: Electron Conservation with TZP Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Zenodo\complete_tzpqvs_synthesis.pdf,497,queued_for_triage,unclassified,no
-206,proof_obligations,ID9999,THEOREM 1: Celestial Gyromagnetic Motion,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\gyromagnetic_validation.tex,447,queued_for_triage,unclassified,no
+204,proof_obligations,ID9999,TZP Vacuum Divergence,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,190,triaged_quantum_matter,quantum_matter_triage,no
+205,proof_obligations,ID9999,Theorem: Electron Conservation with TZP Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Zenodo\complete_tzpqvs_synthesis.pdf,497,triaged_quantum_matter,quantum_matter_triage,no
+206,proof_obligations,ID9999,THEOREM 1: Celestial Gyromagnetic Motion,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\gyromagnetic_validation.tex,447,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
 207,proof_obligations,ID9999,Theorem 5: Quantum Flux Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,348,batch005_started,topology_vector_segment,no
 208,proof_obligations,ID9999,Theorem 3: Beat Frequency Mechanism,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,322,batch006_started,operator_spectral_segment,no
 209,proof_obligations,ID9999,Theorem: The TZP-Torus-Consciousness system is mathematically consistent and enables vacuum energy extraction.,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\Delta function in the bell curve (3).txt,757,batch004_started,remaining_candidate_real_algebra,no
-210,proof_obligations,ID9999,The Borsuk--Ulam Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\paper.tex,124,queued_for_triage,unclassified,no
+210,proof_obligations,ID9999,The Borsuk--Ulam Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\paper.tex,124,triaged_topology_category,topology_category_triage,no
 211,proof_obligations,ID0137,ID 137: Megastructure Formation Theorem,Theorem,Derived_Theorem_Obligation,ID0137,D:\Tex\Opera_Omia_Contextus_Canonicus_Trawin_Zero_Point.tex,1824,batch001_started,first_master_registry_segment,no
-212,proof_obligations,ID0239,ID 239: Buckingham $\Pi$‑Theorem Application,Theorem,Derived_Theorem_Obligation,ID0239,D:\Tex\Opera_Omia_Contextus_Canonicus_Trawin_Zero_Point.tex,2844,queued_for_triage,unclassified,no
+212,proof_obligations,ID0239,ID 239: Buckingham $\Pi$‑Theorem Application,Theorem,Derived_Theorem_Obligation,ID0239,D:\Tex\Opera_Omia_Contextus_Canonicus_Trawin_Zero_Point.tex,2844,triaged_topology_category,topology_category_triage,no
 213,proof_obligations,ID9999,Topological Field Constraint,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,338,batch005_started,topology_vector_segment,no
 214,proof_obligations,ID9999,Spectral Deformation Under Curvature Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,665,batch006_started,operator_spectral_segment,no
-215,proof_obligations,ID9999,Theorem 1: Celestial Gyromagnetic Motion,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\gyromagnetic_validation.tex,432,queued_for_triage,unclassified,no
-216,proof_obligations,ID9999,Theorem 2: Tidal Deformation Amplitude,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,301,queued_for_triage,unclassified,no
-217,proof_obligations,ID9999,Theorem 4: Dipole Constraint Topology,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,338,queued_for_triage,unclassified,no
-218,proof_obligations,ID9999,Universal Criticality,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,359,queued_for_triage,unclassified,no
+215,proof_obligations,ID9999,Theorem 1: Celestial Gyromagnetic Motion,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\gyromagnetic_validation.tex,432,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
+216,proof_obligations,ID9999,Theorem 2: Tidal Deformation Amplitude,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,301,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
+217,proof_obligations,ID9999,Theorem 4: Dipole Constraint Topology,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\trawin_topology_unified_field_theory.tex,338,triaged_topology_category,topology_category_triage,no
+218,proof_obligations,ID9999,Universal Criticality,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,359,triaged_quantum_matter,quantum_matter_triage,no
 219,proof_obligations,ID9999,Generalized Helicity Conservation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,172,batch005_started,topology_vector_segment,no
-220,proof_obligations,ID9999,Spiral Pitch Angle from Accumulated Curvature,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,205,queued_for_triage,unclassified,no
+220,proof_obligations,ID9999,Spiral Pitch Angle from Accumulated Curvature,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,205,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
 221,proof_obligations,ID9999,Opposite Helicity Conservation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,269,batch005_started,topology_vector_segment,no
-222,proof_obligations,ID9999,"Theorem (Woltjer, 1958)",Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\mathematical_formulation.tex,236,queued_for_triage,unclassified,no
-223,proof_obligations,ID9999,Theorem: Curvature Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,74,queued_for_triage,unclassified,no
-224,proof_obligations,ID9999,Accumulated Force Functional,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,98,queued_for_triage,unclassified,no
+222,proof_obligations,ID9999,"Theorem (Woltjer, 1958)",Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\mathematical_formulation.tex,236,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+223,proof_obligations,ID9999,Theorem: Curvature Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,74,triaged_geometry_curvature,geometry_curvature_triage,no
+224,proof_obligations,ID9999,Accumulated Force Functional,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,98,triaged_dynamics_stability,dynamics_stability_triage,no
 225,proof_obligations,ID9999,Chern Number Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,611,batch005_started,topology_vector_segment,no
 226,proof_obligations,ID9999,Curvature-Induced Spectral Deformation,Theorem,Needs_Semantic_Translation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,489,batch006_started,operator_spectral_segment,no
-227,proof_obligations,ID9999,Fine Structure from Topology,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\theory_of_it_all_trawin_topology (2).tex,171,queued_for_triage,unclassified,no
-228,proof_obligations,ID9999,Magnon-Phonon Interaction,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,273,queued_for_triage,unclassified,no
+227,proof_obligations,ID9999,Fine Structure from Topology,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\theory_of_it_all_trawin_topology (2).tex,171,triaged_topology_category,topology_category_triage,no
+228,proof_obligations,ID9999,Magnon-Phonon Interaction,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,273,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 229,proof_obligations,ID9999,Spectral Gap Under Positive Curvature,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,922,batch006_started,operator_spectral_segment,no
 230,proof_obligations,ID9999,Theorem 3 (Information-Theoretic Lower Bound).,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\pi_slide.tex,529,batch004_started,remaining_candidate_real_algebra,no
-231,proof_obligations,ID9999,Universal Toroidal Constraint,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\theory_of_it_all_trawin_topology (2).tex,139,queued_for_triage,unclassified,no
-232,proof_obligations,ID9999,Adjoint Functor Reconstruction,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,312,queued_for_triage,unclassified,no
-233,proof_obligations,ID9999,KK Mode Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\reverse_harmonics_publication.tex,241,queued_for_triage,unclassified,no
-234,proof_obligations,ID9999,Dimensional Access Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,180,queued_for_triage,unclassified,no
-235,proof_obligations,ID9999,Discrete Dark Matter Distribution,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,406,queued_for_triage,unclassified,no
-236,proof_obligations,ID9999,Elsasser Universality,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,212,queued_for_triage,unclassified,no
-237,proof_obligations,ID9999,Geometric Flow Dynamics,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,141,queued_for_triage,unclassified,no
-238,proof_obligations,ID9999,Universal Critical Exponent,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,306,queued_for_triage,unclassified,no
-239,proof_obligations,ID9999,Hamilton’s Equations,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\refactored_derivations.tex,212,queued_for_triage,unclassified,no
+231,proof_obligations,ID9999,Universal Toroidal Constraint,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\theory_of_it_all_trawin_topology (2).tex,139,triaged_topology_category,topology_category_triage,no
+232,proof_obligations,ID9999,Adjoint Functor Reconstruction,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,312,triaged_topology_category,topology_category_triage,no
+233,proof_obligations,ID9999,KK Mode Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\reverse_harmonics_publication.tex,241,triaged_operator_spectral_mode,operator_spectral_triage,no
+234,proof_obligations,ID9999,Dimensional Access Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,180,triaged_topology_category,topology_category_triage,no
+235,proof_obligations,ID9999,Discrete Dark Matter Distribution,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,406,triaged_quantum_matter,quantum_matter_triage,no
+236,proof_obligations,ID9999,Elsasser Universality,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,212,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+237,proof_obligations,ID9999,Geometric Flow Dynamics,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,141,triaged_dynamics_stability,dynamics_stability_triage,no
+238,proof_obligations,ID9999,Universal Critical Exponent,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,306,triaged_quantum_matter,quantum_matter_triage,no
+239,proof_obligations,ID9999,Hamilton’s Equations,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\refactored_derivations.tex,212,triaged_operator_spectral_mode,operator_spectral_triage,no
 240,proof_obligations,ID9999,Helicity Conservation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,305,batch005_started,topology_vector_segment,no
 241,proof_obligations,ID1802,Topological Protection,Theorem,Derived_Theorem_Obligation,ID1802,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,953,batch005_started,topology_vector_segment,no
-242,proof_obligations,ID9999,Alfvén Mode Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,56,queued_for_triage,unclassified,no
-243,proof_obligations,ID9999,Accumulation Dynamics,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,109,queued_for_triage,unclassified,no
-244,proof_obligations,ID9999,Emergence Criterion,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,385,queued_for_triage,unclassified,no
-245,proof_obligations,ID9999,Global Weak Existence,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,739,queued_for_triage,unclassified,no
+242,proof_obligations,ID9999,Alfvén Mode Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,56,triaged_operator_spectral_mode,operator_spectral_triage,no
+243,proof_obligations,ID9999,Accumulation Dynamics,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,109,triaged_dynamics_stability,dynamics_stability_triage,no
+244,proof_obligations,ID9999,Emergence Criterion,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,385,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
+245,proof_obligations,ID9999,Global Weak Existence,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,739,triaged_dynamics_stability,dynamics_stability_triage,no
 246,proof_obligations,ID0137,Theorem 2: Megastructure Formation,Theorem,Derived_Theorem_Obligation,ID0137,D:\Tex\gyromagnetic_validation.tex,454,batch001_started,first_master_registry_segment,no
-247,proof_obligations,ID0239,ID 239: Buckingham $\Pi$â€‘Theorem Application,Theorem,Derived_Theorem_Obligation,ID0239,D:\Tex\Registriy00.tex,2847,queued_for_triage,unclassified,no
-248,proof_obligations,ID0239,ID 239: Buckingham Π‑Theorem Application,Theorem,Derived_Theorem_Obligation,ID0239,D:\Tex\TEX_20260224_182530\minimal_output.tex,2521,queued_for_triage,unclassified,no
-249,proof_obligations,ID9579,Adjoint Functor Correspondence,Theorem,Derived_Theorem_Obligation,ID9579,D:\Tex\All_tex\reverse_harmonics_publication.tex,73,queued_for_triage,unclassified,no
+247,proof_obligations,ID0239,ID 239: Buckingham $\Pi$â€‘Theorem Application,Theorem,Derived_Theorem_Obligation,ID0239,D:\Tex\Registriy00.tex,2847,triaged_topology_category,topology_category_triage,no
+248,proof_obligations,ID0239,ID 239: Buckingham Π‑Theorem Application,Theorem,Derived_Theorem_Obligation,ID0239,D:\Tex\TEX_20260224_182530\minimal_output.tex,2521,triaged_topology_category,topology_category_triage,no
+249,proof_obligations,ID9579,Adjoint Functor Correspondence,Theorem,Derived_Theorem_Obligation,ID9579,D:\Tex\All_tex\reverse_harmonics_publication.tex,73,triaged_topology_category,topology_category_triage,no
 250,proof_obligations,ID9999,Dissipative Energy Decay,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,700,batch004_started,remaining_candidate_real_algebra,no
-251,proof_obligations,ID9999,Dissipative Stability,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,553,queued_for_triage,unclassified,no
-252,proof_obligations,ID9999,First-Order Orbital Shift,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1275,queued_for_triage,unclassified,no
-253,proof_obligations,ID5758,Flux Tunneling,Theorem,Derived_Theorem_Obligation,ID5758,D:\Tex\TEX_20260224_182530\topological_quantum_storage_paper (2).tex,73,queued_for_triage,unclassified,no
-254,proof_obligations,ID9999,Global Phase Symmetry,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,863,queued_for_triage,unclassified,no
-255,proof_obligations,ID9999,Harmonic-KK Resonance,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,331,queued_for_triage,unclassified,no
+251,proof_obligations,ID9999,Dissipative Stability,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,553,triaged_dynamics_stability,dynamics_stability_triage,no
+252,proof_obligations,ID9999,First-Order Orbital Shift,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1275,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
+253,proof_obligations,ID5758,Flux Tunneling,Theorem,Derived_Theorem_Obligation,ID5758,D:\Tex\TEX_20260224_182530\topological_quantum_storage_paper (2).tex,73,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+254,proof_obligations,ID9999,Global Phase Symmetry,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,863,triaged_topology_category,topology_category_triage,no
+255,proof_obligations,ID9999,Harmonic-KK Resonance,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\MagnetoAcousticTopologyAndDimensionalResonance.tex,331,triaged_operator_spectral_mode,operator_spectral_triage,no
 256,proof_obligations,ID0522,ID 0522: THE UNIFIED ENTANGLEMENT META-THEOREM,Theorem,Derived_Theorem_Obligation,ID0522,D:\Tex\TEX_20260224_182530\CanonicalRegistryVol01_1_math_verify_run_5.tex,1441,batch001_started,first_master_registry_segment,no
-257,proof_obligations,ID9999,Logarithmic Local Uniqueness Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\pi_slide.tex,274,queued_for_triage,unclassified,no
-258,proof_obligations,ID9999,Numerical Stability Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1131,queued_for_triage,unclassified,no
+257,proof_obligations,ID9999,Logarithmic Local Uniqueness Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\pi_slide.tex,274,triaged_dynamics_stability,dynamics_stability_triage,no
+258,proof_obligations,ID9999,Numerical Stability Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1131,triaged_dynamics_stability,dynamics_stability_triage,no
 259,proof_obligations,ID9999,Theorem 1 (Local Uniqueness Bound).,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\pi_slide.tex,276,batch004_started,remaining_candidate_real_algebra,no
 260,proof_obligations,ID0522,[ID 522] THE UNIFIED ENTANGLEMENT META-THEOREM,Theorem,Derived_Theorem_Obligation,ID0522,D:\Tex\CanonicalRegistryVol01.tex,2225,batch001_started,first_master_registry_segment,no
-261,proof_obligations,ID9999,Theorem: Infinite-Order Phase Transitions,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,65,queued_for_triage,unclassified,no
-262,proof_obligations,ID9999,Dipole Non-Annihilation Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,337,queued_for_triage,unclassified,no
-263,proof_obligations,ID3322,Encoding-Decoding Adjunction,Theorem,Derived_Theorem_Obligation,ID3322,D:\Tex\All_tex\QuantumTopoHoloNavSystem.tex,1,queued_for_triage,unclassified,no
+261,proof_obligations,ID9999,Theorem: Infinite-Order Phase Transitions,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,65,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
+262,proof_obligations,ID9999,Dipole Non-Annihilation Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\topological_unification.tex,337,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+263,proof_obligations,ID3322,Encoding-Decoding Adjunction,Theorem,Derived_Theorem_Obligation,ID3322,D:\Tex\All_tex\QuantumTopoHoloNavSystem.tex,1,triaged_topology_category,topology_category_triage,no
 264,proof_obligations,ID9999,Linear Dispersion Relation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1012,batch004_started,remaining_candidate_real_algebra,no
-265,proof_obligations,ID9999,Linear Stability Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1044,queued_for_triage,unclassified,no
-266,proof_obligations,ID9999,Newtonian Limit Recovery,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1337,queued_for_triage,unclassified,no
-267,proof_obligations,ID9999,Nonlinear Dispersion Shift,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1064,queued_for_triage,unclassified,no
-268,proof_obligations,ID9999,Phase-Locking Bifurcation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,787,queued_for_triage,unclassified,no
-269,proof_obligations,ID9999,Pitchfork Bifurcation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1239,queued_for_triage,unclassified,no
-270,proof_obligations,ID9999,Quantum Violation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\topological_quantum_storage_paper (2).tex,196,queued_for_triage,unclassified,no
-271,proof_obligations,ID9999,Resonance Capture Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1205,queued_for_triage,unclassified,no
-272,proof_obligations,ID9999,Sufficient Condition for Phase Locking,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document3.tex,223,queued_for_triage,unclassified,no
-273,proof_obligations,ID9999,Surface Dominance Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\programmable_pathway_to_induce_structured_hyper_spherical_states.tex,126,queued_for_triage,unclassified,no
-274,proof_obligations,ID9999,Theorem: Lemniscate Saddle Points,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,50,queued_for_triage,unclassified,no
+265,proof_obligations,ID9999,Linear Stability Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1044,triaged_dynamics_stability,dynamics_stability_triage,no
+266,proof_obligations,ID9999,Newtonian Limit Recovery,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1337,triaged_dynamics_stability,dynamics_stability_triage,no
+267,proof_obligations,ID9999,Nonlinear Dispersion Shift,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1064,triaged_dynamics_stability,dynamics_stability_triage,no
+268,proof_obligations,ID9999,Phase-Locking Bifurcation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,787,triaged_resonance_locking,resonance_locking_triage,no
+269,proof_obligations,ID9999,Pitchfork Bifurcation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1239,triaged_resonance_locking,resonance_locking_triage,no
+270,proof_obligations,ID9999,Quantum Violation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\topological_quantum_storage_paper (2).tex,196,triaged_quantum_matter,quantum_matter_triage,no
+271,proof_obligations,ID9999,Resonance Capture Condition,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1205,triaged_resonance_locking,resonance_locking_triage,no
+272,proof_obligations,ID9999,Sufficient Condition for Phase Locking,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document3.tex,223,triaged_resonance_locking,resonance_locking_triage,no
+273,proof_obligations,ID9999,Surface Dominance Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\programmable_pathway_to_induce_structured_hyper_spherical_states.tex,126,triaged_topology_category,topology_category_triage,no
+274,proof_obligations,ID9999,Theorem: Lemniscate Saddle Points,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,50,triaged_resonance_locking,resonance_locking_triage,no
 275,proof_obligations,ID0137,ID 0137: Megastructure Formation Theorem,Theorem,Derived_Theorem_Obligation,ID0137,D:\Tex\TEX_20260224_182530\Registriy00_math_verify_run_1.tex,3259,batch001_started,first_master_registry_segment,no
-276,proof_obligations,ID9999,Numerical Stability Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1110,queued_for_triage,unclassified,no
-277,proof_obligations,ID3902,Spectral Gap Theorem,Theorem,Derived_Theorem_Obligation,ID3902,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,920,queued_for_triage,unclassified,no
+276,proof_obligations,ID9999,Numerical Stability Theorem,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1110,triaged_dynamics_stability,dynamics_stability_triage,no
+277,proof_obligations,ID3902,Spectral Gap Theorem,Theorem,Derived_Theorem_Obligation,ID3902,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,920,triaged_operator_spectral_mode,operator_spectral_triage,no
 278,statement_inventory,ID0137,ID0137: Megastructure Formation Theorem,Theorem,,ID0137,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID0137,139,batch001_started,first_master_registry_segment,no
 279,statement_inventory,ID0234,ID0234: Helicity Topology Invariant,Theorem,,ID0234,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID0234,236,batch001_started,first_master_registry_segment,no
 280,statement_inventory,ID0399,ID0399: Information Conservation and Holographic Preservation,Theorem,,ID0399,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID0399,401,batch001_started,first_master_registry_segment,no
 281,statement_inventory,ID0522,ID0522: The Unified Entanglement Meta-Theorem,Theorem,,ID0522,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID0522,524,batch001_started,first_master_registry_segment,no
 282,statement_inventory,ID10072,ID10072: Hamiltonian and Equations of Motion: (Dq)/(Dt),Theorem,,ID10072,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10072,9559,batch006_started,operator_spectral_segment,no
-283,statement_inventory,ID10098,ID10098: Categorical Framework for Reverse Harmonics: X in catField_phys,Theorem,,ID10098,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10098,9585,queued_for_triage,unclassified,no
-284,statement_inventory,ID10099,ID10099: Categorical Framework for Reverse Harmonics: Y in catSpec_obs,Theorem,,ID10099,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10099,9586,queued_for_triage,unclassified,no
+283,statement_inventory,ID10098,ID10098: Categorical Framework for Reverse Harmonics: X in catField_phys,Theorem,,ID10098,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10098,9585,triaged_topology_category,topology_category_triage,no
+284,statement_inventory,ID10099,ID10099: Categorical Framework for Reverse Harmonics: Y in catSpec_obs,Theorem,,ID10099,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10099,9586,triaged_topology_category,topology_category_triage,no
 285,statement_inventory,ID10104,ID10104: SM5.1 Proof of Energy Conservation in S³,Theorem,,ID10104,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10104,9591,batch003_started,candidate_real_algebra_segment,no
-286,statement_inventory,ID10147,ID10147: Bell Inequality: |φ_helix| < π/2,Theorem,,ID10147,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10147,9634,queued_for_triage,unclassified,no
-287,statement_inventory,ID10244,ID10244: Theorem 2: Tidal Deformation Amplitude,Theorem,,ID10244,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10244,9731,queued_for_triage,unclassified,no
-288,statement_inventory,ID10247,ID10247: Theorem 1: Wavelength Quantization: oint_S^1 K· Dl,Theorem,,ID10247,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10247,9734,queued_for_triage,unclassified,no
+286,statement_inventory,ID10147,ID10147: Bell Inequality: |φ_helix| < π/2,Theorem,,ID10147,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10147,9634,triaged_quantum_matter,quantum_matter_triage,no
+287,statement_inventory,ID10244,ID10244: Theorem 2: Tidal Deformation Amplitude,Theorem,,ID10244,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10244,9731,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
+288,statement_inventory,ID10247,ID10247: Theorem 1: Wavelength Quantization: oint_S^1 K· Dl,Theorem,,ID10247,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10247,9734,triaged_operator_spectral_mode,operator_spectral_triage,no
 289,statement_inventory,ID10250,ID10250: Theorem 5: Quantum Flux Quantization: Φ_oplus ∼ 4× 10^22 Φ_0.,Theorem,,ID10250,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10250,9737,batch005_started,topology_vector_segment,no
 290,statement_inventory,ID10253,ID10253: Theorem 3: Beat Frequency Mechanism: T_semi,Theorem,,ID10253,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10253,9740,batch006_started,operator_spectral_segment,no
-291,statement_inventory,ID10257,ID10257: Theorem 2: Tidal Deformation Amplitude: ε,Theorem,,ID10257,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10257,9744,queued_for_triage,unclassified,no
+291,statement_inventory,ID10257,ID10257: Theorem 2: Tidal Deformation Amplitude: ε,Theorem,,ID10257,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID10257,9744,triaged_orbital_gyromagnetic,orbital_gyromagnetic_triage,no
 292,statement_inventory,ID1204,ID1204: Configuration Force Bundle,Theorem,,ID1204,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID1204,1204,batch001_started,first_master_registry_segment,no
 293,statement_inventory,ID1585,ID1585: EID_0328 Helicity Coupling Source,Theorem,,ID1585,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID1585,1583,batch001_started,first_master_registry_segment,no
 294,statement_inventory,ID1693,ID1693: Configuration Force Bundle,Theorem,,ID1693,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID1693,1691,batch001_started,first_master_registry_segment,no
@@ -337,22 +337,22 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 336,statement_inventory,ID4195,ID4195: Potential Energy Relation,Theorem,,ID4195,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4195,3812,batch002_started,spectral_helicity_kk_segment,no
 337,statement_inventory,ID4201,ID4201: Rho Dark Apparent Relation,Theorem,,ID4201,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4201,3818,batch003_started,candidate_real_algebra_segment,no
 338,statement_inventory,ID4202,ID4202: Eigenvalue,Theorem,,ID4202,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4202,3819,batch006_started,operator_spectral_segment,no
-339,statement_inventory,ID4206,ID4206: Solar Laplacian Operator,Theorem,,ID4206,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4206,3823,queued_for_triage,unclassified,no
+339,statement_inventory,ID4206,ID4206: Solar Laplacian Operator,Theorem,,ID4206,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4206,3823,triaged_operator_spectral_mode,operator_spectral_triage,no
 340,statement_inventory,ID4213,ID4213: Breathing Mode Frequency Relation,Theorem,,ID4213,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4213,3830,batch006_started,operator_spectral_segment,no
-341,statement_inventory,ID4214,ID4214: Density,Theorem,,ID4214,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4214,3831,queued_for_triage,unclassified,no
+341,statement_inventory,ID4214,ID4214: Density,Theorem,,ID4214,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4214,3831,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 342,statement_inventory,ID4215,ID4215: Magnetic Helicity Functional Correction,Theorem,,ID4215,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4215,3832,batch005_started,topology_vector_segment,no
 343,statement_inventory,ID4216,ID4216: Sideband Pi Relation,Theorem,,ID4216,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4216,3833,batch003_started,candidate_real_algebra_segment,no
 344,statement_inventory,ID4217,ID4217: Chemical Potential Relation,Theorem,,ID4217,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4217,3834,batch003_started,candidate_real_algebra_segment,no
-345,statement_inventory,ID4223,ID4223: Irrotational Magnetic Field Curl Field Equation,Theorem,,ID4223,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4223,3840,queued_for_triage,unclassified,no
-346,statement_inventory,ID4224,ID4224: Magnetic Field,Theorem,,ID4224,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4224,3841,queued_for_triage,unclassified,no
+345,statement_inventory,ID4223,ID4223: Irrotational Magnetic Field Curl Field Equation,Theorem,,ID4223,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4223,3840,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+346,statement_inventory,ID4224,ID4224: Magnetic Field,Theorem,,ID4224,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4224,3841,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 347,statement_inventory,ID4225,ID4225: Delta Scaling Law,Theorem,,ID4225,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4225,3842,batch003_started,candidate_real_algebra_segment,no
-348,statement_inventory,ID4229,ID4229: Dark Magnetic Flux Expansion,Theorem,,ID4229,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4229,3846,queued_for_triage,unclassified,no
+348,statement_inventory,ID4229,ID4229: Dark Magnetic Flux Expansion,Theorem,,ID4229,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4229,3846,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 349,statement_inventory,ID4231,ID4231: Alfvn Alfven Relation,Theorem,,ID4231,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4231,3848,batch003_started,candidate_real_algebra_segment,no
 350,statement_inventory,ID4233,ID4233: Chern Magnetic Field Curl Field Equation,Theorem,,ID4233,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4233,3850,batch005_started,topology_vector_segment,no
 351,statement_inventory,ID4252,ID4252: Magnetic Helicity Evolution Evolution Relation,Theorem,,ID4252,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4252,3869,batch005_started,topology_vector_segment,no
 352,statement_inventory,ID4256,ID4256: Magnetic Helicity Evolution Evolution Relation,Theorem,,ID4256,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4256,3873,batch005_started,topology_vector_segment,no
-353,statement_inventory,ID4363,ID4363: Quadrupole Magnetic Field,Theorem,,ID4363,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4363,3980,queued_for_triage,unclassified,no
-354,statement_inventory,ID4698,ID4698: Gyromagnetic Berry Phase,Theorem,,ID4698,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4698,4314,queued_for_triage,unclassified,no
+353,statement_inventory,ID4363,ID4363: Quadrupole Magnetic Field,Theorem,,ID4363,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4363,3980,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+354,statement_inventory,ID4698,ID4698: Gyromagnetic Berry Phase,Theorem,,ID4698,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4698,4314,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 355,statement_inventory,ID4700,ID4700: Text Magnetic Flux Relation,Theorem,,ID4700,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4700,4316,batch003_started,candidate_real_algebra_segment,no
 356,statement_inventory,ID4708,ID4708: Magnetic Helicity Evolution Evolution Relation,Theorem,,ID4708,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4708,4324,batch005_started,topology_vector_segment,no
 357,statement_inventory,ID4710,ID4710: Kaluza-Klein Magnetic Flux Expansion,Theorem,,ID4710,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID4710,4326,batch006_started,operator_spectral_segment,no
@@ -364,8 +364,8 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 363,statement_inventory,ID5744,ID5744: Hamiltonian Evolution Equation,Theorem,,ID5744,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5744,5250,batch006_started,operator_spectral_segment,no
 364,statement_inventory,ID5751,ID5751: Helix Action Bound,Theorem,,ID5751,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5751,5257,batch003_started,candidate_real_algebra_segment,no
 365,statement_inventory,ID5797,ID5797: Pressure Relation,Theorem,,ID5797,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5797,5303,batch003_started,candidate_real_algebra_segment,no
-366,statement_inventory,ID5802,ID5802: Torsion Evolution Equation,Theorem,,ID5802,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5802,5308,queued_for_triage,unclassified,no
-367,statement_inventory,ID5803,ID5803: Pattern Torsion Functional,Theorem,,ID5803,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5803,5309,queued_for_triage,unclassified,no
+366,statement_inventory,ID5802,ID5802: Torsion Evolution Equation,Theorem,,ID5802,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5802,5308,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
+367,statement_inventory,ID5803,ID5803: Pattern Torsion Functional,Theorem,,ID5803,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5803,5309,triaged_field_magnetic_torsion,field_magnetic_torsion_triage,no
 368,statement_inventory,ID5806,ID5806: Kaluza-Klein Pi Bound,Theorem,,ID5806,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5806,5312,batch006_started,operator_spectral_segment,no
 369,statement_inventory,ID5812,ID5812: North Hamiltonian,Theorem,,ID5812,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5812,5318,batch006_started,operator_spectral_segment,no
 370,statement_inventory,ID5813,ID5813: Cent Field Strength Relation,Theorem,,ID5813,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID5813,5319,batch003_started,candidate_real_algebra_segment,no
@@ -375,7 +375,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 374,statement_inventory,ID6092,ID6092: Energy Relation,Theorem,,ID6092,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID6092,5589,batch003_started,candidate_real_algebra_segment,no
 375,statement_inventory,ID6488,ID6488: III. Helicity Transfer Reversal (Theorem Inversion) (1),Theorem,,ID6488,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID6488,5975,batch005_started,topology_vector_segment,no
 376,statement_inventory,ID7754,ID7754: III. Helicity Transfer Reversal (Theorem Inversion) (2),Theorem,,ID7754,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID7754,7241,batch005_started,topology_vector_segment,no
-377,statement_inventory,ID8520,ID8520: TIDAL WAVELENGTH QUANTIZATION Canonical Statutory Formula: λ_tidal,Theorem,,ID8520,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID8520,8007,queued_for_triage,unclassified,no
+377,statement_inventory,ID8520,ID8520: TIDAL WAVELENGTH QUANTIZATION Canonical Statutory Formula: λ_tidal,Theorem,,ID8520,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID8520,8007,triaged_operator_spectral_mode,operator_spectral_triage,no
 378,statement_inventory,ID8521,ID8521: SEMIDIURNAL BEAT FREQUENCY Canonical Statutory Formula: ω_beat,Theorem,,ID8521,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID8521,8008,batch006_started,operator_spectral_segment,no
 379,statement_inventory,ID8522,ID8522: DIPOLE TOPOLOGICAL CONSTRAINT Canonical Statutory Formula,Theorem,,ID8522,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID8522,8009,batch005_started,topology_vector_segment,no
 380,statement_inventory,ID8523,ID8523: MACROSCOPIC FLUX QUANTIZATION Canonical Statutory Formula: Φ_mag,Theorem,,ID8523,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID8523,8010,batch005_started,topology_vector_segment,no
@@ -383,8 +383,8 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 382,statement_inventory,ID9005,"ID9005: Relation: H^3(M, U(1)) Neq 0",Theorem,,ID9005,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9005,8492,batch003_started,candidate_real_algebra_segment,no
 383,statement_inventory,ID9157,"ID9157: Relation: R_universe / N, Where R_universe Is the Hubble Radius. for N of Order Unity",Theorem,,ID9157,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9157,8644,batch003_started,candidate_real_algebra_segment,no
 384,statement_inventory,ID9291,ID9291: Relation: τdecoherence/(kBT)τ_decoherence,Theorem,,ID9291,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9291,8778,batch003_started,candidate_real_algebra_segment,no
-385,statement_inventory,ID9529,ID9529: Infinite-Order Phase Transition: R → r_TZP,Theorem,,ID9529,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9529,9016,queued_for_triage,unclassified,no
-386,statement_inventory,ID9595,ID9595: 4D Effective Theory Each Mode $Phin$ Appears as Massive Field: R_KK ∼ 10^-6,Theorem,,ID9595,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9595,9082,queued_for_triage,unclassified,no
+385,statement_inventory,ID9529,ID9529: Infinite-Order Phase Transition: R → r_TZP,Theorem,,ID9529,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9529,9016,triaged_emergence_bifurcation,emergence_bifurcation_triage,no
+386,statement_inventory,ID9595,ID9595: 4D Effective Theory Each Mode $Phin$ Appears as Massive Field: R_KK ∼ 10^-6,Theorem,,ID9595,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9595,9082,triaged_operator_spectral_mode,operator_spectral_triage,no
 387,statement_inventory,ID9618,ID9618: Relation: ε: ε_encode Circ δ_decode Rightarrow Id_DAAN,Theorem,,ID9618,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9618,9105,batch003_started,candidate_real_algebra_segment,no
 388,statement_inventory,ID9619,ID9619: Relation: η: Id_Blob Rightarrow δ_decode Circ ε_encode,Theorem,,ID9619,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9619,9106,batch003_started,candidate_real_algebra_segment,no
 389,statement_inventory,ID9633,ID9633: Relation: ⟨ ε_encode Dashv δ_decode ⟩,Theorem,,ID9633,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9633,9120,batch003_started,candidate_real_algebra_segment,no
@@ -393,6 +393,6 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 392,statement_inventory,ID9887,ID9887: Relation: O(n^π-3),Theorem,,ID9887,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9887,9374,batch003_started,candidate_real_algebra_segment,no
 393,statement_inventory,ID9902,"ID9902: Relation: π,Δ_topological/N_max",Theorem,,ID9902,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9902,9389,batch005_started,topology_vector_segment,no
 394,statement_inventory,ID9931,"ID9931: Relation: Ω[T^2 × T^2, π, DAAN]",Theorem,,ID9931,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9931,9418,batch003_started,candidate_real_algebra_segment,no
-395,statement_inventory,ID9973,ID9973: Spectral Inversion Theory: S_obs(ω),Theorem,,ID9973,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9973,9460,queued_for_triage,unclassified,no
+395,statement_inventory,ID9973,ID9973: Spectral Inversion Theory: S_obs(ω),Theorem,,ID9973,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9973,9460,triaged_operator_spectral_mode,operator_spectral_triage,no
 396,statement_inventory,ID9989,ID9989: Toroidal Boundary Condition: ∫∫_T^2 K DA,Theorem,,ID9989,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9989,9476,batch003_started,candidate_real_algebra_segment,no
 397,statement_inventory,ID9990,ID9990: Topological Constraints: ∫∫_Σ K DA + ∫_∂Σ κ_g Ds,Theorem,,ID9990,TZPID_ALL_IDS_CANONICAL_EQUATION_MASTER_with_export.csv#ID9990,9477,batch005_started,topology_vector_segment,no
