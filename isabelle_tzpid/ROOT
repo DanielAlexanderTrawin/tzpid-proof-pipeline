@@ -1,4 +1,4 @@
-session TZPID = HOL +
+session TZPID = "HOL-Analysis" +
   options [document = false]
   theories
     TZPID_Manifest
@@ -13,6 +13,7 @@ session TZPID = HOL +
     TZPID_HypersphericalBesselResidualBridge_Computational_Checks
     TZPID_HypersphericalBesselResidualBridge_Math_Checks
     TZPID_HypersphericalBesselResidualBridge_Phase2_Model
+    TZPID_Temporal_Kernel_HOL_Analysis
     TZPID_TopologicalUnification_Focus
     TZPID_NewSpines_Computational_Checks
     TZPID_ZenodoSpines_Focus
