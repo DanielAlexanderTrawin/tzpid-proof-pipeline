@@ -23,7 +23,7 @@ Generated: 2026-06-07
 | batch009_started | 13 |
 | batch010_started | 13 |
 | batch014_started | 11 |
-| triaged_emergence_bifurcation | 7 |
+| batch015_started | 7 |
 | batch004_started | 7 |
 | triaged_quantum_matter | 7 |
 | triaged_orbital_gyromagnetic | 7 |
@@ -48,7 +48,7 @@ Generated: 2026-06-07
 | dynamics_scaling_segment | 13 |
 | meta_foundation_segment | 13 |
 | dynamics_stability_followup_segment | 11 |
-| emergence_bifurcation_triage | 7 |
+| emergence_bifurcation_followup_segment | 7 |
 | remaining_candidate_real_algebra | 7 |
 | quantum_matter_triage | 7 |
 | orbital_gyromagnetic_triage | 7 |
@@ -78,4 +78,5 @@ Rows marked `batch011_started` are the magnetic/torsion segment now translated t
 Rows marked `batch012_started` are the operator/spectral follow-up rows now translated through the operator-spectral scaffold.
 Rows marked `batch013_started` are the topology/category follow-up rows now translated through the category/topology scaffold.
 Rows marked `batch014_started` are the dynamics/stability follow-up rows now translated through the dynamics-stability scaffold.
+Rows marked `batch015_started` are the emergence/bifurcation follow-up rows now translated through the TZP emergence scaffold.
 Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.
