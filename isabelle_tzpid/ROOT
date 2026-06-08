@@ -32,6 +32,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_GyromagneticMovement_VectorCalculus
     TZPID_GyromagneticMovement_MHD_Helicity
     TZPID_GyromagneticMovement_SpatialBoundary
+    TZPID_GyromagneticMovement_CirculationDiagnostic
     TZPID_PhaseLockingResonance_Focus
     TZPID_PhaseLockingResonance_Computational_Checks
     TZPID_PhaseLockingResonance_Typed_RatioSelection
