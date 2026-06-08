@@ -42,7 +42,7 @@ Generated: 2026-06-07
 |---|---|---:|---|---|---|---|---|---|
 | Hyperspherical Bessel residual bridge | paper_core | 6 | hol_analysis_integral_bessel_policy_delta_alpha_phase3_contract | clean_build | yes | critical | phase2_5_phase3_observable_contract_locked | Next lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics. |
 | Nested hyperspherical enclosure | gold_spine | n/a | focus_certificate_plus_typed_projection_map | clean_build | yes | critical | typed_projection_map_locked | Next enrich the projection carrier from finite-coordinate algebra into topology/continuity and explicit Hopf fibration semantics. |
-| Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_clean_followup | clean_build | yes | critical | phase2_strengthen | Move legacy focus lemmas away from abstract predicates into the Batch016 algebraic gyromagnetic/orbital model. |
+| Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_clean_followup_plus_phase4_phase_gradient_pin | clean_build | yes | critical | phase4_phase_gradient_locked | Next lift the nonzero angular-momentum witness into vector calculus, helicity-integral, and MHD-style gyromagnetic semantics. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_clean_followup | clean_build | yes | high | phase2_strengthen | Add coupled-oscillator stability and threshold inequalities beyond residual/guard semantics. |
 | Magnetic/torsion | domain_model | 21 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar helicity/torsion guards with vector-calculus and MHD-style integral semantics. |
 | Emergence/bifurcation | domain_model | 7 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Formalize bifurcation normal forms, infinite-order transition behavior, and asymptotic emergence thresholds. |
@@ -72,7 +72,7 @@ Generated: 2026-06-07
 | Rank | Family | Reason | First Upgrade |
 |---:|---|---|---|
 | 1 | Hyperspherical Bessel residual bridge | Paper core with concrete algebra and certificates already present. | The kernel integral is proved in HOL-Analysis; Bessel roots are an explicit external Wolfram interval-certificate policy; the drop fraction induces a HOL-proved Delta-alpha phase-gradient and shell-radius prediction; exported Delta-alpha arrays reproduce the predicted shell radii; and the Phase3 HDF5 psi field is locked by an Isabelle observable contract. |
-| 2 | Gyromagnetic movement | Central movement-mechanism spine and already has Wolfram-backed checks. | Replace legacy abstract focus predicates with the cleaner Batch016 algebraic movement semantics. |
+| 2 | Gyromagnetic movement | Central movement-mechanism spine with Wolfram-backed checks and a Phase 4 HDF5 bridge. | Extend the locked Bessel-to-phase-gradient-to-Lz witness into vector calculus, helicity-integral, and MHD-style semantics. |
 | 3 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics. | Add coupled-oscillator threshold inequalities and stability conditions. |
 | 4 | Emergence/bifurcation | Core TZP emergence story; currently guard-level but high paper value. | Formalize a bifurcation normal form and infinite-order transition boundary. |
 | 5 | Magnetic/torsion | High-value bridge between gyromagnetic motion, helicity, Elsasser balance, and matter dynamics. | Move helicity and torsion from scalar guards toward vector-calculus/MHD semantics. |
@@ -84,7 +84,7 @@ Generated: 2026-06-07
 |---|---:|---:|---:|---:|---:|
 | Hyperspherical Bessel residual bridge | 57 | 66 | 26 | 5 | 0 |
 | Nested hyperspherical enclosure | 20 | 30 | 9 | 35 | 22 |
-| Gyromagnetic movement | 18 | 29 | 6 | 15 | 19 |
+| Gyromagnetic movement | 29 | 37 | 12 | 15 | 19 |
 | Phase locking resonance | 17 | 25 | 5 | 20 | 15 |
 | Magnetic/torsion | 16 | 29 | 11 | 0 | 0 |
 | Emergence/bifurcation | 8 | 9 | 3 | 0 | 0 |
