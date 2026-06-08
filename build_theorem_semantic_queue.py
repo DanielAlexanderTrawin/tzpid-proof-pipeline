@@ -122,6 +122,10 @@ BATCH018_IDS = {
     "ID9999",
 }
 
+BATCH019_IDS = {
+    "ID9999",
+}
+
 
 TRIAGE_ACTIONS = {
     "emergence_bifurcation_triage": "Batch 011 candidate: bifurcation and emergence semantics.",
@@ -243,6 +247,10 @@ def classify(name: str, role: str, id_: str) -> tuple[str, str]:
         "lemniscate saddle"
     ]):
         return "batch018_started", "resonance_locking_followup_segment"
+    if id_ in BATCH019_IDS and any(k in text for k in [
+        "curvature coupling"
+    ]):
+        return "batch019_started", "geometry_curvature_closeout_segment"
     if any(k in text for k in [
         "phase-locking", "phase locking", "resonance capture",
         "sufficient condition for phase locking", "pitchfork", "lemniscate saddle"
@@ -357,7 +365,18 @@ def main() -> None:
         if r["translation_status"].startswith("triaged_")
     ]
     with OUT_TRIAGE_CSV.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(triage_rows[0].keys()))
+        triage_fieldnames = [
+            "queue_index",
+            "source",
+            "id",
+            "name",
+            "triage_status",
+            "triage_class",
+            "suggested_next_action",
+            "source_file",
+            "line",
+        ]
+        writer = csv.DictWriter(f, fieldnames=triage_fieldnames)
         writer.writeheader()
         writer.writerows(triage_rows)
 
@@ -407,6 +426,7 @@ def main() -> None:
         "Rows marked `batch016_started` are the orbital/gyromagnetic follow-up rows now translated through the movement-mechanism scaffold.",
         "Rows marked `batch017_started` are the quantum/matter follow-up rows now translated through the quantum-matter scaffold.",
         "Rows marked `batch018_started` are the resonance-locking follow-up rows now translated through the phase-locking scaffold.",
+        "Rows marked `batch019_started` are the geometry/curvature closeout rows now translated through the curvature-coupling scaffold.",
         "Rows marked `triaged_*` now have a family classification and should be promoted as named follow-up batches.",
     ])
     OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")

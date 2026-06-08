@@ -221,7 +221,7 @@ queue_index,source,id,name,kind,obligation_role,semantic_anchor_id,source_file,l
 220,proof_obligations,ID9999,Spiral Pitch Angle from Accumulated Curvature,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\emergent_curvature_theory.tex,205,batch016_started,orbital_gyromagnetic_followup_segment,no
 221,proof_obligations,ID9999,Opposite Helicity Conservation,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,269,batch005_started,topology_vector_segment,no
 222,proof_obligations,ID9999,"Theorem (Woltjer, 1958)",Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\mathematical_formulation.tex,236,batch011_started,magnetic_torsion_segment,no
-223,proof_obligations,ID9999,Theorem: Curvature Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,74,triaged_geometry_curvature,geometry_curvature_triage,no
+223,proof_obligations,ID9999,Theorem: Curvature Coupling,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\TEX_20260224_182530\document2.tex,74,batch019_started,geometry_curvature_closeout_segment,no
 224,proof_obligations,ID9999,Accumulated Force Functional,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\All_tex\unified_field_theory_paper.tex,98,batch014_started,dynamics_stability_followup_segment,no
 225,proof_obligations,ID9999,Chern Number Quantization,Theorem,Derived_Theorem_Obligation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,611,batch005_started,topology_vector_segment,no
 226,proof_obligations,ID9999,Curvature-Induced Spectral Deformation,Theorem,Needs_Semantic_Translation,ID9999,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,489,batch006_started,operator_spectral_segment,no

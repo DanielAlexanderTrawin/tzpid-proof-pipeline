@@ -1,2 +1,1 @@
 queue_index,source,id,name,triage_status,triage_class,suggested_next_action,source_file,line
-223,proof_obligations,ID9999,Theorem: Curvature Coupling,triaged_geometry_curvature,geometry_curvature_triage,Promote into a geometry/curvature follow-up or merge with Batch008.,D:\Tex\TEX_20260224_182530\document2.tex,74
