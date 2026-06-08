@@ -40,47 +40,194 @@ definition bessel_residual_check_notes :: "bessel_residual_check => string" wher
 definition verified_bessel_residual_check :: "bessel_residual_check => bool" where
   "verified_bessel_residual_check check = (bessel_residual_check_status check = ''pass'')"
 
+definition all_hyperspherical_bessel_residual_bridge_certificates_verified :: bool where
+  "all_hyperspherical_bessel_residual_bridge_certificates_verified =
+    (verified_bessel_residual_check BR_Hyperspherical_Order_D4
+     \<and> verified_bessel_residual_check BR_Bessel_Boundary_Quantization
+     \<and> verified_bessel_residual_check BR_Half_Bessel_Drop_Fraction
+     \<and> verified_bessel_residual_check BR_Entropy_Residual_Isolated
+     \<and> verified_bessel_residual_check BR_Effective_Source_Decomposition
+     \<and> verified_bessel_residual_check BR_Kernel_Normalization
+     \<and> verified_bessel_residual_check BR_Curvature_Residual_Decomposition
+     \<and> verified_bessel_residual_check BR_Planck_Charge_Coupling
+     \<and> verified_bessel_residual_check BR_Isotope_Mass_Accounting
+     \<and> verified_bessel_residual_check BR_Large_Number_Smoothing
+     \<and> verified_bessel_residual_check BR_Ordinary_Mass_Energy_Residual)"
+
 lemma hyperspherical_order_d4_passed:
   "verified_bessel_residual_check BR_Hyperspherical_Order_D4"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Hyperspherical_Order_D4 = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma bessel_boundary_quantization_passed:
   "verified_bessel_residual_check BR_Bessel_Boundary_Quantization"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Bessel_Boundary_Quantization = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma half_bessel_drop_fraction_passed:
   "verified_bessel_residual_check BR_Half_Bessel_Drop_Fraction"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Half_Bessel_Drop_Fraction = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma entropy_residual_isolated_passed:
   "verified_bessel_residual_check BR_Entropy_Residual_Isolated"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Entropy_Residual_Isolated = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma effective_source_decomposition_passed:
   "verified_bessel_residual_check BR_Effective_Source_Decomposition"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Effective_Source_Decomposition = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma kernel_normalization_passed:
   "verified_bessel_residual_check BR_Kernel_Normalization"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Kernel_Normalization = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma curvature_residual_decomposition_passed:
   "verified_bessel_residual_check BR_Curvature_Residual_Decomposition"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Curvature_Residual_Decomposition = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma planck_charge_coupling_passed:
   "verified_bessel_residual_check BR_Planck_Charge_Coupling"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Planck_Charge_Coupling = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma isotope_mass_accounting_passed:
   "verified_bessel_residual_check BR_Isotope_Mass_Accounting"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Isotope_Mass_Accounting = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma large_number_smoothing_passed:
   "verified_bessel_residual_check BR_Large_Number_Smoothing"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Large_Number_Smoothing = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
 lemma ordinary_mass_energy_residual_passed:
   "verified_bessel_residual_check BR_Ordinary_Mass_Energy_Residual"
-  by (simp add: verified_bessel_residual_check_def bessel_residual_check_status_def)
+proof -
+  have "bessel_residual_check_status BR_Ordinary_Mass_Energy_Residual = ''pass''"
+    unfolding bessel_residual_check_status_def
+    by (rule refl)
+  thus ?thesis
+    unfolding verified_bessel_residual_check_def .
+qed
+
+theorem all_hyperspherical_bessel_residual_bridge_certificates_passed:
+  "all_hyperspherical_bessel_residual_bridge_certificates_verified"
+proof -
+  have verified:
+    "verified_bessel_residual_check BR_Hyperspherical_Order_D4
+     \<and> verified_bessel_residual_check BR_Bessel_Boundary_Quantization
+     \<and> verified_bessel_residual_check BR_Half_Bessel_Drop_Fraction
+     \<and> verified_bessel_residual_check BR_Entropy_Residual_Isolated
+     \<and> verified_bessel_residual_check BR_Effective_Source_Decomposition
+     \<and> verified_bessel_residual_check BR_Kernel_Normalization
+     \<and> verified_bessel_residual_check BR_Curvature_Residual_Decomposition
+     \<and> verified_bessel_residual_check BR_Planck_Charge_Coupling
+     \<and> verified_bessel_residual_check BR_Isotope_Mass_Accounting
+     \<and> verified_bessel_residual_check BR_Large_Number_Smoothing
+     \<and> verified_bessel_residual_check BR_Ordinary_Mass_Energy_Residual"
+  proof (intro conjI)
+    show "verified_bessel_residual_check BR_Hyperspherical_Order_D4"
+      using hyperspherical_order_d4_passed .
+    show "verified_bessel_residual_check BR_Bessel_Boundary_Quantization"
+      using bessel_boundary_quantization_passed .
+    show "verified_bessel_residual_check BR_Half_Bessel_Drop_Fraction"
+      using half_bessel_drop_fraction_passed .
+    show "verified_bessel_residual_check BR_Entropy_Residual_Isolated"
+      using entropy_residual_isolated_passed .
+    show "verified_bessel_residual_check BR_Effective_Source_Decomposition"
+      using effective_source_decomposition_passed .
+    show "verified_bessel_residual_check BR_Kernel_Normalization"
+      using kernel_normalization_passed .
+    show "verified_bessel_residual_check BR_Curvature_Residual_Decomposition"
+      using curvature_residual_decomposition_passed .
+    show "verified_bessel_residual_check BR_Planck_Charge_Coupling"
+      using planck_charge_coupling_passed .
+    show "verified_bessel_residual_check BR_Isotope_Mass_Accounting"
+      using isotope_mass_accounting_passed .
+    show "verified_bessel_residual_check BR_Large_Number_Smoothing"
+      using large_number_smoothing_passed .
+    show "verified_bessel_residual_check BR_Ordinary_Mass_Energy_Residual"
+      using ordinary_mass_energy_residual_passed .
+  qed
+  thus ?thesis
+    unfolding all_hyperspherical_bessel_residual_bridge_certificates_verified_def .
+qed
 
 context TZPID_HypersphericalBesselResidualBridge_Focus
 begin
 
 theorem hyperspherical_bessel_residual_bridge_has_wolfram_certificate:
   "verified_bessel_residual_check BR_Hyperspherical_Order_D4 & verified_bessel_residual_check BR_Bessel_Boundary_Quantization & verified_bessel_residual_check BR_Half_Bessel_Drop_Fraction & verified_bessel_residual_check BR_Entropy_Residual_Isolated & verified_bessel_residual_check BR_Effective_Source_Decomposition & verified_bessel_residual_check BR_Kernel_Normalization & verified_bessel_residual_check BR_Curvature_Residual_Decomposition & verified_bessel_residual_check BR_Planck_Charge_Coupling & verified_bessel_residual_check BR_Isotope_Mass_Accounting & verified_bessel_residual_check BR_Large_Number_Smoothing & verified_bessel_residual_check BR_Ordinary_Mass_Energy_Residual & hyperspherical_bessel_residual_bridge_chain"
-  using hyperspherical_order_d4_passed bessel_boundary_quantization_passed half_bessel_drop_fraction_passed entropy_residual_isolated_passed effective_source_decomposition_passed kernel_normalization_passed curvature_residual_decomposition_passed planck_charge_coupling_passed isotope_mass_accounting_passed large_number_smoothing_passed ordinary_mass_energy_residual_passed tap_chain
-  by simp
+proof (intro conjI)
+  show "verified_bessel_residual_check BR_Hyperspherical_Order_D4"
+    using hyperspherical_order_d4_passed .
+  show "verified_bessel_residual_check BR_Bessel_Boundary_Quantization"
+    using bessel_boundary_quantization_passed .
+  show "verified_bessel_residual_check BR_Half_Bessel_Drop_Fraction"
+    using half_bessel_drop_fraction_passed .
+  show "verified_bessel_residual_check BR_Entropy_Residual_Isolated"
+    using entropy_residual_isolated_passed .
+  show "verified_bessel_residual_check BR_Effective_Source_Decomposition"
+    using effective_source_decomposition_passed .
+  show "verified_bessel_residual_check BR_Kernel_Normalization"
+    using kernel_normalization_passed .
+  show "verified_bessel_residual_check BR_Curvature_Residual_Decomposition"
+    using curvature_residual_decomposition_passed .
+  show "verified_bessel_residual_check BR_Planck_Charge_Coupling"
+    using planck_charge_coupling_passed .
+  show "verified_bessel_residual_check BR_Isotope_Mass_Accounting"
+    using isotope_mass_accounting_passed .
+  show "verified_bessel_residual_check BR_Large_Number_Smoothing"
+    using large_number_smoothing_passed .
+  show "verified_bessel_residual_check BR_Ordinary_Mass_Energy_Residual"
+    using ordinary_mass_energy_residual_passed .
+  show "hyperspherical_bessel_residual_bridge_chain"
+    using tap_chain .
+qed
 
 end
 

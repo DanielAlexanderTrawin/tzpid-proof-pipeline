@@ -415,5 +415,47 @@ proof -
     by normalization
 qed
 
+context TZPID_HypersphericalBesselResidualBridge_Focus
+begin
+
+theorem phase2_bridge_certificates_and_hol_model_connected:
+  assumes "full_zero > 0"
+    and "half_zero > 0"
+    and "half_zero < full_zero"
+    and "tau \<le> t"
+    and "hbar > 0"
+    and "c > 0"
+    and "grav > 0"
+    and "mP = planck_mass hbar c grav"
+    and "mP \<noteq> 0"
+    and "particle_count > 0"
+  shows
+    "all_hyperspherical_bessel_residual_bridge_certificates_verified
+     \<and> hyperspherical_bessel_residual_bridge_chain
+     \<and> length phase2_obligation_vector = 12
+     \<and> boundary_drop_admissible full_zero half_zero
+     \<and> measurable_residual
+          (accumulated_curvature ordinary_matter sound entropy)
+          ordinary_matter =
+        sound + entropy"
+proof (intro conjI)
+  show "all_hyperspherical_bessel_residual_bridge_certificates_verified"
+    using all_hyperspherical_bessel_residual_bridge_certificates_passed .
+  show "hyperspherical_bessel_residual_bridge_chain"
+    using tap_chain .
+  show "length phase2_obligation_vector = 12"
+    using phase2_obligation_count_is_twelve .
+  show "boundary_drop_admissible full_zero half_zero"
+    using assms(1) assms(2) assms(3)
+    by (rule tap002_boundary_quantization_admissible)
+  show "measurable_residual
+          (accumulated_curvature ordinary_matter sound entropy)
+          ordinary_matter =
+        sound + entropy"
+    using tap012_measurable_residual_beyond_ordinary_mass_energy .
+qed
+
+end
+
 end
 

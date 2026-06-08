@@ -8,10 +8,10 @@ text \<open>
   ORCID: https://orcid.org/0009-0001-4630-3715
   Generated UTC: 2026-06-07T09:41:18Z
   Sources:
-  - TZPID_BESSEL_RESIDUAL_SPINAL_TAP.md SHA1 71b3b16788766db4ad5131ec31fa6a4048067ed7
-  - TZPID_BESSEL_RESIDUAL_SPINAL_TAP_obligations.csv SHA1 2d24f2107414d89fc0d40f92913cdc16fa446d13
-  - TZPID_BESSEL_RESIDUAL_SPINAL_TAP_source_extract.csv SHA1 b8caa7933b61457a60deaede576844e0fa9abe43
-  Note: Spinal tap between Gravity as an Accumulated Force and Energy-to-Matter Logic.
+  - TZPID_HYPERSPHERICAL_BESSEL_RESIDUAL_BRIDGE.md SHA1 71b3b16788766db4ad5131ec31fa6a4048067ed7
+  - TZPID_HYPERSPHERICAL_BESSEL_RESIDUAL_BRIDGE_obligations.csv SHA1 2d24f2107414d89fc0d40f92913cdc16fa446d13
+  - TZPID_HYPERSPHERICAL_BESSEL_RESIDUAL_BRIDGE_source_extract.csv SHA1 b8caa7933b61457a60deaede576844e0fa9abe43
+  Note: Technical bridge between Gravity as an Accumulated Force and Energy-to-Matter Logic.
 \<close>
 
 typedecl br_bessel_equation

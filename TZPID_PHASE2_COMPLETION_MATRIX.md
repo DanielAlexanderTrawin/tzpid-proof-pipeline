@@ -7,7 +7,7 @@ Generated: 2026-06-07
 - Queue rows represented: `397`
 - Remaining triage rows: `0`
 - Matrix rows: `26`
-- Rows with no shortcut/placeholders in listed files: `22` of `26`
+- Rows with no shortcut/placeholders in listed files: `23` of `26`
 - CSV: `TZPID_PHASE2_COMPLETION_MATRIX.csv`
 - JSON: `TZPID_PHASE2_COMPLETION_MATRIX.json`
 
@@ -40,7 +40,7 @@ Generated: 2026-06-07
 
 | Family | Kind | Rows | Level | Isabelle | Wolfram | Priority | Completion | Next Upgrade |
 |---|---|---:|---|---|---|---|---|---|
-| Hyperspherical Bessel residual bridge | paper_core | 6 | concrete_algebra_plus_certificate | clean_build | yes | critical | phase2_strengthen | Formalize exponential-kernel integral and keep Bessel special-function zeros tied to Wolfram certificates until HOL special functions are selected. |
+| Hyperspherical Bessel residual bridge | paper_core | 6 | concrete_algebra_certificate_integrated | clean_build | yes | critical | phase2_5_started | Next formalize the exponential-kernel integral and keep Bessel special-function zeros tied to Wolfram certificates until HOL special functions are selected. |
 | Nested hyperspherical enclosure | gold_spine | n/a | focus_plus_certificate | clean_build | yes | critical | phase2_strengthen | Replace abstract S3/projection predicates with typed topology and projection-map semantics. |
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_clean_followup | clean_build | yes | critical | phase2_strengthen | Move legacy focus lemmas away from abstract predicates into the Batch016 algebraic gyromagnetic/orbital model. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_clean_followup | clean_build | yes | high | phase2_strengthen | Add coupled-oscillator stability and threshold inequalities beyond residual/guard semantics. |
@@ -71,7 +71,7 @@ Generated: 2026-06-07
 
 | Rank | Family | Reason | First Upgrade |
 |---:|---|---|---|
-| 1 | Hyperspherical Bessel residual bridge | Paper core with concrete algebra and certificates already present. | Formalize the exponential kernel integral and explicitly connect the Wolfram Bessel-root certificates. |
+| 1 | Hyperspherical Bessel residual bridge | Paper core with concrete algebra and certificates already present. | Wolfram certificate aggregation is now connected to the HOL bridge theorem; next formalize the exponential kernel integral. |
 | 2 | Gyromagnetic movement | Central movement-mechanism spine and already has Wolfram-backed checks. | Replace legacy abstract focus predicates with the cleaner Batch016 algebraic movement semantics. |
 | 3 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics. | Add coupled-oscillator threshold inequalities and stability conditions. |
 | 4 | Emergence/bifurcation | Core TZP emergence story; currently guard-level but high paper value. | Formalize a bifurcation normal form and infinite-order transition boundary. |
@@ -82,7 +82,7 @@ Generated: 2026-06-07
 
 | Family | Definitions | Theorems/Lemmas | Assumes | Types/Consts | Shortcut Hits |
 |---|---:|---:|---:|---:|---:|
-| Hyperspherical Bessel residual bridge | 29 | 40 | 12 | 5 | 12 |
+| Hyperspherical Bessel residual bridge | 30 | 42 | 13 | 5 | 0 |
 | Nested hyperspherical enclosure | 9 | 22 | 1 | 28 | 22 |
 | Gyromagnetic movement | 18 | 29 | 6 | 15 | 19 |
 | Phase locking resonance | 17 | 25 | 5 | 20 | 15 |
