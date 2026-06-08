@@ -33,6 +33,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_GyromagneticMovement_SpatialBoundary
     TZPID_PhaseLockingResonance_Focus
     TZPID_PhaseLockingResonance_Computational_Checks
+    TZPID_PhaseLockingResonance_Typed_RatioSelection
     TZPID_Phase2_Expanded_Theorem_Coverage
     TZPID_Phase2_Semantic_Translation
     TZPID_Theorem_Semantic_Batch001
