@@ -38,6 +38,7 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup.thy` | Emergence/bifurcation triage follow-up rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup.thy` | Orbital/gyromagnetic triage follow-up rows promoted into typed HOL semantics |
 | `isabelle_tzpid/TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy` | Quantum/matter triage follow-up rows promoted into typed HOL semantics |
+| `isabelle_tzpid/TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup.thy` | Resonance-locking triage follow-up rows promoted into typed HOL semantics |
 | `TZPID_THEOREM_SEMANTIC_QUEUE.csv` | Full 397-row theorem translation queue with status/class fields |
 
 ## Family Translation Status
@@ -76,6 +77,7 @@ This ledger tracks the move from proof-graph predicates into typed Isabelle/HOL 
 | Master theorem batch 015 | Started | Emergence/bifurcation rows including `ID9529` and the relevant `ID9999` proof obligations for symmetry-fixed bifurcation, TZP emergence, Planck-scale emergence mechanism, emergence criterion, and infinite-order phase transition claims | deepen phase-transition and bifurcation semantics into dynamical-systems, singularity, and asymptotic-transition structures |
 | Master theorem batch 016 | Started | Orbital/gyromagnetic rows including `ID10244`, `ID10257`, and the relevant `ID9999` proof obligations for celestial gyromagnetic motion, tidal deformation amplitude, spiral pitch angle from accumulated curvature, and first-order orbital shift | deepen orbital perturbation, gyromagnetic motion, tidal strain, and curvature-pitch semantics into movement-mechanism and celestial-mechanics structures |
 | Master theorem batch 017 | Started | Quantum/matter rows including `ID10147` and the relevant `ID9999` proof obligations for TZP vacuum divergence, electron conservation with TZP coupling, universal criticality/exponent, discrete dark matter distribution, quantum violation, and Bell-helicity phase bounds | deepen vacuum/matter, conservation, criticality, discrete distribution, Bell inequality, and quantum violation semantics into Hilbert-space and probability structures |
+| Master theorem batch 018 | Started | Resonance-locking proof-obligation rows for phase-locking bifurcation, pitchfork bifurcation, resonance capture condition, sufficient phase-locking condition, and lemniscate saddle points | deepen resonance capture, bifurcation, saddle-point, and phase-locking semantics into coupled-oscillator and dynamical-systems structures |
 
 ## Build Status
 

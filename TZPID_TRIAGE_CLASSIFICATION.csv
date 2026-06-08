@@ -1,7 +1,2 @@
 queue_index,source,id,name,triage_status,triage_class,suggested_next_action,source_file,line
 223,proof_obligations,ID9999,Theorem: Curvature Coupling,triaged_geometry_curvature,geometry_curvature_triage,Promote into a geometry/curvature follow-up or merge with Batch008.,D:\Tex\TEX_20260224_182530\document2.tex,74
-268,proof_obligations,ID9999,Phase-Locking Bifurcation,triaged_resonance_locking,resonance_locking_triage,Promote into a phase-locking and resonance follow-up.,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,787
-269,proof_obligations,ID9999,Pitchfork Bifurcation,triaged_resonance_locking,resonance_locking_triage,Promote into a phase-locking and resonance follow-up.,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1239
-271,proof_obligations,ID9999,Resonance Capture Condition,triaged_resonance_locking,resonance_locking_triage,Promote into a phase-locking and resonance follow-up.,D:\Tex\quantized_harmonics_of_the_infinite_curve.tex,1205
-272,proof_obligations,ID9999,Sufficient Condition for Phase Locking,triaged_resonance_locking,resonance_locking_triage,Promote into a phase-locking and resonance follow-up.,D:\Tex\TEX_20260224_182530\document3.tex,223
-274,proof_obligations,ID9999,Theorem: Lemniscate Saddle Points,triaged_resonance_locking,resonance_locking_triage,Promote into a phase-locking and resonance follow-up.,D:\Tex\TEX_20260224_182530\document2.tex,50
