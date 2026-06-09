@@ -47,7 +47,7 @@ Generated: 2026-06-08
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_phase4_phase5_phase5_5_spatial_boundary_plus_phase6_corrected_winding_plus_loop_index_theorem | clean_build | yes | critical | phase6_loop_index_theorem_locked | Next connect the loop-index theorem to vortex-core enclosure and MHD helicity conservation semantics. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_typed_ratio_selection_plus_capture_basin_semantics | clean_build | python_certificate | high | capture_basin_semantics_locked | Next connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans. |
 | Fifth flip crystal scale-invariance | spine_bridge | n/a | golden_reciprocal_fixed_point_plus_crystal_trace_hinge_plus_phi_log_periodic_ripple_bridge | clean_build | python_certificate | high | fifth_flip_phi_ripple_bridge_locked | Next attach empirical ripple-index evidence rows to the bridge and separate measured spatial ratios from acoustic 32/27 ratios. |
-| Magnetic/torsion | domain_model | 21 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar helicity/torsion guards with vector-calculus and MHD-style integral semantics. |
+| Magnetic/torsion | domain_model | 21 | typed_residual_guard_plus_vector_mhd_helicity_torsion | clean_build | python_certificate | high | vector_mhd_helicity_torsion_locked | Next connect vector-MHD torsion/helicity semantics to vortex-core enclosure and gyromagnetic loop-index certificates. |
 | Emergence/bifurcation | domain_model | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | python_certificate | high | bifurcation_normal_forms_locked | Next connect the normal-form carriers to concrete source IDs and physical control-parameter candidates. |
 | Quantum/matter | domain_model | 7 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar quantum guards with density-operator, probability, Bell-bound, and conservation-law semantics. |
 | Master theorem batch 001 | batch | 50 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
@@ -60,7 +60,7 @@ Generated: 2026-06-08
 | Geometry/manifold batch 008 | batch | 17 | typed_scaffold | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Dynamics/scaling batch 009 | batch | 13 | typed_scaffold | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Meta-foundation batch 010 | batch | 13 | typed_scaffold | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
-| Magnetic/torsion batch 011 | batch | 21 | typed_scaffold | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Magnetic/torsion batch 011 | batch | 21 | typed_scaffold_plus_vector_mhd_helicity_torsion | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Operator/spectral follow-up batch 012 | batch | 15 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Topology/category follow-up batch 013 | batch | 15 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Dynamics/stability follow-up batch 014 | batch | 11 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
@@ -81,7 +81,7 @@ Generated: 2026-06-08
 | 5 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics; now includes coupled-oscillator capture-basin semantics with a Python grid certificate. | Connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans. |
 | 6 | Fifth flip crystal scale-invariance | Connects rational locking, crystal trace admissibility, the golden reciprocal fixed point, and the transition into scale-invariant quasicrystal behavior; now has Python certificates for 2*cos(72 degrees) = 1/phi and phi-scaled log-periodic ripple projection. | Attach empirical ripple-index evidence rows to the bridge and separate measured spatial ratios from acoustic 32/27 ratios. |
 | 7 | Emergence/bifurcation | Core TZP emergence story; now upgraded from residual guards to pitchfork/saddle-node normal-form carriers with a Python certificate. | Connect the normal-form carriers to concrete source IDs and physical control-parameter candidates. |
-| 8 | Magnetic/torsion | High-value bridge between gyromagnetic motion, helicity, Elsasser balance, and matter dynamics. | Move helicity and torsion from scalar guards toward vector-calculus/MHD semantics. |
+| 8 | Magnetic/torsion | High-value bridge between gyromagnetic motion, helicity, Elsasser balance, and matter dynamics; now upgraded to vector-MHD helicity/torsion carriers with a Python certificate. | Connect vector-MHD torsion/helicity semantics to vortex-core enclosure and gyromagnetic loop-index certificates. |
 | 9 | Quantum/matter | Matter-facing proof lane for conservation, criticality, Bell bounds, and dark distribution claims. | Introduce probability/density-operator carriers and conservation-law statements. |
 
 ## Isabelle Metrics
@@ -95,7 +95,7 @@ Generated: 2026-06-08
 | Gyromagnetic movement | 76 | 84 | 33 | 15 | 20 |
 | Phase locking resonance | 30 | 42 | 19 | 20 | 15 |
 | Fifth flip crystal scale-invariance | 25 | 43 | 34 | 0 | 0 |
-| Magnetic/torsion | 16 | 29 | 11 | 0 | 0 |
+| Magnetic/torsion | 21 | 36 | 15 | 0 | 0 |
 | Emergence/bifurcation | 15 | 16 | 8 | 0 | 0 |
 | Quantum/matter | 30 | 32 | 7 | 3 | 0 |
 | Master theorem batch 001 | 19 | 22 | 14 | 2 | 0 |
@@ -108,7 +108,7 @@ Generated: 2026-06-08
 | Geometry/manifold batch 008 | 17 | 35 | 5 | 2 | 0 |
 | Dynamics/scaling batch 009 | 14 | 28 | 7 | 0 | 0 |
 | Meta-foundation batch 010 | 17 | 31 | 16 | 0 | 0 |
-| Magnetic/torsion batch 011 | 16 | 29 | 11 | 0 | 0 |
+| Magnetic/torsion batch 011 | 21 | 36 | 15 | 0 | 0 |
 | Operator/spectral follow-up batch 012 | 9 | 14 | 10 | 0 | 0 |
 | Topology/category follow-up batch 013 | 15 | 16 | 2 | 2 | 0 |
 | Dynamics/stability follow-up batch 014 | 12 | 14 | 8 | 0 | 0 |
