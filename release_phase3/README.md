@@ -43,9 +43,21 @@ Before publishing Phase 3, choose the intended GitHub/GitLab/remote account and 
 - Matrix: `../TZPID_PHASE2_COMPLETION_MATRIX.csv`
 - Manifest: `MANIFEST.json`
 - Verification instructions: `VERIFY.md`
+- Verification appendix: `VERIFICATION_APPENDIX.md`
+- Spine pack index: `SPINE_PACK.md`
+- Certificate manifest: `CERTIFICATE_MANIFEST.md`
+- HDF5 artifact manifest: `HDF5_ARTIFACTS.md`
 - Certificates: `../phase2_checks/`
 - Isabelle session: `../isabelle_tzpid/ROOT`
 
 ## Current Spine/Batch Coverage
 
 The manifest contains the full row-level matrix under `matrix_rows`. Use that as the source of truth for release packaging.
+
+## Release Folder Layout
+
+- `matrices/`: copied Phase 2 completion and semantic-translation matrices.
+- `certificates/`: copied certificate JSON, Markdown, and CSV outputs.
+- `isabelle/`: copied Isabelle theories and session `ROOT`.
+- `spines/`: copied paper-facing spine Markdown and obligations CSV files.
+- `wolfram/`: copied Wolfram check scripts from the spine workspace.
