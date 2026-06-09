@@ -30,7 +30,7 @@ def file_metrics(files: list[str]) -> dict[str, int | str]:
         else:
             missing.append(file_name)
     text = "\n".join(text_parts)
-    forbidden_hits = re.findall(r"by simp|by \(simp|simp add|oops|sorry", text)
+    forbidden_hits = re.findall(r"by simp|by \(simp|simp add|\boops\b|\bsorry\b|\badmit\b", text)
     return {
         "definition_count": len(re.findall(r"(?m)^definition\s+", text)),
         "theorem_or_lemma_count": len(re.findall(r"(?m)^(theorem|lemma)\s+", text)),
@@ -309,12 +309,47 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Topology/category follow-up batch 013", "batch", ["TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup.thy"], "batch013_started", "typed_residual_guard", "medium"),
         ("Dynamics/stability follow-up batch 014", "batch", ["TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup.thy"], "batch014_started", "typed_residual_guard", "medium"),
         ("Emergence/bifurcation follow-up batch 015", "batch", ["TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup.thy", "TZPID_EmergenceBifurcation_NormalForms.thy"], "batch015_started", "typed_residual_guard_plus_bifurcation_normal_forms", "high"),
-        ("Orbital/gyromagnetic follow-up batch 016", "batch", ["TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup.thy"], "batch016_started", "typed_residual_guard", "high"),
+        ("Orbital/gyromagnetic follow-up batch 016", "batch", ["TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup.thy", "TZPID_GyromagneticMovement_Typed_PhaseGradient.thy", "TZPID_GyromagneticMovement_VectorCalculus.thy", "TZPID_GyromagneticMovement_MHD_Helicity.thy", "TZPID_GyromagneticMovement_LoopIndex.thy"], "batch016_started", "typed_residual_guard_plus_gyromagnetic_vector_loop_semantics", "high"),
         ("Quantum/matter follow-up batch 017", "batch", ["TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy", "TZPID_QuantumMatter_ProbabilityCarriers.thy"], "batch017_started", "typed_residual_guard_plus_probability_density_bell_conservation", "high"),
-        ("Resonance-locking follow-up batch 018", "batch", ["TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup.thy"], "batch018_started", "typed_residual_guard", "high"),
+        ("Resonance-locking follow-up batch 018", "batch", ["TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup.thy", "TZPID_PhaseLockingResonance_Typed_RatioSelection.thy", "TZPID_PhaseLockingResonance_CaptureBasin.thy"], "batch018_started", "typed_residual_guard_plus_ratio_capture_basin_semantics", "high"),
         ("Geometry/curvature closeout batch 019", "batch", ["TZPID_Theorem_Semantic_Batch019_Geometry_Curvature_Closeout.thy"], "batch019_started", "typed_residual_guard", "medium"),
     ]
+    batch_overrides = {
+        "Magnetic/torsion batch 011": dict(
+            wolfram="python_certificate",
+            completion="vector_mhd_helicity_torsion_locked",
+            next_upgrade="Connect vector-MHD torsion/helicity semantics to vortex-core enclosure and gyromagnetic loop-index certificates.",
+        ),
+        "Emergence/bifurcation follow-up batch 015": dict(
+            wolfram="python_certificate",
+            completion="bifurcation_normal_forms_locked",
+            next_upgrade="Connect normal-form carriers to concrete source IDs and physical control-parameter candidates.",
+        ),
+        "Orbital/gyromagnetic follow-up batch 016": dict(
+            wolfram="python_certificate",
+            completion="gyromagnetic_vector_loop_semantics_locked",
+            next_upgrade="Connect loop-index semantics to vortex-core enclosure and MHD helicity conservation.",
+        ),
+        "Quantum/matter follow-up batch 017": dict(
+            wolfram="python_certificate",
+            completion="probability_density_bell_conservation_locked",
+            next_upgrade="Lift diagonal probability carriers toward complex density matrices and CPTP channel composition.",
+        ),
+        "Resonance-locking follow-up batch 018": dict(
+            wolfram="python_certificate",
+            completion="ratio_capture_basin_semantics_locked",
+            next_upgrade="Connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans.",
+        ),
+    }
     for family, kind, files, status, level, priority in batch_specs:
+        override = batch_overrides.get(
+            family,
+            dict(
+                wolfram="not_attached",
+                completion="started_not_complete",
+                next_upgrade="Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing.",
+            ),
+        )
         rows.append(
             row(
                 family=family,
@@ -325,10 +360,10 @@ def build_rows() -> list[dict[str, str | int]]:
                 typed_carrier="yes",
                 assumptions="yes",
                 isabelle="clean_build",
-                wolfram="not_attached",
+                wolfram=override["wolfram"],
                 priority=priority,
-                completion="started_not_complete",
-                next_upgrade="Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing.",
+                completion=override["completion"],
+                next_upgrade=override["next_upgrade"],
                 status_counts=counts,
             )
         )

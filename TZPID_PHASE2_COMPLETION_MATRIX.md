@@ -60,14 +60,14 @@ Generated: 2026-06-08
 | Geometry/manifold batch 008 | batch | 17 | typed_scaffold | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Dynamics/scaling batch 009 | batch | 13 | typed_scaffold | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Meta-foundation batch 010 | batch | 13 | typed_scaffold | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
-| Magnetic/torsion batch 011 | batch | 21 | typed_scaffold_plus_vector_mhd_helicity_torsion | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Magnetic/torsion batch 011 | batch | 21 | typed_scaffold_plus_vector_mhd_helicity_torsion | clean_build | python_certificate | high | vector_mhd_helicity_torsion_locked | Connect vector-MHD torsion/helicity semantics to vortex-core enclosure and gyromagnetic loop-index certificates. |
 | Operator/spectral follow-up batch 012 | batch | 15 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Topology/category follow-up batch 013 | batch | 15 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Dynamics/stability follow-up batch 014 | batch | 11 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
-| Emergence/bifurcation follow-up batch 015 | batch | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
-| Orbital/gyromagnetic follow-up batch 016 | batch | 7 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
-| Quantum/matter follow-up batch 017 | batch | 7 | typed_residual_guard_plus_probability_density_bell_conservation | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
-| Resonance-locking follow-up batch 018 | batch | 5 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Emergence/bifurcation follow-up batch 015 | batch | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | python_certificate | high | bifurcation_normal_forms_locked | Connect normal-form carriers to concrete source IDs and physical control-parameter candidates. |
+| Orbital/gyromagnetic follow-up batch 016 | batch | 7 | typed_residual_guard_plus_gyromagnetic_vector_loop_semantics | clean_build | python_certificate | high | gyromagnetic_vector_loop_semantics_locked | Connect loop-index semantics to vortex-core enclosure and MHD helicity conservation. |
+| Quantum/matter follow-up batch 017 | batch | 7 | typed_residual_guard_plus_probability_density_bell_conservation | clean_build | python_certificate | high | probability_density_bell_conservation_locked | Lift diagonal probability carriers toward complex density matrices and CPTP channel composition. |
+| Resonance-locking follow-up batch 018 | batch | 5 | typed_residual_guard_plus_ratio_capture_basin_semantics | clean_build | python_certificate | high | ratio_capture_basin_semantics_locked | Connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans. |
 | Geometry/curvature closeout batch 019 | batch | 1 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 
 ## Recommended Phase 2 Upgrade Order
@@ -92,7 +92,7 @@ Generated: 2026-06-08
 | Nested hyperspherical enclosure | 27 | 43 | 20 | 35 | 22 |
 | Hubble breathing enclosure | 85 | 124 | 48 | 20 | 5 |
 | Matter creation spine | 37 | 55 | 24 | 11 | 14 |
-| Gyromagnetic movement | 76 | 84 | 33 | 15 | 20 |
+| Gyromagnetic movement | 76 | 84 | 33 | 15 | 19 |
 | Phase locking resonance | 30 | 42 | 19 | 20 | 15 |
 | Fifth flip crystal scale-invariance | 25 | 43 | 34 | 0 | 0 |
 | Magnetic/torsion | 21 | 36 | 15 | 0 | 0 |
@@ -113,7 +113,7 @@ Generated: 2026-06-08
 | Topology/category follow-up batch 013 | 15 | 16 | 2 | 2 | 0 |
 | Dynamics/stability follow-up batch 014 | 12 | 14 | 8 | 0 | 0 |
 | Emergence/bifurcation follow-up batch 015 | 15 | 16 | 8 | 0 | 0 |
-| Orbital/gyromagnetic follow-up batch 016 | 9 | 10 | 5 | 0 | 0 |
+| Orbital/gyromagnetic follow-up batch 016 | 41 | 43 | 25 | 0 | 0 |
 | Quantum/matter follow-up batch 017 | 18 | 18 | 12 | 0 | 0 |
-| Resonance-locking follow-up batch 018 | 9 | 10 | 4 | 0 | 0 |
+| Resonance-locking follow-up batch 018 | 22 | 27 | 18 | 0 | 0 |
 | Geometry/curvature closeout batch 019 | 5 | 5 | 2 | 0 | 0 |
