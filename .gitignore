@@ -8,6 +8,7 @@ __pycache__/
 tmp/
 *.tmp
 *.bak
+phase2_checks/raw_data_cache/
 
 # LaTeX build byproducts
 *.aux

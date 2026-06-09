@@ -42,7 +42,7 @@ Generated: 2026-06-08
 |---|---|---:|---|---|---|---|---|---|
 | Hyperspherical Bessel residual bridge | paper_core | 6 | hol_analysis_integral_bessel_policy_delta_alpha_phase3_contract | clean_build | yes | critical | phase2_5_phase3_observable_contract_locked | Next lift the nested hyperspherical enclosure spine from abstract S3/projection predicates into typed projection-map semantics. |
 | Nested hyperspherical enclosure | gold_spine | n/a | focus_certificate_plus_typed_projection_map_plus_s3_spectrum | clean_build | yes | critical | s3_spectrum_locked | Next enrich the projection carrier from finite-coordinate algebra into topology/continuity and explicit Hopf fibration semantics. |
-| Hubble breathing enclosure | spine_bridge | n/a | hubble_breathing_closed_distance_plus_friedmann_observed_summary_fit | clean_build | python_certificate | critical | hubble_breathing_observed_summary_fit_locked | Next replace diagonal published-summary constraints with raw CMB distance priors, DESI BAO covariance tables, and Pantheon+ likelihood data. |
+| Hubble breathing enclosure | spine_bridge | n/a | hubble_breathing_closed_distance_plus_friedmann_pantheon_raw_likelihood | clean_build | python_certificate | critical | hubble_breathing_pantheon_raw_likelihood_locked | Next add raw Planck/CMB distance-prior and DESI DR2 BAO covariance likelihood lanes, then combine all chi-square terms. |
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_phase4_phase5_phase5_5_spatial_boundary_plus_phase6_corrected_winding | clean_build | yes | critical | phase6_corrected_winding_locked | Next lift corrected winding from scalar loop certificates into a general loop-index theorem for wrapped phase fields and vortex-core enclosure. |
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_typed_ratio_selection | clean_build | yes | high | typed_ratio_selection_locked | Next lift typed ratio selection into coupled-oscillator stability and capture-basin semantics. |
 | Fifth flip crystal scale-invariance | spine_bridge | n/a | golden_reciprocal_fixed_point_plus_crystal_trace_hinge | clean_build | certificate_only | high | fifth_flip_bridge_locked | Next add an external trig/crystallographic certificate tying 2*cos(72 degrees) to the golden trace and then connect quasicrystal phi-inflation to the ripple scale-invariance lane. |
@@ -75,7 +75,7 @@ Generated: 2026-06-08
 |---:|---|---|---|
 | 1 | Hyperspherical Bessel residual bridge | Paper core with concrete algebra and certificates already present. | The kernel integral is proved in HOL-Analysis; Bessel roots are an explicit external Wolfram interval-certificate policy; the drop fraction induces a HOL-proved Delta-alpha phase-gradient and shell-radius prediction; exported Delta-alpha arrays reproduce the predicted shell radii; and the Phase3 HDF5 psi field is locked by an Isabelle observable contract. |
 | 2 | Gyromagnetic movement | Central movement-mechanism spine with Wolfram-backed checks plus Phase 4, Phase 5, Phase 5.5, Phase 5.6, and a corrected Phase 6 winding lock. | Lift the corrected winding certificate from four numerical loops into a general loop-index theorem for wrapped phase fields. |
-| 3 | Hubble breathing enclosure | Supplies the clock, observable distance fingerprint, typed Friedmann carrier, CPL dynamic-dark-energy certificate, and observed-summary residual lane. | Replace diagonal published-summary constraints with raw CMB distance priors, DESI BAO covariance tables, and Pantheon+ likelihood data. |
+| 3 | Hubble breathing enclosure | Supplies the clock, observable distance fingerprint, typed Friedmann carrier, CPL certificate, observed-summary residual lane, and Pantheon+ raw covariance likelihood. | Add raw Planck/CMB distance-prior and DESI DR2 BAO covariance likelihood lanes, then combine all chi-square terms. |
 | 4 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics. | Add coupled-oscillator threshold inequalities and stability conditions. |
 | 5 | Fifth flip crystal scale-invariance | Connects rational locking, crystal trace admissibility, the golden reciprocal fixed point, and the transition into scale-invariant quasicrystal behavior. | Attach the external crystallographic trace certificate and then lift phi-inflation into the ripple/log-periodic scale-invariance lane. |
 | 6 | Emergence/bifurcation | Core TZP emergence story; currently guard-level but high paper value. | Formalize a bifurcation normal form and infinite-order transition boundary. |
@@ -88,7 +88,7 @@ Generated: 2026-06-08
 |---|---:|---:|---:|---:|---:|
 | Hyperspherical Bessel residual bridge | 57 | 66 | 26 | 5 | 0 |
 | Nested hyperspherical enclosure | 27 | 43 | 20 | 35 | 22 |
-| Hubble breathing enclosure | 56 | 83 | 36 | 20 | 5 |
+| Hubble breathing enclosure | 63 | 92 | 39 | 20 | 5 |
 | Gyromagnetic movement | 72 | 76 | 28 | 15 | 19 |
 | Phase locking resonance | 25 | 35 | 12 | 20 | 15 |
 | Fifth flip crystal scale-invariance | 21 | 37 | 28 | 0 | 0 |
