@@ -62,6 +62,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_Theorem_Semantic_Batch004
     TZPID_Topology_Vector_Model
     TZPID_Theorem_Semantic_Batch005_Topology_Vector
+    TZPID_TopologyVector_Invariants
     TZPID_Operator_Spectral_Model
     TZPID_Theorem_Semantic_Batch006_Operator_Spectral
     TZPID_Quantum_Open_System_Model

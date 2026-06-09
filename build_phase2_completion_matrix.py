@@ -298,7 +298,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Master theorem batch 002", "batch", ["TZPID_Theorem_Semantic_Batch002.thy"], "batch002_started", "typed_residual_guard", "high"),
         ("Master theorem batch 003", "batch", ["TZPID_Theorem_Semantic_Batch003.thy"], "batch003_started", "typed_residual_guard", "medium"),
         ("Master theorem batch 004", "batch", ["TZPID_Theorem_Semantic_Batch004.thy"], "batch004_started", "typed_residual_guard", "medium"),
-        ("Topology/vector batch 005", "batch", ["TZPID_Topology_Vector_Model.thy", "TZPID_Theorem_Semantic_Batch005_Topology_Vector.thy"], "batch005_started", "typed_scaffold", "high"),
+        ("Topology/vector batch 005", "batch", ["TZPID_Topology_Vector_Model.thy", "TZPID_Theorem_Semantic_Batch005_Topology_Vector.thy", "TZPID_TopologyVector_Invariants.thy"], "batch005_started", "typed_scaffold_plus_topological_invariant_carriers", "high"),
         ("Operator/spectral batch 006", "batch", ["TZPID_Operator_Spectral_Model.thy", "TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy"], "batch006_started", "typed_scaffold", "high"),
         ("Quantum/open-system batch 007", "batch", ["TZPID_Quantum_Open_System_Model.thy", "TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy"], "batch007_started", "typed_scaffold", "high"),
         ("Geometry/manifold batch 008", "batch", ["TZPID_Geometry_Manifold_Model.thy", "TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy"], "batch008_started", "typed_scaffold", "high"),
@@ -315,6 +315,11 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Geometry/curvature closeout batch 019", "batch", ["TZPID_Theorem_Semantic_Batch019_Geometry_Curvature_Closeout.thy"], "batch019_started", "typed_residual_guard", "medium"),
     ]
     batch_overrides = {
+        "Topology/vector batch 005": dict(
+            wolfram="python_certificate",
+            completion="topology_vector_invariants_locked",
+            next_upgrade="Connect topological invariant carriers to Hopf/continuity projection semantics and geometry/manifold batch 008.",
+        ),
         "Magnetic/torsion batch 011": dict(
             wolfram="python_certificate",
             completion="vector_mhd_helicity_torsion_locked",
