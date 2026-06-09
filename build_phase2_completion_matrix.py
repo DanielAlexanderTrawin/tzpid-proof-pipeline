@@ -128,18 +128,19 @@ def build_rows() -> list[dict[str, str | int]]:
             kind="spine_bridge",
             files=[
                 "TZPID_HubbleBreathing_Enclosure.thy",
+                "TZPID_HubbleBreathing_ClosedDistance.thy",
                 "TZPID_NestedHypersphere_S3_Spectrum.thy",
                 "TZPID_Einstein_Focus.thy",
             ],
             queue_status="",
-            level="hubble_breathing_volume_rate_inverse_fourth_density",
+            level="hubble_breathing_volume_rate_inverse_fourth_density_closed_distance_fingerprint",
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
             wolfram="certificate_only",
             priority="critical",
-            completion="hubble_breathing_algebra_locked",
-            next_upgrade="Next lift closed-geometry angular-diameter distance and dynamic dark-energy/Friedmann components into typed HOL semantics.",
+            completion="hubble_breathing_closed_distance_locked",
+            next_upgrade="Next lift dynamic dark-energy/Friedmann components into typed HOL semantics and connect them to the closed-distance fingerprint.",
         ),
         dict(
             family="Gyromagnetic movement",
@@ -375,8 +376,8 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
         ),
         (
             "Hubble breathing enclosure",
-            "Supplies the clock for the nested hypersphere: H = Rdot/R, Vdot/V = 3H, and rho scales as R^-4.",
-            "Formalize closed-geometry distance D_A(z)=a0 sin(chi)/(1+z) and dynamic dark-energy/Friedmann components.",
+            "Supplies the clock and observable distance fingerprint for the nested hypersphere: H = Rdot/R, Vdot/V = 3H, rho scales as R^-4, and closed distance uses sin(chi).",
+            "Formalize dynamic dark-energy/Friedmann components and connect them to the closed-distance fingerprint.",
         ),
         (
             "Phase locking resonance",
