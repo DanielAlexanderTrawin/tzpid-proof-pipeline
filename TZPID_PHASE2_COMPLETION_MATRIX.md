@@ -58,7 +58,7 @@ Generated: 2026-06-08
 | Operator/spectral batch 006 | batch | 30 | typed_scaffold_plus_finite_spectral_carriers | clean_build | python_certificate | high | operator_spectral_carriers_locked | Connect finite spectral carriers to Bessel root certificates, S3 eigenvalue ladders, and operator/spectral follow-up batch 012. |
 | Quantum/open-system batch 007 | batch | 23 | typed_scaffold_plus_open_system_density_channel_carriers | clean_build | python_certificate | high | quantum_open_system_carriers_locked | Connect diagonal open-system carriers to full density-matrix/CPTP semantics and quantum/matter probability carriers. |
 | Geometry/manifold batch 008 | batch | 17 | typed_scaffold_plus_metric_projection_curvature_carriers | clean_build | python_certificate | high | geometry_manifold_carriers_locked | Connect finite geometry carriers to Hopf projection continuity, S3 spectrum geometry, and curvature closeout batch 019. |
-| Dynamics/scaling batch 009 | batch | 13 | typed_scaffold | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Dynamics/scaling batch 009 | batch | 13 | typed_scaffold_plus_dynamics_scaling_carriers | clean_build | python_certificate | medium | dynamics_scaling_carriers_locked | Connect dynamics/scaling carriers to time-domain simulations and paper-facing scaling-law appendices. |
 | Meta-foundation batch 010 | batch | 13 | typed_scaffold | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Magnetic/torsion batch 011 | batch | 21 | typed_scaffold_plus_vector_mhd_helicity_torsion | clean_build | python_certificate | high | vector_mhd_helicity_torsion_locked | Connect vector-MHD torsion/helicity semantics to vortex-core enclosure and gyromagnetic loop-index certificates. |
 | Operator/spectral follow-up batch 012 | batch | 15 | typed_residual_guard_plus_followup_spectral_carriers | clean_build | python_certificate | high | operator_spectral_followup_locked | Connect batch 012 follow-up carriers directly to Bessel root certificates and S3 eigenvalue geometry. |
@@ -106,7 +106,7 @@ Generated: 2026-06-08
 | Operator/spectral batch 006 | 31 | 52 | 28 | 2 | 0 |
 | Quantum/open-system batch 007 | 34 | 61 | 12 | 3 | 0 |
 | Geometry/manifold batch 008 | 29 | 49 | 13 | 2 | 0 |
-| Dynamics/scaling batch 009 | 14 | 28 | 7 | 0 | 0 |
+| Dynamics/scaling batch 009 | 24 | 39 | 15 | 0 | 0 |
 | Meta-foundation batch 010 | 17 | 31 | 16 | 0 | 0 |
 | Magnetic/torsion batch 011 | 21 | 36 | 15 | 0 | 0 |
 | Operator/spectral follow-up batch 012 | 16 | 24 | 18 | 0 | 0 |
