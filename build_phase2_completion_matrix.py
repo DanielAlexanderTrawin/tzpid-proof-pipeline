@@ -229,10 +229,10 @@ def build_rows() -> list[dict[str, str | int]]:
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
-            wolfram="certificate_only",
+            wolfram="python_certificate",
             priority="high",
-            completion="fifth_flip_bridge_locked",
-            next_upgrade="Next add an external trig/crystallographic certificate tying 2*cos(72 degrees) to the golden trace and then connect quasicrystal phi-inflation to the ripple scale-invariance lane.",
+            completion="fifth_flip_golden_trace_certificate_locked",
+            next_upgrade="Next connect quasicrystal phi-inflation to the ripple/log-periodic scale-invariance lane.",
         ),
         dict(
             family="Magnetic/torsion",
@@ -422,8 +422,8 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
         ),
         (
             "Fifth flip crystal scale-invariance",
-            "Connects rational locking, crystal trace admissibility, the golden reciprocal fixed point, and the transition into scale-invariant quasicrystal behavior.",
-            "Attach the external crystallographic trace certificate and then lift phi-inflation into the ripple/log-periodic scale-invariance lane.",
+            "Connects rational locking, crystal trace admissibility, the golden reciprocal fixed point, and the transition into scale-invariant quasicrystal behavior; now has a Python trig certificate for 2*cos(72 degrees) = 1/phi.",
+            "Lift phi-inflation into the ripple/log-periodic scale-invariance lane.",
         ),
         (
             "Emergence/bifurcation",
