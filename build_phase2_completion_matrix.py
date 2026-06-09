@@ -150,6 +150,25 @@ def build_rows() -> list[dict[str, str | int]]:
             next_upgrade="Next promote the scenario-sum certificate into a small parameter-search lane over H0, Omega_m, Omega_K, w0, and wa.",
         ),
         dict(
+            family="Matter creation spine",
+            kind="gold_spine",
+            files=[
+                "TZPID_EnergyMatter_Focus.thy",
+                "TZPID_NewSpines_Computational_Checks.thy",
+                "TZPID_MatterCreation_ThresholdSpine.thy",
+                "TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy",
+            ],
+            queue_status="",
+            level="energy_matter_focus_plus_threshold_density_mass_energy_curvature_carrier",
+            typed_carrier="yes",
+            assumptions="yes",
+            isabelle="clean_build",
+            wolfram="yes",
+            priority="critical",
+            completion="matter_creation_threshold_spine_locked",
+            next_upgrade="Next connect the threshold carrier to temporal emergence flow rho_vac(t), J_emerge(t), and rho_matter(t).",
+        ),
+        dict(
             family="Gyromagnetic movement",
             kind="movement_spine",
             files=[
@@ -386,6 +405,11 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
             "Hubble breathing enclosure",
             "Supplies the clock, observable distance fingerprint, typed Friedmann carrier, CPL certificate, observed-summary residual lane, Pantheon+ raw covariance likelihood, Planck compressed distance-prior likelihood, DESI DR2 BAO covariance likelihood, and a joint chi-square certificate.",
             "Promote the scenario-sum certificate into a small parameter-search lane over H0, Omega_m, Omega_K, w0, and wa.",
+        ),
+        (
+            "Matter creation spine",
+            "Locks the Energy-to-Matter Logic spine as a real-valued pressure-threshold, density-gain, mass-energy, and curvature-source carrier with Wolfram-backed checks.",
+            "Connect the threshold carrier to temporal emergence flow rho_vac(t), J_emerge(t), and rho_matter(t).",
         ),
         (
             "Phase locking resonance",
