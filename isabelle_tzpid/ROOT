@@ -57,6 +57,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_Phase2_Expanded_Theorem_Coverage
     TZPID_Phase2_Semantic_Translation
     TZPID_Theorem_Semantic_Batch001
+    TZPID_MasterBatch001_Carriers
     TZPID_Theorem_Semantic_Batch002
     TZPID_Theorem_Semantic_Batch003
     TZPID_Theorem_Semantic_Batch004

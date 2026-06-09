@@ -294,7 +294,7 @@ def build_rows() -> list[dict[str, str | int]]:
         rows.append(row(**spec, status_counts=counts))
 
     batch_specs = [
-        ("Master theorem batch 001", "batch", ["TZPID_Theorem_Semantic_Batch001.thy"], "batch001_started", "typed_residual_guard", "high"),
+        ("Master theorem batch 001", "batch", ["TZPID_Theorem_Semantic_Batch001.thy", "TZPID_MasterBatch001_Carriers.thy"], "batch001_started", "typed_residual_guard_plus_master_carriers", "high"),
         ("Master theorem batch 002", "batch", ["TZPID_Theorem_Semantic_Batch002.thy"], "batch002_started", "typed_residual_guard", "high"),
         ("Master theorem batch 003", "batch", ["TZPID_Theorem_Semantic_Batch003.thy"], "batch003_started", "typed_residual_guard", "medium"),
         ("Master theorem batch 004", "batch", ["TZPID_Theorem_Semantic_Batch004.thy"], "batch004_started", "typed_residual_guard", "medium"),
@@ -315,6 +315,11 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Geometry/curvature closeout batch 019", "batch", ["TZPID_Theorem_Semantic_Batch019_Geometry_Curvature_Closeout.thy"], "batch019_started", "typed_residual_guard", "medium"),
     ]
     batch_overrides = {
+        "Master theorem batch 001": dict(
+            wolfram="python_certificate",
+            completion="master_batch001_carriers_locked",
+            next_upgrade="Connect broad batch 001 carriers to specific spine documents and replace image placeholders as source artifacts mature.",
+        ),
         "Topology/vector batch 005": dict(
             wolfram="python_certificate",
             completion="topology_vector_invariants_locked",
