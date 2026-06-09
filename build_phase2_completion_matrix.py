@@ -307,7 +307,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Meta-foundation batch 010", "batch", ["TZPID_Meta_Foundation_Model.thy", "TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy", "TZPID_MetaFoundation_Carriers.thy"], "batch010_started", "typed_scaffold_plus_meta_foundation_carriers", "medium"),
         ("Magnetic/torsion batch 011", "batch", ["TZPID_Magnetic_Torsion_Model.thy", "TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy", "TZPID_MagneticTorsion_VectorMHD.thy"], "batch011_started", "typed_scaffold_plus_vector_mhd_helicity_torsion", "high"),
         ("Operator/spectral follow-up batch 012", "batch", ["TZPID_Theorem_Semantic_Batch012_Operator_Spectral_Followup.thy", "TZPID_OperatorSpectral_FollowupCarriers.thy"], "batch012_started", "typed_residual_guard_plus_followup_spectral_carriers", "high"),
-        ("Topology/category follow-up batch 013", "batch", ["TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup.thy"], "batch013_started", "typed_residual_guard", "medium"),
+        ("Topology/category follow-up batch 013", "batch", ["TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup.thy", "TZPID_TopologyCategory_Carriers.thy"], "batch013_started", "typed_residual_guard_plus_finite_category_carriers", "medium"),
         ("Dynamics/stability follow-up batch 014", "batch", ["TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup.thy"], "batch014_started", "typed_residual_guard", "medium"),
         ("Emergence/bifurcation follow-up batch 015", "batch", ["TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup.thy", "TZPID_EmergenceBifurcation_NormalForms.thy"], "batch015_started", "typed_residual_guard_plus_bifurcation_normal_forms", "high"),
         ("Orbital/gyromagnetic follow-up batch 016", "batch", ["TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup.thy", "TZPID_GyromagneticMovement_Typed_PhaseGradient.thy", "TZPID_GyromagneticMovement_VectorCalculus.thy", "TZPID_GyromagneticMovement_MHD_Helicity.thy", "TZPID_GyromagneticMovement_LoopIndex.thy"], "batch016_started", "typed_residual_guard_plus_gyromagnetic_vector_loop_semantics", "high"),
@@ -375,6 +375,11 @@ def build_rows() -> list[dict[str, str | int]]:
             wolfram="python_certificate",
             completion="operator_spectral_followup_locked",
             next_upgrade="Connect batch 012 follow-up carriers directly to Bessel root certificates and S3 eigenvalue geometry.",
+        ),
+        "Topology/category follow-up batch 013": dict(
+            wolfram="python_certificate",
+            completion="topology_category_carriers_locked",
+            next_upgrade="Connect finite category carriers to Hopf projection continuity and source-level category documents.",
         ),
         "Emergence/bifurcation follow-up batch 015": dict(
             wolfram="python_certificate",
