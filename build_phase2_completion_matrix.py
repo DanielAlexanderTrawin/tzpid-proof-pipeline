@@ -276,16 +276,17 @@ def build_rows() -> list[dict[str, str | int]]:
             files=[
                 "TZPID_Quantum_Open_System_Model.thy",
                 "TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy",
+                "TZPID_QuantumMatter_ProbabilityCarriers.thy",
             ],
             queue_status="batch017_started",
-            level="typed_residual_guard",
+            level="typed_residual_guard_plus_probability_density_bell_conservation",
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
-            wolfram="not_attached",
+            wolfram="python_certificate",
             priority="high",
-            completion="phase2_strengthen",
-            next_upgrade="Replace scalar quantum guards with density-operator, probability, Bell-bound, and conservation-law semantics.",
+            completion="probability_density_bell_conservation_locked",
+            next_upgrade="Next lift diagonal probability carriers toward complex density matrices and CPTP channel composition.",
         ),
     ]
 
@@ -309,7 +310,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Dynamics/stability follow-up batch 014", "batch", ["TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup.thy"], "batch014_started", "typed_residual_guard", "medium"),
         ("Emergence/bifurcation follow-up batch 015", "batch", ["TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup.thy", "TZPID_EmergenceBifurcation_NormalForms.thy"], "batch015_started", "typed_residual_guard_plus_bifurcation_normal_forms", "high"),
         ("Orbital/gyromagnetic follow-up batch 016", "batch", ["TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup.thy"], "batch016_started", "typed_residual_guard", "high"),
-        ("Quantum/matter follow-up batch 017", "batch", ["TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy"], "batch017_started", "typed_residual_guard", "high"),
+        ("Quantum/matter follow-up batch 017", "batch", ["TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy", "TZPID_QuantumMatter_ProbabilityCarriers.thy"], "batch017_started", "typed_residual_guard_plus_probability_density_bell_conservation", "high"),
         ("Resonance-locking follow-up batch 018", "batch", ["TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup.thy"], "batch018_started", "typed_residual_guard", "high"),
         ("Geometry/curvature closeout batch 019", "batch", ["TZPID_Theorem_Semantic_Batch019_Geometry_Curvature_Closeout.thy"], "batch019_started", "typed_residual_guard", "medium"),
     ]
@@ -442,8 +443,8 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
         ),
         (
             "Quantum/matter",
-            "Matter-facing proof lane for conservation, criticality, Bell bounds, and dark distribution claims.",
-            "Introduce probability/density-operator carriers and conservation-law statements.",
+            "Matter-facing proof lane for conservation, criticality, Bell bounds, and dark distribution claims; now upgraded with diagonal density/probability carriers, Bell-window semantics, and conservation certificates.",
+            "Lift diagonal probability carriers toward complex density matrices and CPTP channel composition.",
         ),
     ]
     for idx, (family, reason, upgrade) in enumerate(upgrade_order, start=1):
