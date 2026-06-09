@@ -64,6 +64,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_Theorem_Semantic_Batch003
     TZPID_MasterBatch003_Carriers
     TZPID_Theorem_Semantic_Batch004
+    TZPID_MasterBatch004_Carriers
     TZPID_Topology_Vector_Model
     TZPID_Theorem_Semantic_Batch005_Topology_Vector
     TZPID_TopologyVector_Invariants

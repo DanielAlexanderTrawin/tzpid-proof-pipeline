@@ -298,7 +298,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Master theorem batch 001", "batch", ["TZPID_Theorem_Semantic_Batch001.thy", "TZPID_MasterBatch001_Carriers.thy"], "batch001_started", "typed_residual_guard_plus_master_carriers", "high"),
         ("Master theorem batch 002", "batch", ["TZPID_Theorem_Semantic_Batch002.thy", "TZPID_MasterBatch002_Carriers.thy"], "batch002_started", "typed_residual_guard_plus_master_helicity_kk_carriers", "high"),
         ("Master theorem batch 003", "batch", ["TZPID_Theorem_Semantic_Batch003.thy", "TZPID_MasterBatch003_Carriers.thy"], "batch003_started", "typed_residual_guard_plus_balance_projection_carriers", "medium"),
-        ("Master theorem batch 004", "batch", ["TZPID_Theorem_Semantic_Batch004.thy"], "batch004_started", "typed_residual_guard", "medium"),
+        ("Master theorem batch 004", "batch", ["TZPID_Theorem_Semantic_Batch004.thy", "TZPID_MasterBatch004_Carriers.thy"], "batch004_started", "typed_residual_guard_plus_base_boundary_decay_carriers", "medium"),
         ("Topology/vector batch 005", "batch", ["TZPID_Topology_Vector_Model.thy", "TZPID_Theorem_Semantic_Batch005_Topology_Vector.thy", "TZPID_TopologyVector_Invariants.thy"], "batch005_started", "typed_scaffold_plus_topological_invariant_carriers", "high"),
         ("Operator/spectral batch 006", "batch", ["TZPID_Operator_Spectral_Model.thy", "TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy", "TZPID_OperatorSpectral_Carriers.thy"], "batch006_started", "typed_scaffold_plus_finite_spectral_carriers", "high"),
         ("Quantum/open-system batch 007", "batch", ["TZPID_Quantum_Open_System_Model.thy", "TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy", "TZPID_QuantumOpenSystem_Carriers.thy"], "batch007_started", "typed_scaffold_plus_open_system_density_channel_carriers", "high"),
@@ -330,6 +330,11 @@ def build_rows() -> list[dict[str, str | int]]:
             wolfram="python_certificate",
             completion="master_batch003_carriers_locked",
             next_upgrade="Connect batch 003 balance/projection carriers to Hopf, MHD, radius-ratio, and S3-boundary spine documents.",
+        ),
+        "Master theorem batch 004": dict(
+            wolfram="python_certificate",
+            completion="master_batch004_carriers_locked",
+            next_upgrade="Connect batch 004 base-unit, boundary, information, decay, and dispersion carriers to publication-facing verification appendices.",
         ),
         "Topology/vector batch 005": dict(
             wolfram="python_certificate",
