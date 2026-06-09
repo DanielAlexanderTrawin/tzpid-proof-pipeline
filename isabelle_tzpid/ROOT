@@ -78,6 +78,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup
     TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup
     TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup
+    TZPID_EmergenceBifurcation_NormalForms
     TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup
     TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup
     TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup

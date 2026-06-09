@@ -48,7 +48,7 @@ Generated: 2026-06-08
 | Phase locking resonance | movement_spine | 5 | focus_certificate_plus_typed_ratio_selection_plus_capture_basin_semantics | clean_build | python_certificate | high | capture_basin_semantics_locked | Next connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans. |
 | Fifth flip crystal scale-invariance | spine_bridge | n/a | golden_reciprocal_fixed_point_plus_crystal_trace_hinge_plus_phi_log_periodic_ripple_bridge | clean_build | python_certificate | high | fifth_flip_phi_ripple_bridge_locked | Next attach empirical ripple-index evidence rows to the bridge and separate measured spatial ratios from acoustic 32/27 ratios. |
 | Magnetic/torsion | domain_model | 21 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar helicity/torsion guards with vector-calculus and MHD-style integral semantics. |
-| Emergence/bifurcation | domain_model | 7 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Formalize bifurcation normal forms, infinite-order transition behavior, and asymptotic emergence thresholds. |
+| Emergence/bifurcation | domain_model | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | python_certificate | high | bifurcation_normal_forms_locked | Next connect the normal-form carriers to concrete source IDs and physical control-parameter candidates. |
 | Quantum/matter | domain_model | 7 | typed_residual_guard | clean_build | not_attached | high | phase2_strengthen | Replace scalar quantum guards with density-operator, probability, Bell-bound, and conservation-law semantics. |
 | Master theorem batch 001 | batch | 50 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Master theorem batch 002 | batch | 60 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
@@ -64,7 +64,7 @@ Generated: 2026-06-08
 | Operator/spectral follow-up batch 012 | batch | 15 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Topology/category follow-up batch 013 | batch | 15 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Dynamics/stability follow-up batch 014 | batch | 11 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
-| Emergence/bifurcation follow-up batch 015 | batch | 7 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Emergence/bifurcation follow-up batch 015 | batch | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Orbital/gyromagnetic follow-up batch 016 | batch | 7 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Quantum/matter follow-up batch 017 | batch | 7 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Resonance-locking follow-up batch 018 | batch | 5 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
@@ -80,7 +80,7 @@ Generated: 2026-06-08
 | 4 | Matter creation spine | Locks the Energy-to-Matter Logic spine as a real-valued pressure-threshold, density-gain, mass-energy, curvature-source, temporal-transfer, ID10117 criticality-split, and quadratic pressure-EoS candidate carrier with Python certificates for temporal flow and pressure stationarity. | Connect the pressure EoS candidate to the temporal threshold gate Gamma(rho_vac) Theta(p-p_c) from ID10114. |
 | 5 | Phase locking resonance | Connects the rational-ratio selection mechanism to orbital and acoustic dynamics; now includes coupled-oscillator capture-basin semantics with a Python grid certificate. | Connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans. |
 | 6 | Fifth flip crystal scale-invariance | Connects rational locking, crystal trace admissibility, the golden reciprocal fixed point, and the transition into scale-invariant quasicrystal behavior; now has Python certificates for 2*cos(72 degrees) = 1/phi and phi-scaled log-periodic ripple projection. | Attach empirical ripple-index evidence rows to the bridge and separate measured spatial ratios from acoustic 32/27 ratios. |
-| 7 | Emergence/bifurcation | Core TZP emergence story; currently guard-level but high paper value. | Formalize a bifurcation normal form and infinite-order transition boundary. |
+| 7 | Emergence/bifurcation | Core TZP emergence story; now upgraded from residual guards to pitchfork/saddle-node normal-form carriers with a Python certificate. | Connect the normal-form carriers to concrete source IDs and physical control-parameter candidates. |
 | 8 | Magnetic/torsion | High-value bridge between gyromagnetic motion, helicity, Elsasser balance, and matter dynamics. | Move helicity and torsion from scalar guards toward vector-calculus/MHD semantics. |
 | 9 | Quantum/matter | Matter-facing proof lane for conservation, criticality, Bell bounds, and dark distribution claims. | Introduce probability/density-operator carriers and conservation-law statements. |
 
@@ -96,7 +96,7 @@ Generated: 2026-06-08
 | Phase locking resonance | 30 | 42 | 19 | 20 | 15 |
 | Fifth flip crystal scale-invariance | 25 | 43 | 34 | 0 | 0 |
 | Magnetic/torsion | 16 | 29 | 11 | 0 | 0 |
-| Emergence/bifurcation | 8 | 9 | 3 | 0 | 0 |
+| Emergence/bifurcation | 15 | 16 | 8 | 0 | 0 |
 | Quantum/matter | 30 | 32 | 7 | 3 | 0 |
 | Master theorem batch 001 | 19 | 22 | 14 | 2 | 0 |
 | Master theorem batch 002 | 21 | 21 | 7 | 0 | 0 |
@@ -112,7 +112,7 @@ Generated: 2026-06-08
 | Operator/spectral follow-up batch 012 | 9 | 14 | 10 | 0 | 0 |
 | Topology/category follow-up batch 013 | 15 | 16 | 2 | 2 | 0 |
 | Dynamics/stability follow-up batch 014 | 12 | 14 | 8 | 0 | 0 |
-| Emergence/bifurcation follow-up batch 015 | 8 | 9 | 3 | 0 | 0 |
+| Emergence/bifurcation follow-up batch 015 | 15 | 16 | 8 | 0 | 0 |
 | Orbital/gyromagnetic follow-up batch 016 | 9 | 10 | 5 | 0 | 0 |
 | Quantum/matter follow-up batch 017 | 8 | 10 | 4 | 0 | 0 |
 | Resonance-locking follow-up batch 018 | 9 | 10 | 4 | 0 | 0 |
