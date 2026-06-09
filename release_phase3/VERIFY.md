@@ -1,7 +1,7 @@
 # TZPID Phase 3 Verification Guide
 
 Generated UTC: 2026-06-09T07:03:29+00:00  
-Commit: `f447222b103e223297de17a836e744fb03adece7`
+Generated from verified commit: `f447222b103e223297de17a836e744fb03adece7`
 
 Run these commands from `d:\tzpidNEW`.
 

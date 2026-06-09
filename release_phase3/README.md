@@ -3,7 +3,7 @@
 Creator: Daniel Alexander Trawin  
 ORCID: https://orcid.org/0009-0001-4630-3715  
 Generated UTC: 2026-06-09T07:03:29+00:00  
-Commit: `f447222b103e223297de17a836e744fb03adece7`  
+Generated from verified commit: `f447222b103e223297de17a836e744fb03adece7`  
 Branch: `master`
 
 ## Purpose
@@ -35,7 +35,7 @@ Before publishing Phase 3, choose the intended GitHub/GitLab/remote account and 
 2. Keep `README.md`, `VERIFY.md`, and `MANIFEST.json` as the release entrypoint.
 3. Build one paper-facing spine summary per mature spine.
 4. Package Isabelle theories, certificate JSON/CSV/MD artifacts, and source matrices.
-5. Add a clear “How to Verify” command set.
+5. Add a clear "How to Verify" command set.
 6. Prepare a clean archive for Zenodo/DOI upload.
 
 ## Core Verification Evidence
