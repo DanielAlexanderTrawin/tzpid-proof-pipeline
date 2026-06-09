@@ -68,7 +68,7 @@ Generated: 2026-06-08
 | Orbital/gyromagnetic follow-up batch 016 | batch | 7 | typed_residual_guard_plus_gyromagnetic_vector_loop_semantics | clean_build | python_certificate | high | gyromagnetic_vector_loop_semantics_locked | Connect loop-index semantics to vortex-core enclosure and MHD helicity conservation. |
 | Quantum/matter follow-up batch 017 | batch | 7 | typed_residual_guard_plus_probability_density_bell_conservation | clean_build | python_certificate | high | probability_density_bell_conservation_locked | Lift diagonal probability carriers toward complex density matrices and CPTP channel composition. |
 | Resonance-locking follow-up batch 018 | batch | 5 | typed_residual_guard_plus_ratio_capture_basin_finite_n_kuramoto_semantics | clean_build | python_certificate | high | ratio_capture_basin_finite_n_kuramoto_locked | Extend the finite-N algebraic scan into a time-domain Kuramoto integration certificate and orbital capture examples. |
-| Geometry/curvature closeout batch 019 | batch | 1 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Geometry/curvature closeout batch 019 | batch | 1 | typed_residual_guard_plus_curvature_coupling_carriers | clean_build | python_certificate | medium | geometry_curvature_carriers_locked | Connect curvature coupling carriers to manifold/metric spine appendices and source-level curvature obligations. |
 
 ## Recommended Phase 2 Upgrade Order
 
@@ -116,4 +116,4 @@ Generated: 2026-06-08
 | Orbital/gyromagnetic follow-up batch 016 | 41 | 43 | 25 | 0 | 0 |
 | Quantum/matter follow-up batch 017 | 18 | 18 | 12 | 0 | 0 |
 | Resonance-locking follow-up batch 018 | 27 | 31 | 22 | 0 | 0 |
-| Geometry/curvature closeout batch 019 | 5 | 5 | 2 | 0 | 0 |
+| Geometry/curvature closeout batch 019 | 10 | 11 | 7 | 0 | 0 |

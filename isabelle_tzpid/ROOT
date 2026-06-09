@@ -99,4 +99,5 @@ session TZPID = "HOL-Analysis" +
     TZPID_QuantumMatter_ProbabilityCarriers
     TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup
     TZPID_Theorem_Semantic_Batch019_Geometry_Curvature_Closeout
+    TZPID_GeometryCurvature_Carriers
 
