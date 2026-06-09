@@ -28,6 +28,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_NestedHypersphere_S3_Spectrum
     TZPID_HubbleBreathing_Enclosure
     TZPID_HubbleBreathing_ClosedDistance
+    TZPID_HubbleBreathing_FriedmannComponents
     TZPID_GyromagneticMovement_Focus
     TZPID_GyromagneticMovement_Computational_Checks
     TZPID_GyromagneticMovement_Typed_PhaseGradient

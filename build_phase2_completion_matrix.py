@@ -129,18 +129,19 @@ def build_rows() -> list[dict[str, str | int]]:
             files=[
                 "TZPID_HubbleBreathing_Enclosure.thy",
                 "TZPID_HubbleBreathing_ClosedDistance.thy",
+                "TZPID_HubbleBreathing_FriedmannComponents.thy",
                 "TZPID_NestedHypersphere_S3_Spectrum.thy",
                 "TZPID_Einstein_Focus.thy",
             ],
             queue_status="",
-            level="hubble_breathing_volume_rate_inverse_fourth_density_closed_distance_fingerprint",
+            level="hubble_breathing_closed_distance_plus_friedmann_components",
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
             wolfram="certificate_only",
             priority="critical",
-            completion="hubble_breathing_closed_distance_locked",
-            next_upgrade="Next lift dynamic dark-energy/Friedmann components into typed HOL semantics and connect them to the closed-distance fingerprint.",
+            completion="hubble_breathing_friedmann_components_locked",
+            next_upgrade="Next add a computational F(a) / w0-wa fit scaffold and connect it to CMB/BAO/SN-style parameter certificates.",
         ),
         dict(
             family="Gyromagnetic movement",
@@ -376,8 +377,8 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
         ),
         (
             "Hubble breathing enclosure",
-            "Supplies the clock and observable distance fingerprint for the nested hypersphere: H = Rdot/R, Vdot/V = 3H, rho scales as R^-4, and closed distance uses sin(chi).",
-            "Formalize dynamic dark-energy/Friedmann components and connect them to the closed-distance fingerprint.",
+            "Supplies the clock, observable distance fingerprint, and typed Friedmann component carrier for the nested hypersphere.",
+            "Add a computational F(a) / w0-wa fit scaffold and connect it to CMB/BAO/SN-style parameter certificates.",
         ),
         (
             "Phase locking resonance",
