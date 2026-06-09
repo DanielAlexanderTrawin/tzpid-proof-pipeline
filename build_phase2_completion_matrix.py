@@ -308,7 +308,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Magnetic/torsion batch 011", "batch", ["TZPID_Magnetic_Torsion_Model.thy", "TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy", "TZPID_MagneticTorsion_VectorMHD.thy"], "batch011_started", "typed_scaffold_plus_vector_mhd_helicity_torsion", "high"),
         ("Operator/spectral follow-up batch 012", "batch", ["TZPID_Theorem_Semantic_Batch012_Operator_Spectral_Followup.thy", "TZPID_OperatorSpectral_FollowupCarriers.thy"], "batch012_started", "typed_residual_guard_plus_followup_spectral_carriers", "high"),
         ("Topology/category follow-up batch 013", "batch", ["TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup.thy", "TZPID_TopologyCategory_Carriers.thy"], "batch013_started", "typed_residual_guard_plus_finite_category_carriers", "medium"),
-        ("Dynamics/stability follow-up batch 014", "batch", ["TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup.thy"], "batch014_started", "typed_residual_guard", "medium"),
+        ("Dynamics/stability follow-up batch 014", "batch", ["TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup.thy", "TZPID_DynamicsStability_Carriers.thy"], "batch014_started", "typed_residual_guard_plus_stability_margin_carriers", "medium"),
         ("Emergence/bifurcation follow-up batch 015", "batch", ["TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup.thy", "TZPID_EmergenceBifurcation_NormalForms.thy"], "batch015_started", "typed_residual_guard_plus_bifurcation_normal_forms", "high"),
         ("Orbital/gyromagnetic follow-up batch 016", "batch", ["TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup.thy", "TZPID_GyromagneticMovement_Typed_PhaseGradient.thy", "TZPID_GyromagneticMovement_VectorCalculus.thy", "TZPID_GyromagneticMovement_MHD_Helicity.thy", "TZPID_GyromagneticMovement_LoopIndex.thy"], "batch016_started", "typed_residual_guard_plus_gyromagnetic_vector_loop_semantics", "high"),
         ("Quantum/matter follow-up batch 017", "batch", ["TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy", "TZPID_QuantumMatter_ProbabilityCarriers.thy"], "batch017_started", "typed_residual_guard_plus_probability_density_bell_conservation", "high"),
@@ -380,6 +380,11 @@ def build_rows() -> list[dict[str, str | int]]:
             wolfram="python_certificate",
             completion="topology_category_carriers_locked",
             next_upgrade="Connect finite category carriers to Hopf projection continuity and source-level category documents.",
+        ),
+        "Dynamics/stability follow-up batch 014": dict(
+            wolfram="python_certificate",
+            completion="dynamics_stability_carriers_locked",
+            next_upgrade="Connect stability margin carriers to time-domain numerical stability scans and paper-facing solver appendices.",
         ),
         "Emergence/bifurcation follow-up batch 015": dict(
             wolfram="python_certificate",
