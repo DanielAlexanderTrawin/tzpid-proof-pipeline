@@ -169,9 +169,7 @@ def build_certificate() -> dict:
             "all_scenarios_pass": "pass" if all_pass else "fail",
             "finite_category_contract_verified": "pass"
             if all(
-                row["identity_left_ok"] == "pass"
-                and row["identity_right_ok"] == "pass"
-                and row["adjoint_roundtrip_ok"] == "pass"
+                row["status"] == "pass"
                 for row in summaries
             )
             else "fail",
