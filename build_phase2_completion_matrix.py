@@ -164,10 +164,10 @@ def build_rows() -> list[dict[str, str | int]]:
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
-            wolfram="yes",
+            wolfram="python_certificate",
             priority="critical",
             completion="matter_creation_temporal_flow_locked",
-            next_upgrade="Next attach an executable Python/Wolfram certificate plotting rho_vac(t), J_emerge(t), rho_matter(t), and total-transfer conservation over a time grid.",
+            next_upgrade="Next connect the temporal-flow certificate to the ID10117 criticality condition and p(rho_vac) stationarity semantics.",
         ),
         dict(
             family="Gyromagnetic movement",
@@ -409,8 +409,8 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
         ),
         (
             "Matter creation spine",
-            "Locks the Energy-to-Matter Logic spine as a real-valued pressure-threshold, density-gain, mass-energy, curvature-source, and temporal-transfer carrier with Wolfram-backed checks.",
-            "Attach an executable Python/Wolfram certificate plotting rho_vac(t), J_emerge(t), rho_matter(t), and total-transfer conservation over a time grid.",
+            "Locks the Energy-to-Matter Logic spine as a real-valued pressure-threshold, density-gain, mass-energy, curvature-source, and temporal-transfer carrier with Wolfram-backed checks plus a Python certificate for rho_vac(t), J_emerge(t), rho_matter(t), and total-transfer conservation.",
+            "Connect the temporal-flow certificate to the ID10117 criticality condition and p(rho_vac) stationarity semantics.",
         ),
         (
             "Phase locking resonance",
