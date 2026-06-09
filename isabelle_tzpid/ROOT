@@ -68,6 +68,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_OperatorSpectral_Carriers
     TZPID_Quantum_Open_System_Model
     TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems
+    TZPID_QuantumOpenSystem_Carriers
     TZPID_Geometry_Manifold_Model
     TZPID_Theorem_Semantic_Batch008_Geometry_Manifold
     TZPID_Dynamics_Scaling_Model
