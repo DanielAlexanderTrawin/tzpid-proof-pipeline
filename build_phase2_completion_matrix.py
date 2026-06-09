@@ -304,7 +304,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Quantum/open-system batch 007", "batch", ["TZPID_Quantum_Open_System_Model.thy", "TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy", "TZPID_QuantumOpenSystem_Carriers.thy"], "batch007_started", "typed_scaffold_plus_open_system_density_channel_carriers", "high"),
         ("Geometry/manifold batch 008", "batch", ["TZPID_Geometry_Manifold_Model.thy", "TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy", "TZPID_GeometryManifold_Carriers.thy"], "batch008_started", "typed_scaffold_plus_metric_projection_curvature_carriers", "high"),
         ("Dynamics/scaling batch 009", "batch", ["TZPID_Dynamics_Scaling_Model.thy", "TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling.thy", "TZPID_DynamicsScaling_Carriers.thy"], "batch009_started", "typed_scaffold_plus_dynamics_scaling_carriers", "medium"),
-        ("Meta-foundation batch 010", "batch", ["TZPID_Meta_Foundation_Model.thy", "TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy"], "batch010_started", "typed_scaffold", "medium"),
+        ("Meta-foundation batch 010", "batch", ["TZPID_Meta_Foundation_Model.thy", "TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy", "TZPID_MetaFoundation_Carriers.thy"], "batch010_started", "typed_scaffold_plus_meta_foundation_carriers", "medium"),
         ("Magnetic/torsion batch 011", "batch", ["TZPID_Magnetic_Torsion_Model.thy", "TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy", "TZPID_MagneticTorsion_VectorMHD.thy"], "batch011_started", "typed_scaffold_plus_vector_mhd_helicity_torsion", "high"),
         ("Operator/spectral follow-up batch 012", "batch", ["TZPID_Theorem_Semantic_Batch012_Operator_Spectral_Followup.thy", "TZPID_OperatorSpectral_FollowupCarriers.thy"], "batch012_started", "typed_residual_guard_plus_followup_spectral_carriers", "high"),
         ("Topology/category follow-up batch 013", "batch", ["TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup.thy"], "batch013_started", "typed_residual_guard", "medium"),
@@ -360,6 +360,11 @@ def build_rows() -> list[dict[str, str | int]]:
             wolfram="python_certificate",
             completion="dynamics_scaling_carriers_locked",
             next_upgrade="Connect dynamics/scaling carriers to time-domain simulations and paper-facing scaling-law appendices.",
+        ),
+        "Meta-foundation batch 010": dict(
+            wolfram="python_certificate",
+            completion="meta_foundation_carriers_locked",
+            next_upgrade="Connect meta-foundation carriers to README provenance, falsifiability statements, and publication verification tables.",
         ),
         "Magnetic/torsion batch 011": dict(
             wolfram="python_certificate",
