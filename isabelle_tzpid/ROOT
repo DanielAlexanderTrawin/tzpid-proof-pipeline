@@ -53,6 +53,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_PhaseLockingResonance_Typed_RatioSelection
     TZPID_PhaseLockingResonance_CaptureBasin
     TZPID_FifthFlip_CrystalScaleInvariance
+    TZPID_Ripple_LogPeriodic_PhiBridge
     TZPID_Phase2_Expanded_Theorem_Coverage
     TZPID_Phase2_Semantic_Translation
     TZPID_Theorem_Semantic_Batch001
