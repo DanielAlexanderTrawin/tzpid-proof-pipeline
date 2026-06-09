@@ -124,6 +124,24 @@ def build_rows() -> list[dict[str, str | int]]:
             next_upgrade="Next enrich the projection carrier from finite-coordinate algebra into topology/continuity and explicit Hopf fibration semantics.",
         ),
         dict(
+            family="Hubble breathing enclosure",
+            kind="spine_bridge",
+            files=[
+                "TZPID_HubbleBreathing_Enclosure.thy",
+                "TZPID_NestedHypersphere_S3_Spectrum.thy",
+                "TZPID_Einstein_Focus.thy",
+            ],
+            queue_status="",
+            level="hubble_breathing_volume_rate_inverse_fourth_density",
+            typed_carrier="yes",
+            assumptions="yes",
+            isabelle="clean_build",
+            wolfram="certificate_only",
+            priority="critical",
+            completion="hubble_breathing_algebra_locked",
+            next_upgrade="Next lift closed-geometry angular-diameter distance and dynamic dark-energy/Friedmann components into typed HOL semantics.",
+        ),
+        dict(
             family="Gyromagnetic movement",
             kind="movement_spine",
             files=[
@@ -354,6 +372,11 @@ def write_md(rows: list[dict[str, str | int]]) -> None:
             "Gyromagnetic movement",
             "Central movement-mechanism spine with Wolfram-backed checks plus Phase 4, Phase 5, Phase 5.5, Phase 5.6, and a corrected Phase 6 winding lock.",
             "Lift the corrected winding certificate from four numerical loops into a general loop-index theorem for wrapped phase fields.",
+        ),
+        (
+            "Hubble breathing enclosure",
+            "Supplies the clock for the nested hypersphere: H = Rdot/R, Vdot/V = 3H, and rho scales as R^-4.",
+            "Formalize closed-geometry distance D_A(z)=a0 sin(chi)/(1+z) and dynamic dark-energy/Friedmann components.",
         ),
         (
             "Phase locking resonance",
