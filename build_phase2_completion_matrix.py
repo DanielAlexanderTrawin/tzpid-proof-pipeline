@@ -205,16 +205,17 @@ def build_rows() -> list[dict[str, str | int]]:
                 "TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup.thy",
                 "TZPID_PhaseLockingResonance_Typed_RatioSelection.thy",
                 "TZPID_PhaseLockingResonance_CaptureBasin.thy",
+                "TZPID_PhaseLockingResonance_KuramotoFiniteN.thy",
             ],
             queue_status="batch018_started",
-            level="focus_certificate_plus_typed_ratio_selection_plus_capture_basin_semantics",
+            level="focus_certificate_plus_typed_ratio_selection_plus_capture_basin_plus_finite_n_kuramoto_semantics",
             typed_carrier="yes",
             assumptions="yes",
             isabelle="clean_build",
             wolfram="python_certificate",
             priority="high",
-            completion="capture_basin_semantics_locked",
-            next_upgrade="Next connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans.",
+            completion="finite_n_kuramoto_scan_locked",
+            next_upgrade="Next extend the finite-N algebraic scan into a time-domain Kuramoto integration certificate and orbital capture examples.",
         ),
         dict(
             family="Fifth flip crystal scale-invariance",
@@ -311,7 +312,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Emergence/bifurcation follow-up batch 015", "batch", ["TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup.thy", "TZPID_EmergenceBifurcation_NormalForms.thy"], "batch015_started", "typed_residual_guard_plus_bifurcation_normal_forms", "high"),
         ("Orbital/gyromagnetic follow-up batch 016", "batch", ["TZPID_Theorem_Semantic_Batch016_Orbital_Gyromagnetic_Followup.thy", "TZPID_GyromagneticMovement_Typed_PhaseGradient.thy", "TZPID_GyromagneticMovement_VectorCalculus.thy", "TZPID_GyromagneticMovement_MHD_Helicity.thy", "TZPID_GyromagneticMovement_LoopIndex.thy"], "batch016_started", "typed_residual_guard_plus_gyromagnetic_vector_loop_semantics", "high"),
         ("Quantum/matter follow-up batch 017", "batch", ["TZPID_Theorem_Semantic_Batch017_Quantum_Matter_Followup.thy", "TZPID_QuantumMatter_ProbabilityCarriers.thy"], "batch017_started", "typed_residual_guard_plus_probability_density_bell_conservation", "high"),
-        ("Resonance-locking follow-up batch 018", "batch", ["TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup.thy", "TZPID_PhaseLockingResonance_Typed_RatioSelection.thy", "TZPID_PhaseLockingResonance_CaptureBasin.thy"], "batch018_started", "typed_residual_guard_plus_ratio_capture_basin_semantics", "high"),
+        ("Resonance-locking follow-up batch 018", "batch", ["TZPID_Theorem_Semantic_Batch018_Resonance_Locking_Followup.thy", "TZPID_PhaseLockingResonance_Typed_RatioSelection.thy", "TZPID_PhaseLockingResonance_CaptureBasin.thy", "TZPID_PhaseLockingResonance_KuramotoFiniteN.thy"], "batch018_started", "typed_residual_guard_plus_ratio_capture_basin_finite_n_kuramoto_semantics", "high"),
         ("Geometry/curvature closeout batch 019", "batch", ["TZPID_Theorem_Semantic_Batch019_Geometry_Curvature_Closeout.thy"], "batch019_started", "typed_residual_guard", "medium"),
     ]
     batch_overrides = {
@@ -377,8 +378,8 @@ def build_rows() -> list[dict[str, str | int]]:
         ),
         "Resonance-locking follow-up batch 018": dict(
             wolfram="python_certificate",
-            completion="ratio_capture_basin_semantics_locked",
-            next_upgrade="Connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans.",
+            completion="ratio_capture_basin_finite_n_kuramoto_locked",
+            next_upgrade="Extend the finite-N algebraic scan into a time-domain Kuramoto integration certificate and orbital capture examples.",
         ),
     }
     for family, kind, files, status, level, priority in batch_specs:

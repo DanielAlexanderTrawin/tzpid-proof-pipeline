@@ -45,7 +45,7 @@ Generated: 2026-06-08
 | Hubble breathing enclosure | spine_bridge | n/a | hubble_breathing_closed_distance_plus_friedmann_joint_likelihood | clean_build | python_certificate | critical | hubble_breathing_joint_likelihood_locked | Next promote the scenario-sum certificate into a small parameter-search lane over H0, Omega_m, Omega_K, w0, and wa. |
 | Matter creation spine | gold_spine | n/a | energy_matter_focus_plus_threshold_density_mass_energy_curvature_carrier_plus_temporal_emergence_flow_plus_criticality_split_plus_pressure_eos_candidate | clean_build | python_certificate | critical | matter_creation_pressure_eos_candidate_locked | Next connect the pressure EoS candidate to the temporal threshold gate Gamma(rho_vac) Theta(p-p_c) from ID10114. |
 | Gyromagnetic movement | movement_spine | 7 | focus_certificate_plus_phase4_phase5_phase5_5_spatial_boundary_plus_phase6_corrected_winding_plus_loop_index_theorem | clean_build | yes | critical | phase6_loop_index_theorem_locked | Next connect the loop-index theorem to vortex-core enclosure and MHD helicity conservation semantics. |
-| Phase locking resonance | movement_spine | 5 | focus_certificate_plus_typed_ratio_selection_plus_capture_basin_semantics | clean_build | python_certificate | high | capture_basin_semantics_locked | Next connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans. |
+| Phase locking resonance | movement_spine | 5 | focus_certificate_plus_typed_ratio_selection_plus_capture_basin_plus_finite_n_kuramoto_semantics | clean_build | python_certificate | high | finite_n_kuramoto_scan_locked | Next extend the finite-N algebraic scan into a time-domain Kuramoto integration certificate and orbital capture examples. |
 | Fifth flip crystal scale-invariance | spine_bridge | n/a | golden_reciprocal_fixed_point_plus_crystal_trace_hinge_plus_phi_log_periodic_ripple_bridge | clean_build | python_certificate | high | fifth_flip_phi_ripple_bridge_locked | Next attach empirical ripple-index evidence rows to the bridge and separate measured spatial ratios from acoustic 32/27 ratios. |
 | Magnetic/torsion | domain_model | 21 | typed_residual_guard_plus_vector_mhd_helicity_torsion | clean_build | python_certificate | high | vector_mhd_helicity_torsion_locked | Next connect vector-MHD torsion/helicity semantics to vortex-core enclosure and gyromagnetic loop-index certificates. |
 | Emergence/bifurcation | domain_model | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | python_certificate | high | bifurcation_normal_forms_locked | Next connect the normal-form carriers to concrete source IDs and physical control-parameter candidates. |
@@ -67,7 +67,7 @@ Generated: 2026-06-08
 | Emergence/bifurcation follow-up batch 015 | batch | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | python_certificate | high | bifurcation_normal_forms_locked | Connect normal-form carriers to concrete source IDs and physical control-parameter candidates. |
 | Orbital/gyromagnetic follow-up batch 016 | batch | 7 | typed_residual_guard_plus_gyromagnetic_vector_loop_semantics | clean_build | python_certificate | high | gyromagnetic_vector_loop_semantics_locked | Connect loop-index semantics to vortex-core enclosure and MHD helicity conservation. |
 | Quantum/matter follow-up batch 017 | batch | 7 | typed_residual_guard_plus_probability_density_bell_conservation | clean_build | python_certificate | high | probability_density_bell_conservation_locked | Lift diagonal probability carriers toward complex density matrices and CPTP channel composition. |
-| Resonance-locking follow-up batch 018 | batch | 5 | typed_residual_guard_plus_ratio_capture_basin_semantics | clean_build | python_certificate | high | ratio_capture_basin_semantics_locked | Connect capture-basin semantics to nonlinear Kuramoto order-parameter stability and finite-N entrainment scans. |
+| Resonance-locking follow-up batch 018 | batch | 5 | typed_residual_guard_plus_ratio_capture_basin_finite_n_kuramoto_semantics | clean_build | python_certificate | high | ratio_capture_basin_finite_n_kuramoto_locked | Extend the finite-N algebraic scan into a time-domain Kuramoto integration certificate and orbital capture examples. |
 | Geometry/curvature closeout batch 019 | batch | 1 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 
 ## Recommended Phase 2 Upgrade Order
@@ -93,7 +93,7 @@ Generated: 2026-06-08
 | Hubble breathing enclosure | 85 | 124 | 48 | 20 | 5 |
 | Matter creation spine | 37 | 55 | 24 | 11 | 14 |
 | Gyromagnetic movement | 76 | 84 | 33 | 15 | 19 |
-| Phase locking resonance | 30 | 42 | 19 | 20 | 15 |
+| Phase locking resonance | 35 | 46 | 23 | 20 | 15 |
 | Fifth flip crystal scale-invariance | 25 | 43 | 34 | 0 | 0 |
 | Magnetic/torsion | 21 | 36 | 15 | 0 | 0 |
 | Emergence/bifurcation | 15 | 16 | 8 | 0 | 0 |
@@ -115,5 +115,5 @@ Generated: 2026-06-08
 | Emergence/bifurcation follow-up batch 015 | 15 | 16 | 8 | 0 | 0 |
 | Orbital/gyromagnetic follow-up batch 016 | 41 | 43 | 25 | 0 | 0 |
 | Quantum/matter follow-up batch 017 | 18 | 18 | 12 | 0 | 0 |
-| Resonance-locking follow-up batch 018 | 22 | 27 | 18 | 0 | 0 |
+| Resonance-locking follow-up batch 018 | 27 | 31 | 22 | 0 | 0 |
 | Geometry/curvature closeout batch 019 | 5 | 5 | 2 | 0 | 0 |
