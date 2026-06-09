@@ -19,6 +19,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_TopologicalUnification_Focus
     TZPID_NewSpines_Computational_Checks
     TZPID_MatterCreation_ThresholdSpine
+    TZPID_MatterCreation_TemporalFlow
     TZPID_ZenodoSpines_Focus
     TZPID_ZenodoSpines_Computational_Checks
     TZPID_AA_Spines_Focus
