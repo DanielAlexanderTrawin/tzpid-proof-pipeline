@@ -21,6 +21,7 @@ session TZPID = "HOL-Analysis" +
     TZPID_MatterCreation_ThresholdSpine
     TZPID_MatterCreation_TemporalFlow
     TZPID_MatterCreation_CriticalityBridge
+    TZPID_MatterCreation_PressureEoS
     TZPID_ZenodoSpines_Focus
     TZPID_ZenodoSpines_Computational_Checks
     TZPID_AA_Spines_Focus
