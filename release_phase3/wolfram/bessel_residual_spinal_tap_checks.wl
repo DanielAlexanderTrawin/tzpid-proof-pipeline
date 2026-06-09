@@ -6,8 +6,9 @@
   Note: Wolfram guardrails for Bessel residual spinal tap.
 *)
 ClearAll["Global`*"];
-outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], "bessel_residual_spinal_tap_results.json"];
-If[!DirectoryQ[DirectoryName[outputPath]], CreateDirectory[DirectoryName[outputPath], CreateIntermediateDirectories -> True]];
+outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], FileNameJoin[{DirectoryName[$InputFileName], "..", "wolfram_results", "bessel_residual_spinal_tap_results.json"}]];
+outputDir = DirectoryName[outputPath];
+If[StringLength[outputDir] > 0 && ! DirectoryQ[outputDir], CreateDirectory[outputDir, CreateIntermediateDirectories -> True]];
 asString[expr_] := ToString[expr, InputForm];
 
 nuD = ell + (d - 2)/2;

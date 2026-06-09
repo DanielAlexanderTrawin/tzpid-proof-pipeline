@@ -1,22 +1,23 @@
 {
-  "release": "TZPID Phase 3 proof package skeleton",
-  "generated_utc": "2026-06-09T07:03:29+00:00",
+  "release": "TZPID Phase 3 proof package",
+  "generated_utc": "2026-06-09T20:56:50+00:00",
   "creator": "Daniel Alexander Trawin",
   "orcid": "https://orcid.org/0009-0001-4630-3715",
+  "doi": "10.5281/zenodo.20579476",
   "repository": {
-    "path": "D:/tzpidNEW",
-    "branch": "master",
-    "generated_from_verified_commit": "f447222b103e223297de17a836e744fb03adece7",
-    "remote": null,
-    "remote_note": "No git remote is configured in .git/config at generation time.",
+    "path": "D:\\tzpidNEW",
+    "branch": "main",
+    "generated_from_commit": "99303e1b22606b09ba32abc1706004cb3f609929",
+    "remote": "https://github.com/DanielAlexanderTrawin/tzpid-proof-pipeline.git",
     "local_git_user": {
       "name": "Daniel Alexander Trawin",
       "email": "daniel@tzpid.local"
     }
   },
   "toolchain": {
-    "isabelle": "unavailable: [WinError 193] %1 is not a valid Win32 application",
-    "python_certificate_scripts": 25
+    "isabelle_session": "isabelle_tzpid",
+    "python_certificate_scripts": 25,
+    "wolfram_scripts": 9
   },
   "phase2_matrix": {
     "file": "TZPID_PHASE2_COMPLETION_MATRIX.csv",
@@ -664,259 +665,18 @@
       "missing_files": ""
     }
   ],
-  "certificates": [
-    {
-      "file": "phase2_checks/DYNAMICS_SCALING_CARRIERS_CERTIFICATE.json",
-      "certificate": "DYNAMICS_SCALING_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Representative numerical certificate for dynamics/scaling carrier algebra; the universal contracts are checked in Isabelle/HOL."
-    },
-    {
-      "file": "phase2_checks/DYNAMICS_STABILITY_CARRIERS_CERTIFICATE.json",
-      "certificate": "DYNAMICS_STABILITY_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Representative numerical certificate for dynamics/stability carrier margins; the universal contracts are checked in Isabelle/HOL."
-    },
-    {
-      "file": "phase2_checks/EMERGENCE_BIFURCATION_NORMAL_FORM_CERTIFICATE.json",
-      "certificate": "EMERGENCE_BIFURCATION_NORMAL_FORM_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational certificate for normal-form carriers; not a full domain-specific physical bifurcation fit."
-    },
-    {
-      "file": "phase2_checks/FIFTH_FLIP_GOLDEN_TRACE_CERTIFICATE.json",
-      "certificate": "FIFTH_FLIP_GOLDEN_TRACE_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational/trigonometric certificate for the golden trace hinge; not a full crystallographic restriction proof."
-    },
-    {
-      "file": "phase2_checks/GEOMETRY_CURVATURE_CARRIERS_CERTIFICATE.json",
-      "certificate": "GEOMETRY_CURVATURE_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Representative numerical certificate for geometry/curvature carrier algebra; the universal contracts are checked in Isabelle/HOL."
-    },
-    {
-      "file": "phase2_checks/GEOMETRY_MANIFOLD_CARRIERS_CERTIFICATE.json",
-      "certificate": "GEOMETRY_MANIFOLD_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    },
-    {
-      "file": "phase2_checks/HUBBLE_DESI_DR2_BAO_LIKELIHOOD_CERTIFICATE.json",
-      "certificate": "HUBBLE_DESI_DR2_BAO_LIKELIHOOD_CERTIFICATE",
-      "status": "unknown",
-      "generated_utc": "2026-06-09T03:35:04+00:00",
-      "engine": "Python + numpy",
-      "claim_boundary": "DESI DR2 Gaussian BAO distance-ratio likelihood, not a full joint cosmological fit."
-    },
-    {
-      "file": "phase2_checks/HUBBLE_FRIEDMANN_CPL_CERTIFICATE.json",
-      "certificate": "HUBBLE_FRIEDMANN_CPL_CERTIFICATE",
-      "status": "unknown",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational scaffold and parameter-style anchors, not an observational fit."
-    },
-    {
-      "file": "phase2_checks/HUBBLE_FRIEDMANN_OBSERVED_FIT_CERTIFICATE.json",
-      "certificate": "HUBBLE_FRIEDMANN_OBSERVED_FIT_CERTIFICATE",
-      "status": "unknown",
-      "generated_utc": "2026-06-09T03:19:15+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Published summary-constraint residual scaffold; not a raw likelihood and not a full covariance cosmology fit."
-    },
-    {
-      "file": "phase2_checks/HUBBLE_JOINT_LIKELIHOOD_CERTIFICATE.json",
-      "certificate": "HUBBLE_JOINT_LIKELIHOOD_CERTIFICATE",
-      "status": "unknown",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Sum of locked Pantheon+, Planck distance-prior, and DESI DR2 BAO chi-square lanes; not a refit or full likelihood."
-    },
-    {
-      "file": "phase2_checks/HUBBLE_PANTHEONPLUS_RAW_LIKELIHOOD_CERTIFICATE.json",
-      "certificate": "HUBBLE_PANTHEONPLUS_RAW_LIKELIHOOD_CERTIFICATE",
-      "status": "unknown",
-      "generated_utc": "2026-06-09T03:26:19+00:00",
-      "engine": "Python + numpy",
-      "claim_boundary": "Pantheon+ Hubble-flow full-covariance likelihood only; additive magnitude offset is analytically profiled; not a joint CMB/DESI/SN fit."
-    },
-    {
-      "file": "phase2_checks/HUBBLE_PLANCK_DISTANCE_PRIOR_CERTIFICATE.json",
-      "certificate": "HUBBLE_PLANCK_DISTANCE_PRIOR_CERTIFICATE",
-      "status": "unknown",
-      "generated_utc": "2026-06-09T03:26:19+00:00",
-      "engine": "Python + numpy",
-      "claim_boundary": "Planck 2018 compressed distance-prior likelihood, not the full Planck likelihood."
-    },
-    {
-      "file": "phase2_checks/MAGNETIC_TORSION_VECTOR_MHD_CERTIFICATE.json",
-      "certificate": "MAGNETIC_TORSION_VECTOR_MHD_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:43+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational certificate for vector-MHD algebraic carriers; not a full PDE MHD simulation."
-    },
-    {
-      "file": "phase2_checks/MASTER_BATCH001_CARRIERS_CERTIFICATE.json",
-      "certificate": "MASTER_BATCH001_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    },
-    {
-      "file": "phase2_checks/MASTER_BATCH002_CARRIERS_CERTIFICATE.json",
-      "certificate": "MASTER_BATCH002_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    },
-    {
-      "file": "phase2_checks/MASTER_BATCH003_CARRIERS_CERTIFICATE.json",
-      "certificate": "MASTER_BATCH003_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    },
-    {
-      "file": "phase2_checks/MASTER_BATCH004_CARRIERS_CERTIFICATE.json",
-      "certificate": "MASTER_BATCH004_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:44+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Representative numerical certificate for batch 004 carrier algebra; the universal carrier contracts are checked in Isabelle/HOL."
-    },
-    {
-      "file": "phase2_checks/MATTER_CREATION_PRESSURE_EOS_CERTIFICATE.json",
-      "certificate": "MATTER_CREATION_PRESSURE_EOS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:44+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational certificate for a local quadratic pressure carrier; not a final physical equation of state."
-    },
-    {
-      "file": "phase2_checks/MATTER_CREATION_TEMPORAL_FLOW_CERTIFICATE.json",
-      "certificate": "MATTER_CREATION_TEMPORAL_FLOW_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:44+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational certificate for the temporal transfer carrier; not a proof of the physical matter-creation premise."
-    },
-    {
-      "file": "phase2_checks/META_FOUNDATION_CARRIERS_CERTIFICATE.json",
-      "certificate": "META_FOUNDATION_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:44+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Representative numerical certificate for meta-foundation carrier margins; the universal contracts are checked in Isabelle/HOL."
-    },
-    {
-      "file": "phase2_checks/OPERATOR_SPECTRAL_CARRIERS_CERTIFICATE.json",
-      "certificate": "OPERATOR_SPECTRAL_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    },
-    {
-      "file": "phase2_checks/OPERATOR_SPECTRAL_FOLLOWUP_CERTIFICATE.json",
-      "certificate": "OPERATOR_SPECTRAL_FOLLOWUP_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    },
-    {
-      "file": "phase2_checks/PHASE_LOCKING_CAPTURE_BASIN_CERTIFICATE.json",
-      "certificate": "PHASE_LOCKING_CAPTURE_BASIN_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:44+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational certificate for the algebraic capture-basin carrier; not a full nonlinear oscillator simulation."
-    },
-    {
-      "file": "phase2_checks/PHASE_LOCKING_KURAMOTO_FINITE_N_CERTIFICATE.json",
-      "certificate": "PHASE_LOCKING_KURAMOTO_FINITE_N_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:44+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Finite-N algebraic entrainment scan for the phase-locking carrier; not a full nonlinear time-domain Kuramoto simulation."
-    },
-    {
-      "file": "phase2_checks/QUANTUM_MATTER_PROBABILITY_CERTIFICATE.json",
-      "certificate": "QUANTUM_MATTER_PROBABILITY_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:45+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational certificate for diagonal two-state probability carriers; not a full complex density-matrix or Bell-experiment model."
-    },
-    {
-      "file": "phase2_checks/QUANTUM_OPEN_SYSTEM_CARRIERS_CERTIFICATE.json",
-      "certificate": "QUANTUM_OPEN_SYSTEM_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    },
-    {
-      "file": "phase2_checks/RIPPLE_LOG_PERIODIC_PHI_CERTIFICATE.json",
-      "certificate": "RIPPLE_LOG_PERIODIC_PHI_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:27:45+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Computational certificate for phi-scaled log-periodic projection and dimensionless ripple-index invariance; not a new empirical dataset."
-    },
-    {
-      "file": "phase2_checks/TOPOLOGY_CATEGORY_CARRIERS_CERTIFICATE.json",
-      "certificate": "TOPOLOGY_CATEGORY_CARRIERS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T05:36:15+00:00",
-      "engine": "Python standard library",
-      "claim_boundary": "Representative finite topology/category certificate; universal contracts are checked in Isabelle/HOL."
-    },
-    {
-      "file": "phase2_checks/TOPOLOGY_VECTOR_INVARIANTS_CERTIFICATE.json",
-      "certificate": "TOPOLOGY_VECTOR_INVARIANTS_CERTIFICATE",
-      "status": "pass",
-      "generated_utc": "2026-06-09T00:00:00Z",
-      "engine": "",
-      "claim_boundary": ""
-    }
-  ],
-  "verification_commands": [
-    "D:\\Isabelle2025\\Isabelle2025-2\\bin\\isabelle build -v -D d:\\tzpidNEW\\isabelle_tzpid",
-    "python build_phase2_completion_matrix.py",
-    "powershell: Get-ChildItem -File -Filter 'compute_*certificate*.py' | Sort-Object Name | ForEach-Object { python $_.FullName }"
-  ],
-  "release_files": [
-    "release_phase3/README.md",
-    "release_phase3/VERIFY.md",
-    "release_phase3/MANIFEST.json"
-  ],
   "phase3_package": {
-    "generated_utc": "2026-06-09T20:43:17+00:00",
-    "package_commit_source": "02b71f0e378fbacd5a4b444ea71252893468e577",
+    "generated_utc": "2026-06-09T20:56:50+00:00",
+    "package_commit_source": "99303e1b22606b09ba32abc1706004cb3f609929",
     "directories": {
       "matrices": "release_phase3/matrices",
       "certificates": "release_phase3/certificates",
       "isabelle": "release_phase3/isabelle",
       "spines": "release_phase3/spines",
-      "wolfram": "release_phase3/wolfram"
+      "wolfram": "release_phase3/wolfram",
+      "wolfram_results": "release_phase3/wolfram_results",
+      "exports": "release_phase3/exports",
+      "papers": "release_phase3/papers"
     },
     "files": {
       "matrices": [
@@ -1090,7 +850,7 @@
         {
           "source": "D:\\tzpidNEW\\phase2_checks\\HUBBLE_PANTHEONPLUS_RAW_LIKELIHOOD_CERTIFICATE.md",
           "release_path": "release_phase3/certificates/md/HUBBLE_PANTHEONPLUS_RAW_LIKELIHOOD_CERTIFICATE.md",
-          "bytes": 3779
+          "bytes": 3780
         },
         {
           "source": "D:\\tzpidNEW\\phase2_checks\\HUBBLE_PLANCK_DISTANCE_PRIOR_CERTIFICATE.json",
@@ -1100,7 +860,7 @@
         {
           "source": "D:\\tzpidNEW\\phase2_checks\\HUBBLE_PLANCK_DISTANCE_PRIOR_CERTIFICATE.md",
           "release_path": "release_phase3/certificates/md/HUBBLE_PLANCK_DISTANCE_PRIOR_CERTIFICATE.md",
-          "bytes": 2520
+          "bytes": 2521
         },
         {
           "source": "D:\\tzpidNEW\\phase2_checks\\MAGNETIC_TORSION_VECTOR_MHD_CERTIFICATE.json",
@@ -2052,6 +1812,127 @@
           "source": "D:\\00_Engine\\AI_Workspaces\\OpenAI2\\new_gold_spines\\wolfram\\topo_unification_spine_checks.wl",
           "release_path": "release_phase3/wolfram/topo_unification_spine_checks.wl",
           "bytes": 1050
+        }
+      ],
+      "wolfram_results": [
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\aa_module_library_results.json",
+          "release_path": "release_phase3/wolfram_results/aa_module_library_results.json",
+          "bytes": 304204
+        },
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\aa_spines_results.json",
+          "release_path": "release_phase3/wolfram_results/aa_spines_results.json",
+          "bytes": 3008
+        },
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\einstein_focus_results.json",
+          "release_path": "release_phase3/wolfram_results/einstein_focus_results.json",
+          "bytes": 6021
+        },
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\energy_matter_spine_results.json",
+          "release_path": "release_phase3/wolfram_results/energy_matter_spine_results.json",
+          "bytes": 820
+        },
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\gravity_spine_results.json",
+          "release_path": "release_phase3/wolfram_results/gravity_spine_results.json",
+          "bytes": 787
+        },
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\nested_hypersphere_results.json",
+          "release_path": "release_phase3/wolfram_results/nested_hypersphere_results.json",
+          "bytes": 4017
+        },
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\topo_unification_spine_results.json",
+          "release_path": "release_phase3/wolfram_results/topo_unification_spine_results.json",
+          "bytes": 748
+        },
+        {
+          "source": "D:\\tzpidNEW\\wolfram_checks\\zenodo_spines_results.json",
+          "release_path": "release_phase3/wolfram_results/zenodo_spines_results.json",
+          "bytes": 115451
+        },
+        {
+          "source": "generated_in_release",
+          "release_path": "release_phase3/wolfram_results/bao_enclosure_acoustics_results.json",
+          "bytes": 1251
+        },
+        {
+          "source": "generated_in_release",
+          "release_path": "release_phase3/wolfram_results/bessel_residual_spinal_tap_results.json",
+          "bytes": 3032
+        },
+        {
+          "source": "generated_in_release",
+          "release_path": "release_phase3/wolfram_results/gyromagnetic_movement_results.json",
+          "bytes": 2585
+        },
+        {
+          "source": "generated_in_release",
+          "release_path": "release_phase3/wolfram_results/phase_locking_resonance_results.json",
+          "bytes": 2065
+        },
+        {
+          "source": "generated_in_release",
+          "release_path": "release_phase3/wolfram_results/pythagorean_comma_holonomy_results.json",
+          "bytes": 1020
+        }
+      ],
+      "exports": [
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\.TZPIDAllIDs.aux",
+          "release_path": "release_phase3/exports/.TZPIDAllIDs.aux",
+          "bytes": 2615
+        },
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\all_ids_export_summary.json",
+          "release_path": "release_phase3/exports/all_ids_export_summary.json",
+          "bytes": 6872
+        },
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\TZPIDAllIDs.glob",
+          "release_path": "release_phase3/exports/TZPIDAllIDs.glob",
+          "bytes": 887914
+        },
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\TZPIDAllIDs.lean",
+          "release_path": "release_phase3/exports/TZPIDAllIDs.lean",
+          "bytes": 462976
+        },
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\TZPIDAllIDs.v",
+          "release_path": "release_phase3/exports/TZPIDAllIDs.v",
+          "bytes": 551850
+        },
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\TZPIDAllIDs.vo",
+          "release_path": "release_phase3/exports/TZPIDAllIDs.vo",
+          "bytes": 2363368
+        },
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\TZPIDAllIDs.vok",
+          "release_path": "release_phase3/exports/TZPIDAllIDs.vok",
+          "bytes": 0
+        },
+        {
+          "source": "D:\\tzpidNEW\\lean_rocq_gold_spine\\TZPIDAllIDs.vos",
+          "release_path": "release_phase3/exports/TZPIDAllIDs.vos",
+          "bytes": 0
+        }
+      ],
+      "papers": [
+        {
+          "source": "D:\\tzpidNEW\\What_Matters_Most_Finding_Time_In_A_temporal_HyperSpherical_Zenith.tex",
+          "release_path": "release_phase3/papers/What_Matters_Most_Finding_Time_In_A_temporal_HyperSpherical_Zenith.tex",
+          "bytes": 39975
+        },
+        {
+          "source": "D:\\tzpidNEW\\What_Matters_Most_Finding_Time_In_A_temporal_HyperSpherical_Zenith.pdf",
+          "release_path": "release_phase3/papers/What_Matters_Most_Finding_Time_In_A_temporal_HyperSpherical_Zenith.pdf",
+          "bytes": 375429
         }
       ]
     }

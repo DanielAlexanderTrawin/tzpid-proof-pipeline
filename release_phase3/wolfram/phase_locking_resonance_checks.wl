@@ -6,8 +6,9 @@
   Note: Focused checks for the phase-locking / resonance ratio-selection vertebra.
 *)
 ClearAll["Global`*"];
-outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], "phase_locking_resonance_results.json"];
-If[!DirectoryQ[DirectoryName[outputPath]], CreateDirectory[DirectoryName[outputPath], CreateIntermediateDirectories -> True]];
+outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], FileNameJoin[{DirectoryName[$InputFileName], "..", "wolfram_results", "phase_locking_resonance_results.json"}]];
+outputDir = DirectoryName[outputPath];
+If[StringLength[outputDir] > 0 && ! DirectoryQ[outputDir], CreateDirectory[outputDir, CreateIntermediateDirectories -> True]];
 asString[expr_] := ToString[expr, InputForm];
 
 angles = N[Range[0, 7] 2 Pi/8];

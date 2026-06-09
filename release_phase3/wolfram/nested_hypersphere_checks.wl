@@ -9,8 +9,9 @@
   Note: Generated Wolfram checks for the nested-hypersphere gold spine.
 *)
 ClearAll["Global`*"];
-outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], "wolfram_checks/nested_hypersphere_results.json"];
-If[! DirectoryQ[DirectoryName[outputPath]], CreateDirectory[DirectoryName[outputPath], CreateIntermediateDirectories -> True]];
+outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], FileNameJoin[{DirectoryName[$InputFileName], "..", "wolfram_results", "nested_hypersphere_results.json"}]];
+outputDir = DirectoryName[outputPath];
+If[StringLength[outputDir] > 0 && ! DirectoryQ[outputDir], CreateDirectory[outputDir, CreateIntermediateDirectories -> True]];
 asString[expr_] := ToString[expr, InputForm];
 
 j0Node = FullSimplify[Sin[Pi]/Pi];

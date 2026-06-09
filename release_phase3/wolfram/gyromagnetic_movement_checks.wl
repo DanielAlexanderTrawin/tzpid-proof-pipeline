@@ -6,8 +6,9 @@
   Note: Algebraic guardrails for gyromagnetic movement mechanism before Isabelle encoding.
 *)
 ClearAll["Global`*"];
-outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], "gyromagnetic_movement_results.json"];
-If[!DirectoryQ[DirectoryName[outputPath]], CreateDirectory[DirectoryName[outputPath], CreateIntermediateDirectories -> True]];
+outputPath = If[Length[$ScriptCommandLine] >= 2, $ScriptCommandLine[[2]], FileNameJoin[{DirectoryName[$InputFileName], "..", "wolfram_results", "gyromagnetic_movement_results.json"}]];
+outputDir = DirectoryName[outputPath];
+If[StringLength[outputDir] > 0 && ! DirectoryQ[outputDir], CreateDirectory[outputDir, CreateIntermediateDirectories -> True]];
 asString[expr_] := ToString[expr, InputForm];
 
 stateDim = 3 + 3 + 3 + 3;

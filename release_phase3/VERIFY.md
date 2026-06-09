@@ -1,7 +1,7 @@
 # TZPID Phase 3 Verification Guide
 
-Generated UTC: 2026-06-09T07:03:29+00:00  
-Generated from verified commit: `f447222b103e223297de17a836e744fb03adece7`
+Generated UTC: 2026-06-09T20:56:50+00:00
+Generated from commit: `99303e1b22606b09ba32abc1706004cb3f609929`
 
 Run these commands from `d:\tzpidNEW`.
 
@@ -29,7 +29,7 @@ Import-Csv .\TZPID_PHASE2_COMPLETION_MATRIX.csv |
 
 Pass condition: no rows are printed.
 
-## 3. Regenerate All Certificate Scripts
+## 3. Regenerate Certificate Scripts
 
 ```powershell
 $scripts = Get-ChildItem -File -Filter 'compute_*certificate*.py' | Sort-Object Name
@@ -43,8 +43,6 @@ foreach ($s in $scripts) {
 Pass condition: every script exits with code `0`.
 
 ## 4. Check Certificate JSON Status Fields
-
-Use the helper command below. It exits with code `1` if any certificate JSON status field is `fail`.
 
 ```powershell
 python -c "import json; from pathlib import Path; bad=[]; count=0
@@ -65,29 +63,29 @@ print('all certificate JSON status fields pass')"
 
 Pass condition: `all certificate JSON status fields pass`.
 
-## 5. Git State Check
+## 5. Validate Release JSON
 
 ```powershell
-git status --short
+python -m json.tool .\release_phase3\MANIFEST.json > $null
+python -m json.tool .\release_phase3\CERTIFICATE_MANIFEST.json > $null
+python -m json.tool .\release_phase3\HDF5_ARTIFACTS.json > $null
+python -m json.tool .\release_phase3\ZENODO_METADATA.json > $null
+```
+
+Pass condition: every command exits with code `0`.
+
+## 6. Git And Release Account Check
+
+```powershell
+git status --short --branch
+git remote -v
 git log -3 --oneline
 ```
 
-Expected note: the user working notes may remain untracked until intentionally added:
+Expected remote: `https://github.com/DanielAlexanderTrawin/tzpid-proof-pipeline.git`.
+
+Expected note: user working notes may remain untracked until intentionally added:
 
 - `fithflip.txt`
 - `hyper-universality.txt`
 - `key_nondimensional_numbers.txt`
-
-## 6. Release Account Check
-
-```powershell
-git remote -v
-git config --get user.name
-git config --get user.email
-```
-
-Current generation found no configured remote. Add one before publishing:
-
-```powershell
-git remote add origin <remote-url-for-the-intended-account>
-```
