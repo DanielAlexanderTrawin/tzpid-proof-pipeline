@@ -305,7 +305,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Dynamics/scaling batch 009", "batch", ["TZPID_Dynamics_Scaling_Model.thy", "TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling.thy"], "batch009_started", "typed_scaffold", "medium"),
         ("Meta-foundation batch 010", "batch", ["TZPID_Meta_Foundation_Model.thy", "TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy"], "batch010_started", "typed_scaffold", "medium"),
         ("Magnetic/torsion batch 011", "batch", ["TZPID_Magnetic_Torsion_Model.thy", "TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy", "TZPID_MagneticTorsion_VectorMHD.thy"], "batch011_started", "typed_scaffold_plus_vector_mhd_helicity_torsion", "high"),
-        ("Operator/spectral follow-up batch 012", "batch", ["TZPID_Theorem_Semantic_Batch012_Operator_Spectral_Followup.thy"], "batch012_started", "typed_residual_guard", "high"),
+        ("Operator/spectral follow-up batch 012", "batch", ["TZPID_Theorem_Semantic_Batch012_Operator_Spectral_Followup.thy", "TZPID_OperatorSpectral_FollowupCarriers.thy"], "batch012_started", "typed_residual_guard_plus_followup_spectral_carriers", "high"),
         ("Topology/category follow-up batch 013", "batch", ["TZPID_Theorem_Semantic_Batch013_Topology_Category_Followup.thy"], "batch013_started", "typed_residual_guard", "medium"),
         ("Dynamics/stability follow-up batch 014", "batch", ["TZPID_Theorem_Semantic_Batch014_Dynamics_Stability_Followup.thy"], "batch014_started", "typed_residual_guard", "medium"),
         ("Emergence/bifurcation follow-up batch 015", "batch", ["TZPID_Theorem_Semantic_Batch015_Emergence_Bifurcation_Followup.thy", "TZPID_EmergenceBifurcation_NormalForms.thy"], "batch015_started", "typed_residual_guard_plus_bifurcation_normal_forms", "high"),
@@ -339,6 +339,11 @@ def build_rows() -> list[dict[str, str | int]]:
             wolfram="python_certificate",
             completion="vector_mhd_helicity_torsion_locked",
             next_upgrade="Connect vector-MHD torsion/helicity semantics to vortex-core enclosure and gyromagnetic loop-index certificates.",
+        ),
+        "Operator/spectral follow-up batch 012": dict(
+            wolfram="python_certificate",
+            completion="operator_spectral_followup_locked",
+            next_upgrade="Connect batch 012 follow-up carriers directly to Bessel root certificates and S3 eigenvalue geometry.",
         ),
         "Emergence/bifurcation follow-up batch 015": dict(
             wolfram="python_certificate",
