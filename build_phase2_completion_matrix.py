@@ -301,7 +301,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Topology/vector batch 005", "batch", ["TZPID_Topology_Vector_Model.thy", "TZPID_Theorem_Semantic_Batch005_Topology_Vector.thy", "TZPID_TopologyVector_Invariants.thy"], "batch005_started", "typed_scaffold_plus_topological_invariant_carriers", "high"),
         ("Operator/spectral batch 006", "batch", ["TZPID_Operator_Spectral_Model.thy", "TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy", "TZPID_OperatorSpectral_Carriers.thy"], "batch006_started", "typed_scaffold_plus_finite_spectral_carriers", "high"),
         ("Quantum/open-system batch 007", "batch", ["TZPID_Quantum_Open_System_Model.thy", "TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy", "TZPID_QuantumOpenSystem_Carriers.thy"], "batch007_started", "typed_scaffold_plus_open_system_density_channel_carriers", "high"),
-        ("Geometry/manifold batch 008", "batch", ["TZPID_Geometry_Manifold_Model.thy", "TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy"], "batch008_started", "typed_scaffold", "high"),
+        ("Geometry/manifold batch 008", "batch", ["TZPID_Geometry_Manifold_Model.thy", "TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy", "TZPID_GeometryManifold_Carriers.thy"], "batch008_started", "typed_scaffold_plus_metric_projection_curvature_carriers", "high"),
         ("Dynamics/scaling batch 009", "batch", ["TZPID_Dynamics_Scaling_Model.thy", "TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling.thy"], "batch009_started", "typed_scaffold", "medium"),
         ("Meta-foundation batch 010", "batch", ["TZPID_Meta_Foundation_Model.thy", "TZPID_Theorem_Semantic_Batch010_Meta_Foundation.thy"], "batch010_started", "typed_scaffold", "medium"),
         ("Magnetic/torsion batch 011", "batch", ["TZPID_Magnetic_Torsion_Model.thy", "TZPID_Theorem_Semantic_Batch011_Magnetic_Torsion.thy", "TZPID_MagneticTorsion_VectorMHD.thy"], "batch011_started", "typed_scaffold_plus_vector_mhd_helicity_torsion", "high"),
@@ -329,6 +329,11 @@ def build_rows() -> list[dict[str, str | int]]:
             wolfram="python_certificate",
             completion="quantum_open_system_carriers_locked",
             next_upgrade="Connect diagonal open-system carriers to full density-matrix/CPTP semantics and quantum/matter probability carriers.",
+        ),
+        "Geometry/manifold batch 008": dict(
+            wolfram="python_certificate",
+            completion="geometry_manifold_carriers_locked",
+            next_upgrade="Connect finite geometry carriers to Hopf projection continuity, S3 spectrum geometry, and curvature closeout batch 019.",
         ),
         "Magnetic/torsion batch 011": dict(
             wolfram="python_certificate",
