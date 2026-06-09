@@ -51,7 +51,7 @@ Generated: 2026-06-08
 | Emergence/bifurcation | domain_model | 7 | typed_residual_guard_plus_bifurcation_normal_forms | clean_build | python_certificate | high | bifurcation_normal_forms_locked | Next connect the normal-form carriers to concrete source IDs and physical control-parameter candidates. |
 | Quantum/matter | domain_model | 7 | typed_residual_guard_plus_probability_density_bell_conservation | clean_build | python_certificate | high | probability_density_bell_conservation_locked | Next lift diagonal probability carriers toward complex density matrices and CPTP channel composition. |
 | Master theorem batch 001 | batch | 50 | typed_residual_guard_plus_master_carriers | clean_build | python_certificate | high | master_batch001_carriers_locked | Connect broad batch 001 carriers to specific spine documents and replace image placeholders as source artifacts mature. |
-| Master theorem batch 002 | batch | 60 | typed_residual_guard | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Master theorem batch 002 | batch | 60 | typed_residual_guard_plus_master_helicity_kk_carriers | clean_build | python_certificate | high | master_batch002_carriers_locked | Connect batch 002 helicity/KK/pressure carriers to magnetic-torsion, operator-spectral, and avalanche spine documents. |
 | Master theorem batch 003 | batch | 51 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Master theorem batch 004 | batch | 7 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Topology/vector batch 005 | batch | 38 | typed_scaffold_plus_topological_invariant_carriers | clean_build | python_certificate | high | topology_vector_invariants_locked | Connect topological invariant carriers to Hopf/continuity projection semantics and geometry/manifold batch 008. |
@@ -99,7 +99,7 @@ Generated: 2026-06-08
 | Emergence/bifurcation | 15 | 16 | 8 | 0 | 0 |
 | Quantum/matter | 40 | 40 | 15 | 3 | 0 |
 | Master theorem batch 001 | 29 | 34 | 21 | 2 | 0 |
-| Master theorem batch 002 | 21 | 21 | 7 | 0 | 0 |
+| Master theorem batch 002 | 31 | 33 | 11 | 0 | 0 |
 | Master theorem batch 003 | 25 | 28 | 12 | 6 | 0 |
 | Master theorem batch 004 | 10 | 11 | 8 | 0 | 0 |
 | Topology/vector batch 005 | 33 | 43 | 14 | 8 | 0 |
