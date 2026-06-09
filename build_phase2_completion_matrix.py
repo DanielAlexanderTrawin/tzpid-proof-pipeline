@@ -299,7 +299,7 @@ def build_rows() -> list[dict[str, str | int]]:
         ("Master theorem batch 003", "batch", ["TZPID_Theorem_Semantic_Batch003.thy"], "batch003_started", "typed_residual_guard", "medium"),
         ("Master theorem batch 004", "batch", ["TZPID_Theorem_Semantic_Batch004.thy"], "batch004_started", "typed_residual_guard", "medium"),
         ("Topology/vector batch 005", "batch", ["TZPID_Topology_Vector_Model.thy", "TZPID_Theorem_Semantic_Batch005_Topology_Vector.thy", "TZPID_TopologyVector_Invariants.thy"], "batch005_started", "typed_scaffold_plus_topological_invariant_carriers", "high"),
-        ("Operator/spectral batch 006", "batch", ["TZPID_Operator_Spectral_Model.thy", "TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy"], "batch006_started", "typed_scaffold", "high"),
+        ("Operator/spectral batch 006", "batch", ["TZPID_Operator_Spectral_Model.thy", "TZPID_Theorem_Semantic_Batch006_Operator_Spectral.thy", "TZPID_OperatorSpectral_Carriers.thy"], "batch006_started", "typed_scaffold_plus_finite_spectral_carriers", "high"),
         ("Quantum/open-system batch 007", "batch", ["TZPID_Quantum_Open_System_Model.thy", "TZPID_Theorem_Semantic_Batch007_Quantum_Open_Systems.thy"], "batch007_started", "typed_scaffold", "high"),
         ("Geometry/manifold batch 008", "batch", ["TZPID_Geometry_Manifold_Model.thy", "TZPID_Theorem_Semantic_Batch008_Geometry_Manifold.thy"], "batch008_started", "typed_scaffold", "high"),
         ("Dynamics/scaling batch 009", "batch", ["TZPID_Dynamics_Scaling_Model.thy", "TZPID_Theorem_Semantic_Batch009_Dynamics_Scaling.thy"], "batch009_started", "typed_scaffold", "medium"),
@@ -319,6 +319,11 @@ def build_rows() -> list[dict[str, str | int]]:
             wolfram="python_certificate",
             completion="topology_vector_invariants_locked",
             next_upgrade="Connect topological invariant carriers to Hopf/continuity projection semantics and geometry/manifold batch 008.",
+        ),
+        "Operator/spectral batch 006": dict(
+            wolfram="python_certificate",
+            completion="operator_spectral_carriers_locked",
+            next_upgrade="Connect finite spectral carriers to Bessel root certificates, S3 eigenvalue ladders, and operator/spectral follow-up batch 012.",
         ),
         "Magnetic/torsion batch 011": dict(
             wolfram="python_certificate",

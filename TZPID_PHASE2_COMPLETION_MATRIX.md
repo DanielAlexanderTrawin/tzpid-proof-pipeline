@@ -55,7 +55,7 @@ Generated: 2026-06-08
 | Master theorem batch 003 | batch | 51 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Master theorem batch 004 | batch | 7 | typed_residual_guard | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Topology/vector batch 005 | batch | 38 | typed_scaffold_plus_topological_invariant_carriers | clean_build | python_certificate | high | topology_vector_invariants_locked | Connect topological invariant carriers to Hopf/continuity projection semantics and geometry/manifold batch 008. |
-| Operator/spectral batch 006 | batch | 30 | typed_scaffold | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
+| Operator/spectral batch 006 | batch | 30 | typed_scaffold_plus_finite_spectral_carriers | clean_build | python_certificate | high | operator_spectral_carriers_locked | Connect finite spectral carriers to Bessel root certificates, S3 eigenvalue ladders, and operator/spectral follow-up batch 012. |
 | Quantum/open-system batch 007 | batch | 23 | typed_scaffold | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Geometry/manifold batch 008 | batch | 17 | typed_scaffold | clean_build | not_attached | high | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
 | Dynamics/scaling batch 009 | batch | 13 | typed_scaffold | clean_build | not_attached | medium | started_not_complete | Promote from residual/guard semantics into domain-specific HOL-Analysis structures where this batch is paper-facing. |
@@ -103,7 +103,7 @@ Generated: 2026-06-08
 | Master theorem batch 003 | 25 | 28 | 12 | 6 | 0 |
 | Master theorem batch 004 | 10 | 11 | 8 | 0 | 0 |
 | Topology/vector batch 005 | 33 | 43 | 14 | 8 | 0 |
-| Operator/spectral batch 006 | 22 | 38 | 21 | 2 | 0 |
+| Operator/spectral batch 006 | 31 | 52 | 28 | 2 | 0 |
 | Quantum/open-system batch 007 | 23 | 47 | 7 | 3 | 0 |
 | Geometry/manifold batch 008 | 17 | 35 | 5 | 2 | 0 |
 | Dynamics/scaling batch 009 | 14 | 28 | 7 | 0 | 0 |
